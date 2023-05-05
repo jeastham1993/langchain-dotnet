@@ -135,7 +135,7 @@ Click **Make a contribution** at the bottom of any docs page to make small chang
 - Using the command line:
   - [Fork the repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository) so that you can make your changes without affecting the original project until you're ready to merge them.
 
-2. Install or make sure **Golang** is updated.
+2. Install or make sure **.NET** is updated.
 
 3. Create a working branch and start with your changes!
 
