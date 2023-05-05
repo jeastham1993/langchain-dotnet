@@ -1,0 +1,22 @@
+using LangChain.NET.LLMS.OpenAi;
+
+namespace LangChain.NET.Schema;
+
+public class Generation
+{
+    /// <summary>
+    /// Generated text output
+    /// </summary>
+    public string Text { get; set; }
+
+    /// <summary>
+    /// Raw generation info response from the provider.
+    /// May include things like reason for finishing (e.g. in <see cref="OpenAI"/>)
+    /// </summary>
+    public Dictionary<string, object> GenerationInfo { get; set; }
+}
+
+public class ChatGeneration : Generation
+{
+    public string Message { get; set; }
+}

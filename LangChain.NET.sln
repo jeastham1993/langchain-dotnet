@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CDFF9629-E87
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET", "src\LangChain.NET\LangChain.NET.csproj", "{67344432-3C26-4B6F-B05C-7916F72CA212}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{0F72D671-D884-41CF-9CF2-5FFDFE664C6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.OpenAISample", "examples\LangChain.NET.OpenAISample\LangChain.NET.OpenAISample.csproj", "{977B2590-8AC9-4D03-9815-DB33127AB1A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +24,13 @@ Global
 		{67344432-3C26-4B6F-B05C-7916F72CA212}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67344432-3C26-4B6F-B05C-7916F72CA212}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67344432-3C26-4B6F-B05C-7916F72CA212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{977B2590-8AC9-4D03-9815-DB33127AB1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977B2590-8AC9-4D03-9815-DB33127AB1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977B2590-8AC9-4D03-9815-DB33127AB1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977B2590-8AC9-4D03-9815-DB33127AB1A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{67344432-3C26-4B6F-B05C-7916F72CA212} = {CDFF9629-E87F-42EB-9054-C26D3F76C525}
+		{977B2590-8AC9-4D03-9815-DB33127AB1A3} = {0F72D671-D884-41CF-9CF2-5FFDFE664C6F}
 	EndGlobalSection
 EndGlobal
