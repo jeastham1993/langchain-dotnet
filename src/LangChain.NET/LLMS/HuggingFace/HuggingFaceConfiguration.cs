@@ -4,6 +4,12 @@ namespace LangChain.NET.LLMS.HuggingFace;
 
 public class HuggingFaceConfiguration : BaseLLMParams
 {
+    public HuggingFaceConfiguration()
+    {
+        this.Temperature = 0.7M;
+        this.ModelName = "gpt2";
+    }
+    
     /// <summary>
     ///  Sampling temperature to use
     /// </summary>

@@ -1,15 +1,8 @@
 ﻿
 using LangChain.NET.LLMS.HuggingFace;
 
-Console.WriteLine("What is your Hugging Face API Key?");
+var huggingFace = new HuggingFace();
 
-var secondModel = new HuggingFace(new HuggingFaceConfiguration()
-{
-    ApiKey = Console.ReadLine(),
-    ModelName = "gpt2",
-    Temperature = 0.9M
-});
-
-var hfResult = await secondModel.Call("The man walked his");
+var hfResult = await huggingFace.Call("What would be a good company name be for name a company that makes colorful socks?");
 
 Console.WriteLine(hfResult);
