@@ -20,6 +20,11 @@ public class OpenAI : BaseLLM
     {
         _configuration = configuration;
 
+        if (string.IsNullOrEmpty(_configuration.ApiKey))
+        {
+            _configuration.ApiKey = Environment.GetEnvironmentVariable("OPEN_AI_API_KEY") ?? throw new ArgumentException("'OPEN_AI_API_KEY' environment variable is not set and an API key is not provided in the input parameters");
+        }
+
         _httpClient = new HttpClient();
         _httpClient.BaseAddress = new Uri("https://api.openai.com/v1");
             

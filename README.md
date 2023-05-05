@@ -11,16 +11,9 @@ This is the .NET language implementation of LangChain.
 See [examples](./examples) for example usage.
 
 ```c#
-Console.WriteLine("What is your OpenAI API Key?");
-var model = new OpenAI(new OpenAIConfiguration()
-{
-    ApiKey = Console.ReadLine(),
-    ModelName = "text-davinci-003",
-    Temperature = 1.0M,
-    MaxTokens = 1000,
-});
+var model = new OpenAI();
 
-var result = await model.Call("What would be a good company name for a company that makes colorful socks");
+var result = await model.Call("What is a good name for a company that sells colourful socks?");
 
 Console.WriteLine(result);
 ```

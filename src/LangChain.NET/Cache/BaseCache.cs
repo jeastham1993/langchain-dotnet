@@ -1,6 +1,6 @@
 namespace LangChain.NET.Cache;
 
-public class BaseCache
+public abstract class BaseCache
 {
     
 }
