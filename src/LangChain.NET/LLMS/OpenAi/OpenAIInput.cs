@@ -15,7 +15,36 @@
 
 namespace LangChain.NET.LLMS.OpenAi;
 
-public interface OpenAIInput
+public class OpenAIInput
 {
+    /// <summary>
+    ///  Sampling temperature to use
+    /// </summary>
+    public decimal Temperature { get; set; }
     
+    public decimal MaxTokens { get; set; }
+    
+    public decimal TopP { get; set; }
+    
+    public decimal FrequencyPenalty { get; set; }
+    
+    public decimal PresencePenalty { get; set; }
+    
+    public decimal N { get; set; }
+    
+    public decimal BestOf { get; set; }
+    
+    public Dictionary<string, decimal>? LogItBias { get; set; }
+    
+    public bool Streaming { get; set; }
+    
+    public string ModelName { get; set; }
+    
+    public object[] Kwargs { get; set; }
+    
+    public decimal BatchSize { get; set; }
+    
+    public string[] Stop { get; set; }
+    
+    public decimal? Timeout { get; set; }
 }
