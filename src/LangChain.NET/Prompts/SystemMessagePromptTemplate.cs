@@ -1,3 +1,4 @@
+using LangChain.NET.Chat;
 using LangChain.NET.Prompts.Base;
 using LangChain.NET.Schema;
 

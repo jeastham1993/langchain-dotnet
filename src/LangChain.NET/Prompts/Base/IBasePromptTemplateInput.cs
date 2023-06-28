@@ -6,6 +6,6 @@ using System.Collections.Generic;
 
 public interface IBasePromptTemplateInput
 {
-    List<string> InputVariables { get; set; }
-    Dictionary<string, object> PartialVariables { get; set; }
+    List<string> InputVariables { get; }
+    Dictionary<string, object> PartialVariables { get; }
 }

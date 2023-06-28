@@ -1,4 +1,5 @@
 using System.Text.Json;
+using LangChain.NET.Chat;
 using LangChain.NET.Schema;
 
 namespace LangChain.NET.Prompts;

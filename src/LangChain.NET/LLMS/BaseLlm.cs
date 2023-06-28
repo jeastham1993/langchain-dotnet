@@ -20,6 +20,12 @@ public abstract class BaseLlm : BaseLanguageModel
 
     public abstract Task<LlmResult> Generate(string[] prompts, List<string>? stop);
 
+    /// <summary>
+    /// Call the LLM using the provided prompt.
+    /// </summary>
+    /// <param name="prompt">The prompt to use.</param>
+    /// <param name="stop">Whether to stop gathering results.</param>
+    /// <returns>A string value containing the LLM response.</returns>
     public async Task<string?> Call(string prompt, List<string>? stop = null)
     {
         var generations = await Generate(new[] { prompt }, stop);

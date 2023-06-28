@@ -1,4 +1,4 @@
-namespace LangChain.NET.Schema;
+namespace LangChain.NET.Chat;
 
 public abstract class BaseChatMessage
 {
@@ -11,5 +11,5 @@ public abstract class BaseChatMessage
     
     public string? Name { get; set; }
 
-    public abstract MessageType GetType();
+    internal new abstract ChatMessageType GetType();
 }

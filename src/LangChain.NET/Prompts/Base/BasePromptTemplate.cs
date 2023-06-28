@@ -4,7 +4,7 @@ namespace LangChain.NET.Prompts.Base;
 
 public abstract class BasePromptTemplate
 {
-    public List<string> InputVariables { get; set;  }
+    public List<string> InputVariables { get; private set;  }
     public InputValues PartialVariables { get; }
     
     public BasePromptTemplate(IBasePromptTemplateInput input)
@@ -15,14 +15,14 @@ public abstract class BasePromptTemplate
         }
         
         InputVariables = input.InputVariables;
-        PartialVariables = new InputValues(){Value = input.PartialVariables};
+        PartialVariables = new InputValues(input.PartialVariables);
     }
     
     public abstract Task<BasePromptTemplate> Partial(PartialValues values);
     
     public async Task<InputValues> MergePartialAndUserVariables(InputValues userVariables)
     {
-        InputValues partialValues = new InputValues();
+        InputValues partialValues = new InputValues(new Dictionary<string, object>());
         
         foreach (KeyValuePair<string, object> entry in PartialVariables.Value)
         {
@@ -39,7 +39,7 @@ public abstract class BasePromptTemplate
             }
         }
         
-        InputValues allKwargs = new InputValues(){Value = partialValues.Value.Concat(userVariables.Value).ToDictionary(x => x.Key, x => x.Value)};
+        InputValues allKwargs = new InputValues(partialValues.Value.Concat(userVariables.Value).ToDictionary(x => x.Key, x => x.Value));
         return allKwargs;
     }
     

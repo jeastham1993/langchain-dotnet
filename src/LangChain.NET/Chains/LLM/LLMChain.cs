@@ -9,12 +9,11 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-public class LlmChain<T> : BaseChain, ILlmChainInput
+public class LlmChain : BaseChain, ILlmChainInput
 {
     public BasePromptTemplate Prompt { get; }
     public BaseLanguageModel Llm { get; }
     public string OutputKey { get; set; }
-    public BaseOutputParser<T>? OutputParser { get; }
     public override string ChainType() => "llm_chain";
 
     public bool? Verbose { get; set; }
@@ -23,17 +22,11 @@ public class LlmChain<T> : BaseChain, ILlmChainInput
     public override string[] InputKeys => Prompt.InputVariables.ToArray();
     public override string[] OutputKeys => new[] { OutputKey };
 
-    public LlmChain(LlmChainInput<T> fields)
+    public LlmChain(LlmChainInput fields)
     {
         Prompt = fields.Prompt;
         Llm = fields.Llm;
         OutputKey = fields.OutputKey;
-        OutputParser = fields.OutputParser;
-
-        if (OutputParser != null)
-        {
-            throw new Exception("Cannot set both OutputParser and Prompt.OutputParser");
-        }
     }
 
     protected async Task<object?> GetFinalOutput(
@@ -41,22 +34,15 @@ public class LlmChain<T> : BaseChain, ILlmChainInput
         BasePromptValue promptValue, 
         CallbackManagerForChainRun? runManager = null)
     {
-        string? completion = generations[0].Text;
-        object? finalCompletion;
-
-        if (OutputParser != null)
-        {
-            finalCompletion = await OutputParser.ParseWithPrompt(completion, promptValue);
-        }
-        else
-        {
-            finalCompletion = completion;
-        }
-
-        return finalCompletion;
+        return generations[0].Text;
     }
 
-    protected override async Task<ChainValues> Call(ChainValues values)
+    /// <summary>
+    /// Execute the chain.
+    /// </summary>
+    /// <param name="values">The values to use when executing the chain.</param>
+    /// <returns>The resulting output <see cref="ChainValues"/>.</returns>
+    public override async Task<ChainValues> Call(ChainValues values)
     {
         List<string>? stop = new List<string>();
 
@@ -67,19 +53,16 @@ public class LlmChain<T> : BaseChain, ILlmChainInput
             stop = stopList;
         }
         
-        BasePromptValue promptValue = await Prompt.FormatPromptValue(new InputValues
-        {
-            Value = values.Value
-        });
+        BasePromptValue promptValue = await Prompt.FormatPromptValue(new InputValues(values.Value));
         var generationResult = await Llm.GeneratePrompt(new List<BasePromptValue> { promptValue }.ToArray(), stop);
         var generations = generationResult.Generations;
         
         return new ChainValues(await GetFinalOutput(generations.ToList(), promptValue));
     }
     
-    public async Task<T> Predict(ChainValues values, BaseRunManager? callbackManager = null)
+    public async Task<object> Predict(ChainValues values)
     {
-        var output = await Call(values, callbackManager as CallbackManagerForChainRun);
-        return (T)output.Value[OutputKey];
+        var output = await Call(values);
+        return output.Value[OutputKey];
     }
 }

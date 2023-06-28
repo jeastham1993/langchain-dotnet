@@ -17,17 +17,23 @@ public abstract class BaseChain
 
     public abstract string[] OutputKeys { get; }
 
-    public async Task<string> Run(string input, CallbackManagerForChainRun runManager = null)
+    /// <summary>
+    /// Run the chain using a simple input/output.
+    /// </summary>
+    /// <param name="input">The string input to use to execute the chain.</param>
+    /// <returns>A text value containing the result of the chain.</returns>
+    /// <exception cref="ArgumentException">If the type of chain used expects multiple inputs, this method will throw an ArgumentException.</exception>
+    public async Task<string?> Run(string input)
     {
         var isKeylessInput = InputKeys.Length <= 1;
 
         if (!isKeylessInput)
         {
-            throw new Exception($"Chain {ChainType()} expects multiple inputs, cannot use 'run'");
+            throw new ArgumentException($"Chain {ChainType()} expects multiple inputs, cannot use 'run'");
         }
 
         var values = InputKeys.Length > 0 ? new ChainValues(InputKeys[0], input) : new ChainValues();
-        var returnValues = await Call(values, runManager);
+        var returnValues = await Call(values);
         var keys = returnValues.Value.Keys;
 
         if (keys.Count(p => p != RunKey) == 1)
@@ -39,45 +45,16 @@ public abstract class BaseChain
         throw new Exception("Return values have multiple keys, 'run' only supported when one key currently");
     }
 
-    public async Task<ChainValues> Call(ChainValues values, BaseRunManager? runManager)
-    {
-        var fullValues = new ChainValues(values);
-
-        //TODO: Implement memory
-        // if (memory != null)
-        // {
-        //     var newValues = await memory.LoadMemoryVariables(values);
-        //
-        //     foreach (var entry in newValues)
-        //     {
-        //         fullValues[entry.Key] = entry.Value;
-        //     }
-        // }
-
-        ChainValues outputValues;
-
-        outputValues = await Call(fullValues);
-
-        //TODO: implement memory
-        // if (memory != null)
-        // {
-        //     await memory.SaveContext(values, outputValues);
-        // }
-
-        //TODO: Implement run manager
-        //await runManager?.HandleChainEndAsync(outputValues);
-
-        // Add the runManager's currentRunId to the outputValues
-        outputValues.Value[RunKey] = runManager != null ? new { runId = runManager.RunId } : null;
-
-        return outputValues;
-    }
-
-    protected abstract Task<ChainValues> Call(ChainValues values);
+    /// <summary>
+    /// Execute the chain, using the values provided.
+    /// </summary>
+    /// <param name="values">The <see cref="ChainValues"/> to use.</param>
+    /// <returns></returns>
+    public abstract Task<ChainValues> Call(ChainValues values);
     
-    public async Task<ChainValues> Apply(List<ChainValues> inputs, List<CallbackManagerForChainRun>? callbacks)
+    public async Task<ChainValues> Apply(List<ChainValues> inputs)
     {
-        var tasks = inputs.Select(async (input, idx) => await Call(input, callbacks?[idx]));
+        var tasks = inputs.Select(async (input, idx) => await Call(input));
         var results = await Task.WhenAll(tasks);
 
         return results.Aggregate(new ChainValues(), (acc, result) =>

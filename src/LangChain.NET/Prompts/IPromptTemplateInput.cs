@@ -4,9 +4,9 @@ namespace LangChain.NET.Prompts;
 
 public interface IPromptTemplateInput : IBasePromptTemplateInput
 {
-    string Template { get; set; }
+    string Template { get; }
     
-    TemplateFormatOptions? TemplateFormat { get; set; }
+    TemplateFormatOptions? TemplateFormat { get; }
     
-    bool? ValidateTemplate { get; set; }
+    bool? ValidateTemplate { get; }
 }

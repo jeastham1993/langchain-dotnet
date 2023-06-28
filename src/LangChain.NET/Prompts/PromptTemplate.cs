@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-public class PromptTemplate : BaseStringPromptTemplate, IPromptTemplateInput
+public class PromptTemplate : BaseStringPromptTemplate
 {
     public string Template { get; set; }
     public TemplateFormatOptions? TemplateFormat { get; set; } = TemplateFormatOptions.FString;
@@ -22,6 +22,7 @@ public class PromptTemplate : BaseStringPromptTemplate, IPromptTemplateInput
         Template = input.Template;
         TemplateFormat = input.TemplateFormat ?? TemplateFormatOptions.FString;
         ValidateTemplate = input.ValidateTemplate ?? true;
+        PartialVariables = input.PartialVariables;
 
         if (ValidateTemplate.Value)
         {
@@ -54,11 +55,7 @@ public class PromptTemplate : BaseStringPromptTemplate, IPromptTemplateInput
         string prefix = "")
     {
         var template = $"{prefix}\n{string.Join(exampleSeparator, examples)}{suffix}";
-        return new PromptTemplate(new PromptTemplateInput
-        {
-            InputVariables = inputVariables.ToList(),
-            Template = template
-        });
+        return new PromptTemplate(new PromptTemplateInput(template, inputVariables.ToList()));
     }
 
     public static PromptTemplate FromTemplate(string template, PromptTemplateInput? options = null)
@@ -73,28 +70,21 @@ public class PromptTemplate : BaseStringPromptTemplate, IPromptTemplateInput
                 }
             });
 
-        return new PromptTemplate(new PromptTemplateInput
+        return new PromptTemplate(new PromptTemplateInput(template, names.ToList())
         {
-            InputVariables = names.ToList(),
             TemplateFormat = options?.TemplateFormat ?? TemplateFormatOptions.FString,
-            Template = template
         });
     }
 
     public override async Task<BasePromptTemplate> Partial(PartialValues values)
     {
-        PromptTemplateInput promptDict = new PromptTemplateInput
+        PromptTemplateInput promptDict = new PromptTemplateInput(Template, InputVariables
+            .Where(iv => !values.Value.ContainsKey(iv))
+            .ToList(), PartialVariables)
         {
-            Template = Template,
             TemplateFormat = TemplateFormat,
             ValidateTemplate = ValidateTemplate,
-            InputVariables = InputVariables,
-            PartialVariables = PartialVariables
         };
-
-        promptDict.InputVariables = InputVariables
-            .Where(iv => !values.Value.ContainsKey(iv))
-            .ToList();
 
         if (PartialVariables != null)
         {
@@ -128,10 +118,8 @@ public class PromptTemplate : BaseStringPromptTemplate, IPromptTemplateInput
             throw new Exception("Prompt template must have a template");
         }
 
-        return new PromptTemplate(new PromptTemplateInput
+        return new PromptTemplate(new PromptTemplateInput(data.Template, data.InputVariables)
         {
-            InputVariables = data.InputVariables,
-            Template = data.Template,
             // TemplateFormat = data.template_format
         });
     }
@@ -165,7 +153,7 @@ public class PromptTemplate : BaseStringPromptTemplate, IPromptTemplateInput
                     return res + values[parsedNode.Name];
                 }
                 
-                throw new Exception($"Missing value for input {parsedNode.Name}");
+                throw new ArgumentException($"Missing value for input {parsedNode.Name}");
             }
 
             return res + (node as LiteralNode).Text;

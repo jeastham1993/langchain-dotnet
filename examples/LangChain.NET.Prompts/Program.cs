@@ -1,7 +1,4 @@
 ﻿
-using System.Text.Json;
-using LangChain.NET.Base;
-using LangChain.NET.Callback;
 using LangChain.NET.Chains.LLM;
 using LangChain.NET.LLMS.OpenAi;
 using LangChain.NET.LLMS.OpenAiChatModel;
@@ -11,22 +8,14 @@ using LangChain.NET.Schema;
 var llm = new OpenAi();
 
 var template = "What is a good name for a company that makes {product}?";
-var prompt = new PromptTemplate(new PromptTemplateInput()
-{
-    Template = template,
-    InputVariables = new List<string>() { "product" }
-});
+var prompt = new PromptTemplate(new PromptTemplateInput(template, new List<string>(1){"product"}));
 
-var chain = new LlmChain<string>(new LlmChainInput<string>()
-{
-    Llm = llm,
-    Prompt = prompt
-});
+var chain = new LlmChain(new LlmChainInput(llm, prompt));
 
 var result = await chain.Call(new ChainValues(new Dictionary<string, object>(1)
 {
     { "product", "colourful socks" }
-}), new CallbackManagerForChainRun("", new List<BaseCallbackHandler>(), new List<BaseCallbackHandler>()));
+}));
 
 // The result is an object with a `text` property.
 Console.WriteLine(result.Value["text"]);
@@ -49,17 +38,13 @@ var chatPrompt = ChatPromptTemplate.FromPromptMessages(new List<BaseMessagePromp
     HumanMessagePromptTemplate.FromTemplate("{text}")
 });
 
-var chainB = new LlmChain<string>(new LlmChainInput<string>()
-{
-    Llm = chat,
-    Prompt = chatPrompt
-});
+var chainB = new LlmChain(new LlmChainInput(chat, chatPrompt));
 
 var resultB = await chainB.Call(new ChainValues(new Dictionary<string, object>(3)
 {
     {"input_language", "English"},
     {"output_language", "French"},
     {"text", "I love programming"},
-}), null);
+}));
 
 Console.WriteLine(resultB.Value["text"]);

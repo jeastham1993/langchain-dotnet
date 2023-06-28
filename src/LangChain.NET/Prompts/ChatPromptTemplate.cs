@@ -1,3 +1,4 @@
+using LangChain.NET.Chat;
 using LangChain.NET.Prompts.Base;
 using LangChain.NET.Schema;
 
@@ -5,9 +6,9 @@ namespace LangChain.NET.Prompts;
 
 public class ChatPromptTemplate : BaseChatPromptTemplate
 {
-    public List<BaseMessagePromptTemplate> PromptMessages { get; set; }
+    public List<BaseMessagePromptTemplate> PromptMessages { get; private set; }
 
-    public bool ValidateTemplate { get; set; }
+    public bool ValidateTemplate { get; private set; }
 
     public ChatPromptTemplate(ChatPromptTemplateInput input) : base(input)
     {
@@ -16,7 +17,7 @@ public class ChatPromptTemplate : BaseChatPromptTemplate
 
         if (this.ValidateTemplate)
         {
-            // Add template validation logic here as needed.
+            this.validateInputs(input);
         }
     }
 
@@ -43,13 +44,13 @@ public class ChatPromptTemplate : BaseChatPromptTemplate
 
         foreach (var promptMessage in this.PromptMessages)
         {
-            var inputValues = new InputValues();
+            var inputValues = new InputValues(new Dictionary<string, object>());
 
             foreach (var inputVariable in promptMessage.InputVariables)
             {
                 if (!allValues.Value.ContainsKey(inputVariable))
                 {
-                    throw new Exception($"Missing value for input variable `{inputVariable}`");
+                    throw new ArgumentException($"Missing value for input variable `{inputVariable}`");
                 }
 
                 inputValues.Value.Add(inputVariable, allValues.Value[inputVariable]);
@@ -74,11 +75,34 @@ public class ChatPromptTemplate : BaseChatPromptTemplate
 
         var inputVariables = new HashSet<string>();
 
-        return new ChatPromptTemplate(new ChatPromptTemplateInput())
-        {
+        return new ChatPromptTemplate(new ChatPromptTemplateInput(){
             InputVariables = inputVariables.ToList(),
-            PromptMessages = flattenedMessages
-        };
+            PromptMessages = flattenedMessages,
+            ValidateTemplate = false
+        });
+    }
+
+    private void validateInputs(ChatPromptTemplateInput input)
+    {
+        var promptVariables = new List<string>();
+
+        foreach (var prompt in input.PromptMessages)
+        {
+            foreach (var inputVariable in prompt.InputVariables)
+            {
+                if (!promptVariables.Contains(inputVariable))
+                {
+                    promptVariables.Add(inputVariable);
+                }
+            }
+        }
+
+        if (promptVariables.Count != input.InputVariables.Count)
+        {
+            var missingVariables = promptVariables.Except(input.InputVariables);
+
+            throw new ArgumentException($"Input variables `{string.Join(',', missingVariables)}` are not used in any of the prompt messages.");
+        }
     }
 }
 

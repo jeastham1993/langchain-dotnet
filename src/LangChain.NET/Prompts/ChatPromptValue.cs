@@ -1,4 +1,5 @@
 using System.Text.Json;
+using LangChain.NET.Chat;
 using LangChain.NET.Schema;
 
 namespace LangChain.NET.Prompts;
@@ -17,7 +18,7 @@ public class ChatPromptValue : BasePromptValue
         return JsonSerializer.Serialize(this.Messages);
     }
 
-    public override BaseChatMessage[] ToChatMessages()
+    internal override BaseChatMessage[] ToChatMessages()
     {
         return this.Messages;
     }
