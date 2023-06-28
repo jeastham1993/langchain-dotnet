@@ -4,7 +4,18 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>LangChain.NET.NetCore</RootNamespace>
+        <RootNamespace>LangChain.NET.Extensions.DependencyInjection</RootNamespace>
+<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Product>LangChain.NET.Extensions.DependencyInjection</Product>
+    <Description>
+      LangChain.NET provides the ability to build applications with LLMs through composability
+    </Description>
+    <PackageTags>LangChain LLM OpenAI</PackageTags>
+    <PackageId>LangChain.NET</PackageId>
+    <Version>0.0.2-preview1</Version>
+    <Authors>James Eastham</Authors>
+    <RepositoryUrl>https://github.com/jeastham1993/langchain-dotnet</RepositoryUrl> 
+    <RepositoryType>git</RepositoryType> 
     </PropertyGroup>
 
     <ItemGroup>
