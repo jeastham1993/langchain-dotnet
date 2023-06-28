@@ -11,7 +11,7 @@
       LangChain.NET provides the ability to build applications with LLMs through composability
     </Description>
     <PackageTags>LangChain LLM OpenAI</PackageTags>
-    <PackageId>LangChain.NET</PackageId>
+    <PackageId>LangChain.NET.Extensions.DependencyInjection</PackageId>
     <Version>0.0.2-preview2</Version>
     <Authors>James Eastham</Authors>
     <RepositoryUrl>https://github.com/jeastham1993/langchain-dotnet</RepositoryUrl> 
