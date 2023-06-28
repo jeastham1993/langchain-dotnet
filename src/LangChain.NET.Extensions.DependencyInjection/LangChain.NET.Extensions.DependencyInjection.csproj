@@ -12,7 +12,7 @@
     </Description>
     <PackageTags>LangChain LLM OpenAI</PackageTags>
     <PackageId>LangChain.NET</PackageId>
-    <Version>0.0.2-preview1</Version>
+    <Version>0.0.2-preview2</Version>
     <Authors>James Eastham</Authors>
     <RepositoryUrl>https://github.com/jeastham1993/langchain-dotnet</RepositoryUrl> 
     <RepositoryType>git</RepositoryType> 
