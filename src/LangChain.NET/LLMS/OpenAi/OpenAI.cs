@@ -2,19 +2,27 @@ using System.Text;
 using System.Text.Json;
 using LangChain.NET.Schema;
 using Microsoft.DeepDev;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 
 namespace LangChain.NET.LLMS.OpenAi;
 
-public class OpenAi : BaseLlm
+public class OpenAi : BaseLlm, IDisposable
 {
     private readonly OpenAiConfiguration _configuration;
     private readonly HttpClient _httpClient;
+    private readonly bool _disposeHttpClient;
 
     public OpenAi() : this (new OpenAiConfiguration())
     {
     }
-
-    public OpenAi(OpenAiConfiguration configuration) : base(configuration)
+    
+    [ActivatorUtilitiesConstructor]
+    public OpenAi(IOptions<OpenAiConfiguration> options, HttpClient httpClient) : this(options.Value, httpClient)
+    {
+    }
+    
+    public OpenAi(OpenAiConfiguration configuration, HttpClient? httpClient = null) : base(configuration)
     {
         _configuration = configuration;
 
@@ -23,9 +31,17 @@ public class OpenAi : BaseLlm
             _configuration.ApiKey = Environment.GetEnvironmentVariable("OPEN_AI_API_KEY") ?? throw new ArgumentException("'OPEN_AI_API_KEY' environment variable is not set and an API key is not provided in the input parameters");
         }
 
-        _httpClient = new HttpClient();
-        _httpClient.BaseAddress = new Uri("https://api.openai.com/v1");
-            
+        if (httpClient == null)
+        {
+            _disposeHttpClient = true;
+            _httpClient = new HttpClient();
+            _httpClient.BaseAddress = new Uri("https://api.openai.com/v1");
+        }
+        else
+        {
+            _httpClient = httpClient;
+        }
+        
         _httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {_configuration.ApiKey}");
 
         if (_configuration.Streaming && _configuration.N > 1)
@@ -92,5 +108,20 @@ public class OpenAi : BaseLlm
                 {"usage", usage}
             }
         };
+    }
+
+    public void Dispose()
+    {
+        Dispose(true);
+        GC.SuppressFinalize(this);
+    }
+    
+    protected virtual void Dispose(bool disposing)
+    {
+        if (!disposing) return;
+        if (_disposeHttpClient)
+        {
+            _httpClient.Dispose();
+        }
     }
 }
