@@ -45,22 +45,14 @@ Or using chains
 var llm = new OpenAi();
 
 var template = "What is a good name for a company that makes {product}?";
-var prompt = new PromptTemplate(new PromptTemplateInput()
-{
-    Template = template,
-    InputVariables = new List<string>() { "product" }
-});
+var prompt = new PromptTemplate(new PromptTemplateInput(template, new List<string>(1){"product"}));
 
-var chain = new LlmChain<string>(new LlmChainInput<string>()
-{
-    Llm = llm,
-    Prompt = prompt
-});
+var chain = new LlmChain(new LlmChainInput(llm, prompt));
 
 var result = await chain.Call(new ChainValues(new Dictionary<string, object>(1)
 {
     { "product", "colourful socks" }
-}), new CallbackManagerForChainRun("", new List<BaseCallbackHandler>(), new List<BaseCallbackHandler>()));
+}));
 
 // The result is an object with a `text` property.
 Console.WriteLine(result.Value["text"]);
