@@ -9,8 +9,8 @@ public class StringPromptValue : BasePromptValue
 
     public override BaseChatMessage[] ToChatMessages()
     {
-        return new[] { new HumanChatMessage(this.Value) };
+        return new[] { new HumanChatMessage(Value) };
     }
 
-    public override string ToString() => this.Value;
+    public override string ToString() => Value;
 }

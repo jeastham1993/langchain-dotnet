@@ -1,12 +1,11 @@
 using System.Text;
 using System.Text.Json;
-using LangChain.NET.LLMS.OpenAi;
 using LangChain.NET.Schema;
 using Microsoft.DeepDev;
 
 namespace LangChain.NET.LLMS.HuggingFace;
 
-public class HuggingFace : BaseLLM
+public class HuggingFace : BaseLlm
 {
     private readonly HuggingFaceConfiguration _configuration;
     private readonly HttpClient _httpClient;
@@ -29,16 +28,16 @@ public class HuggingFace : BaseLLM
     }
 
     public override string ModelType { get; set; }
-    public override string LLMType { get; set; }
+    public override string LlmType { get; set; }
     public override TikTokenizer Tokenizer { get; set; }
     
-    public override async Task<LLMResult> Generate(string[] prompts, string[]? stop)
+    public override async Task<LlmResult> Generate(string[] prompts, List<string>? stop)
     {
         var huggingFaceInferenceResponses = new List<HuggingFaceInferenceResponse>();
         
         foreach (var prompt in prompts)
         {
-            var result = await this._httpClient.PostAsync($"https://api-inference.huggingface.co/models/{_configuration.ModelName}", new StringContent(JsonSerializer.Serialize(new
+            var result = await _httpClient.PostAsync($"https://api-inference.huggingface.co/models/{_configuration.ModelName}", new StringContent(JsonSerializer.Serialize(new
             {
                 inputs = prompt,
                 parameters = new
@@ -58,13 +57,13 @@ public class HuggingFace : BaseLLM
             huggingFaceInferenceResponses.AddRange(response);
         }
         
-        return new LLMResult
+        return new LlmResult
         {
             Generations = huggingFaceInferenceResponses.Select(choice => new Generation()
             {
                 Text = choice.GeneratedText, GenerationInfo = new Dictionary<string, object>(0)
             }).ToArray(),
-            LLMOutput = new Dictionary<string, object>(0)
+            LlmOutput = new Dictionary<string, object>(0)
         };
     }
 }

@@ -4,34 +4,34 @@ using LangChain.NET.Schema;
 
 namespace LangChain.NET.LLMS;
 
-public interface BaseLLMParams : BaseLanguageModelParams
+public interface IBaseLlmParams : IBaseLanguageModelParams
 {
     internal decimal? Concurrency { get; set; }
     
     internal BaseCache? Cache { get; set; }
 }
 
-public interface BaseLLMCallOptions : BaseLanguageModelCallOptions { }
+public interface IBaseLlmCallOptions : IBaseLanguageModelCallOptions { }
 
-public abstract class BaseLLM : BaseLanguageModel
+public abstract class BaseLlm : BaseLanguageModel
 {
     private readonly BaseCache? _cache;
     
-    protected BaseLLM(BaseLLMParams parameters) : base(parameters)
+    protected BaseLlm(IBaseLlmParams parameters) : base(parameters)
     {
-        this._cache = parameters.Cache;
+        _cache = parameters.Cache;
     }
 
-    public override async Task<LLMResult> GeneratePrompt(BasePromptValue[] promptValues, string[]? stop)
+    public override async Task<LlmResult> GeneratePrompt(BasePromptValue[] promptValues, List<string>? stop)
     {
-        return await this.Generate(promptValues.Select(p => p.ToString()).ToArray(), stop);
+        return await Generate(promptValues.Select(p => p.ToString()).ToArray(), stop);
     }
 
-    public abstract Task<LLMResult> Generate(string[] prompts, string[]? stop);
+    public abstract Task<LlmResult> Generate(string[] prompts, List<string>? stop);
 
-    public async Task<string> Call(string prompt, string[]? stop = null)
+    public async Task<string?> Call(string prompt, List<string>? stop = null)
     {
-        var generations = await this.Generate(new[] { prompt }, stop);
+        var generations = await Generate(new[] { prompt }, stop);
 
         return generations.Generations[0].Text;
     }

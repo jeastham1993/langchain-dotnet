@@ -1,6 +1,6 @@
 namespace LangChain.NET.Base;
 
-public class SerializedLLM
+public class SerializedLlm
 {
     public string Model { get; set; }
     

@@ -1,6 +1,32 @@
+using LangChain.NET.Callback;
+
 namespace LangChain.NET.Schema;
 
-public abstract class BaseOutputParser
+using System;
+
+public abstract class BaseOutputParser<T>
 {
-    public abstract object Parse(string text);
+    public abstract Task<T> Parse(string? text, CallbackManager? callbacks = null);
+
+    public virtual async Task<T> ParseWithPrompt(string? text, BasePromptValue prompt, CallbackManager? callbacks = null)
+    {
+        return await Parse(text, callbacks);
+    }
+
+    public abstract string GetFormatInstructions();
+
+    protected virtual string _type()
+    {
+        throw new NotImplementedException("_type not implemented");
+    }
+}
+
+public class OutputParserException : Exception
+{
+    public string Output { get; }
+
+    public OutputParserException(string message, string? output = null) : base(message)
+    {
+        Output = output;
+    }
 }

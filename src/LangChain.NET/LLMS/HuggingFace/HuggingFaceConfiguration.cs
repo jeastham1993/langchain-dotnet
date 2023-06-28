@@ -2,12 +2,12 @@ using LangChain.NET.Cache;
 
 namespace LangChain.NET.LLMS.HuggingFace;
 
-public class HuggingFaceConfiguration : BaseLLMParams
+public class HuggingFaceConfiguration : IBaseLlmParams
 {
     public HuggingFaceConfiguration()
     {
-        this.Temperature = 0.7M;
-        this.ModelName = "gpt2";
+        Temperature = 0.7M;
+        ModelName = "gpt2";
     }
     
     /// <summary>

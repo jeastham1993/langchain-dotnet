@@ -1,18 +1,18 @@
 namespace LangChain.NET.Base;
 
-public interface BaseLangChainParams
+public interface IBaseLangChainParams
 {
     bool? Verbose { get; set; }
 }
 
-public abstract class BaseLangChain : BaseLangChainParams
+public abstract class BaseLangChain : IBaseLangChainParams
 {
-    private const bool DEFAULT_VERBOSITY = false;
+    private const bool DefaultVerbosity = false;
     
     public bool? Verbose { get; set; }
 
-    public BaseLangChain(BaseLangChainParams parameters)
+    public BaseLangChain(IBaseLangChainParams parameters)
     {
-        this.Verbose = parameters.Verbose ?? DEFAULT_VERBOSITY;
+        Verbose = parameters.Verbose ?? DefaultVerbosity;
     }
 }

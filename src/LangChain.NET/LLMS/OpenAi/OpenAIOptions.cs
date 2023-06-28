@@ -2,11 +2,11 @@ using LangChain.NET.Cache;
 
 namespace LangChain.NET.LLMS.OpenAi;
 
-public class OpenAIOptions : BaseLLMParams
+public class OpenAiOptions : IBaseLlmParams
 {
     public string ApiKey { get; set; }
     
-    public OpenAIConfiguration Configuration { get; set; }
+    public OpenAiConfiguration Configuration { get; set; }
     
     public bool? Verbose { get; set; }
     

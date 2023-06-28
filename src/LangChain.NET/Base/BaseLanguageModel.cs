@@ -3,26 +3,26 @@ using Microsoft.DeepDev;
 
 namespace LangChain.NET.Base;
 
-public interface BaseLanguageModelParams : BaseLangChainParams
+public interface IBaseLanguageModelParams : IBaseLangChainParams
 {
     public string ApiKey { get; set; }
 }
 
-public interface BaseLanguageModelCallOptions
+public interface IBaseLanguageModelCallOptions
 {
 }
 
 public abstract class BaseLanguageModel : BaseLangChain
 {
-    public BaseLanguageModel(BaseLanguageModelParams parameters) : base(parameters)
+    public BaseLanguageModel(IBaseLanguageModelParams parameters) : base(parameters)
     {
     }
 
     public abstract string ModelType { get; set; }
 
-    public abstract string LLMType { get; set; }
+    public abstract string LlmType { get; set; }
 
     public abstract TikTokenizer Tokenizer { get; set; }
 
-    public abstract Task<LLMResult> GeneratePrompt(BasePromptValue[] promptValues, string[]? stop);
+    public abstract Task<LlmResult> GeneratePrompt(BasePromptValue[] promptValues, List<string>? stop = null);
 }

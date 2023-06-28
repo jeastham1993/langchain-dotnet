@@ -2,11 +2,11 @@ using LangChain.NET.Schema;
 
 namespace LangChain.NET.Prompts.Base;
 
-public interface BasePromptTemplateInput
+using System.Collections.Generic;
+
+public interface IBasePromptTemplateInput<T>
 {
-    public string[] InputVariables { get; set; }
-    
-    public BaseOutputParser OutputParser { get; set; }
-    
-    public PartialValues PartialValues { get; set; }
+    List<string> InputVariables { get; set; }
+    BaseOutputParser<T> OutputParser { get; set; }
+    Dictionary<string, object> PartialVariables { get; set; }
 }

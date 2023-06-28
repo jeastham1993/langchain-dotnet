@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace LangChain.NET.LLMS.OpenAi;
 
-internal class OpenAIChatMessage
+internal class OpenAiChatMessage
 {
     [JsonPropertyName("role")]
     public string Role { get; set; }

@@ -1,8 +1,8 @@
 namespace LangChain.NET.Schema;
 
-public class AIChatMessage : BaseChatMessage
+public class AiChatMessage : BaseChatMessage
 {
-    public AIChatMessage(string text) : base(text){}
+    public AiChatMessage(string text) : base(text){}
     
-    public override MessageType GetType() => MessageType.ai;
+    public override MessageType GetType() => MessageType.Ai;
 }

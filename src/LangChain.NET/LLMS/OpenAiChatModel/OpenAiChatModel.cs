@@ -1,20 +1,21 @@
 using System.Text;
 using System.Text.Json;
+using LangChain.NET.LLMS.OpenAi;
 using LangChain.NET.Schema;
 using Microsoft.DeepDev;
 
-namespace LangChain.NET.LLMS.OpenAi;
+namespace LangChain.NET.LLMS.OpenAiChatModel;
 
-public class OpenAi : BaseLlm
+public class OpenAiChatModel: BaseLlm
 {
     private readonly OpenAiConfiguration _configuration;
     private readonly HttpClient _httpClient;
 
-    public OpenAi() : this (new OpenAiConfiguration())
+    public OpenAiChatModel() : this (new OpenAiConfiguration())
     {
     }
 
-    public OpenAi(OpenAiConfiguration configuration) : base(configuration)
+    public OpenAiChatModel(OpenAiConfiguration configuration) : base(configuration)
     {
         _configuration = configuration;
 
@@ -43,6 +44,68 @@ public class OpenAi : BaseLlm
     public override string LlmType { get; set; }
     public override TikTokenizer Tokenizer { get; set; }
 
+    public override async Task<LlmResult> GeneratePrompt(BasePromptValue[] promptValues, List<string>? stop)
+    {
+        var choices = new List<ChatChoices>();
+        var usage = new List<Usage>();
+
+        var messages = new List<OpenAiChatMessage>();
+
+        foreach (var prompt in promptValues)
+        {
+            var contents = prompt.ToChatMessages();
+
+            foreach (var chatMessage in contents)
+            {
+                messages.Add(new OpenAiChatMessage()
+                {
+                    Role = chatMessage.GetType().ToString().ToLower(),
+                    Content = chatMessage.Text
+                });
+            }
+        }
+        
+        var result = await _httpClient.PostAsync("https://api.openai.com/v1/chat/completions", new StringContent(JsonSerializer.Serialize(new
+        {
+            model = _configuration.ModelName,
+            messages = messages,
+            max_tokens = _configuration.MaxTokens,
+            temperature = _configuration.Temperature,
+            top_p = _configuration.TopP,
+            frequency_penalty = _configuration.FrequencyPenalty,
+            presence_penalty = _configuration.PresencePenalty,
+            n = _configuration.N,
+            logit_bias = _configuration.LogItBias,
+            stop = stop is { Count: 0 } ? null : stop,
+            stream = _configuration.Streaming,
+        }), Encoding.UTF8, "application/json"));
+
+        if (!result.IsSuccessStatusCode)
+        {
+            throw new Exception("HTTP Exception");
+        }
+
+        var response = JsonSerializer.Deserialize<OpenAiChatCompletionResponse>(await result.Content.ReadAsStreamAsync());
+
+        choices.AddRange(response.Choices);
+        usage.Add(response.Usage);
+        
+        return new LlmResult
+        {
+            Generations = choices.Select(choice => new Generation()
+            {
+                Text = choice.Message.Content, GenerationInfo = new Dictionary<string, object>(1)
+                {
+                    { "finish_reason", choice.FinishReason }
+                }
+            }).ToArray(),
+            LlmOutput = new Dictionary<string, object>(1)
+            {
+                {"usage", usage}
+            }
+        };
+    }
+
     public override async Task<LlmResult> Generate(string[] prompts, List<string>? stop)
     {
         var choices = new List<Choices>();
@@ -50,7 +113,7 @@ public class OpenAi : BaseLlm
 
         foreach (var prompt in prompts)
         {
-            var result = await _httpClient.PostAsync("https://api.openai.com/v1/completions", new StringContent(JsonSerializer.Serialize(new
+            var result = await _httpClient.PostAsync("https://api.openai.com/v1/chat/completions", new StringContent(JsonSerializer.Serialize(new
             {
                 model = _configuration.ModelName,
                 prompt = prompt,

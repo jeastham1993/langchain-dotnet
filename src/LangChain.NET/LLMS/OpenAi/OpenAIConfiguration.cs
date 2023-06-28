@@ -17,20 +17,20 @@ using LangChain.NET.Cache;
 
 namespace LangChain.NET.LLMS.OpenAi;
 
-public class OpenAIConfiguration : BaseLLMParams
+public class OpenAiConfiguration : IBaseLlmParams
 {
-    public OpenAIConfiguration()
+    public OpenAiConfiguration()
     {
-        this.Temperature = 0.7M;
-        this.MaxTokens = 256;
-        this.TopP = 1;
-        this.FrequencyPenalty = 0;
-        this.PresencePenalty = 0;
-        this.N = 1;
-        this.BestOf = 1;
-        this.LogItBias = new Dictionary<string, decimal>();
-        this.ModelName = "text-davinci-003";
-        this.BatchSize = 20;
+        Temperature = 0.7M;
+        MaxTokens = 256;
+        TopP = 1;
+        FrequencyPenalty = 0;
+        PresencePenalty = 0;
+        N = 1;
+        BestOf = 1;
+        LogItBias = new Dictionary<string, decimal>();
+        ModelName = "text-davinci-003";
+        BatchSize = 20;
     }
     
     /// <summary>

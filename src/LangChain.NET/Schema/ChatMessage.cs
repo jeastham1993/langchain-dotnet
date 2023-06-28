@@ -5,5 +5,5 @@ public class ChatMessage : BaseChatMessage
     public ChatMessage(string text) : base(text){}
 
     
-    public override MessageType GetType() => MessageType.generic;
+    public override MessageType GetType() => MessageType.Generic;
 }

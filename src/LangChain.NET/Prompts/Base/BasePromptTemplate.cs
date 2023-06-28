@@ -2,18 +2,91 @@ using LangChain.NET.Schema;
 
 namespace LangChain.NET.Prompts.Base;
 
-public abstract class BasePromptTemplate : BasePromptTemplateInput
+public abstract class BasePromptTemplate<T>
 {
-    public BasePromptTemplate(BasePromptTemplateInput input)
+    public List<string> InputVariables { get; set;  }
+    public BaseOutputParser<T> OutputParser { get; set; }
+    public PartialValues PartialValues { get; set; }
+    public InputValues PartialVariables { get; }
+    
+    public BasePromptTemplate(IBasePromptTemplateInput<T> input)
     {
-        this.PartialValues = input.PartialValues;
-        this.InputVariables = input.InputVariables;
-        this.OutputParser = input.OutputParser;
+        if (input.InputVariables.Contains("stop"))
+        {
+            throw new Exception("Cannot have an input variable named 'stop', as it is used internally, please rename.");
+        }
+        
+        InputVariables = input.InputVariables;
+        OutputParser = input.OutputParser;
+        PartialVariables = new InputValues(){Value = input.PartialVariables};
     }
     
-    public string[] InputVariables { get; set; }
-    public BaseOutputParser OutputParser { get; set; }
-    public PartialValues PartialValues { get; set; }
+    public abstract Task<BasePromptTemplate<T>> Partial(PartialValues values);
+    
+    public async Task<InputValues> MergePartialAndUserVariables(InputValues userVariables)
+    {
+        InputValues partialValues = new InputValues();
+        
+        foreach (KeyValuePair<string, object> entry in PartialVariables.Value)
+        {
+            string key = entry.Key;
+            object value = entry.Value;
+            
+            if (value is string stringValue)
+            {
+                partialValues.Value[key] = stringValue;
+            }
+            else if (value is Func<Task<string>> asyncFunc)
+            {
+                partialValues.Value[key] = await asyncFunc();
+            }
+        }
+        
+        InputValues allKwargs = new InputValues(){Value = partialValues.Value.Concat(userVariables.Value).ToDictionary(x => x.Key, x => x.Value)};
+        return allKwargs;
+    }
+    
+    public abstract Task<string> Format(InputValues values);
+    
+    public abstract Task<BasePromptValue> FormatPromptValue(InputValues values);
+    
+    protected abstract string GetPromptType();
+    
+    public abstract SerializedBasePromptTemplate Serialize();
+    
+    public static async Task<BasePromptTemplate<T>> Deserialize(SerializedBasePromptTemplate data)
+    {
+        switch (data.Type)
+        {
+            case "prompt":
+                {
+                    var promptTemplate = await Deserialize(data);
+                    return promptTemplate;
+                }
+            case null:
+                {
+                    var promptTemplate = await Deserialize(new SerializedBasePromptTemplate { Type = "prompt" });
+                    return promptTemplate;
+                }
+            default:
+                throw new Exception($"Invalid prompt type in config: {data.Type}");
+        }
+    }
+}
 
-    public abstract BasePromptTemplate Partial(PartialValues partial);
+public abstract class BaseStringPromptTemplate<T> : BasePromptTemplate<T>
+{
+    public override async Task<BasePromptValue> FormatPromptValue(InputValues values)
+    {
+        var formattedPrompt = await Format(values);
+        
+        return new StringPromptValue()
+        {
+            Value = formattedPrompt
+        };
+    }
+
+    protected BaseStringPromptTemplate(IBasePromptTemplateInput<T> input) : base(input)
+    {
+    }
 }
