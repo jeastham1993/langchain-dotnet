@@ -20,13 +20,3 @@ public abstract class BaseOutputParser<T>
         throw new NotImplementedException("_type not implemented");
     }
 }
-
-public class OutputParserException : Exception
-{
-    public string Output { get; }
-
-    public OutputParserException(string message, string? output = null) : base(message)
-    {
-        Output = output;
-    }
-}

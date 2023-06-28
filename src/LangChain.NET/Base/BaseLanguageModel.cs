@@ -3,15 +3,6 @@ using Microsoft.DeepDev;
 
 namespace LangChain.NET.Base;
 
-public interface IBaseLanguageModelParams : IBaseLangChainParams
-{
-    public string ApiKey { get; set; }
-}
-
-public interface IBaseLanguageModelCallOptions
-{
-}
-
 public abstract class BaseLanguageModel : BaseLangChain
 {
     public BaseLanguageModel(IBaseLanguageModelParams parameters) : base(parameters)

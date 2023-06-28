@@ -15,8 +15,3 @@ public class Generation
     /// </summary>
     public Dictionary<string, object> GenerationInfo { get; set; }
 }
-
-public class ChatGeneration : Generation
-{
-    public string Message { get; set; }
-}

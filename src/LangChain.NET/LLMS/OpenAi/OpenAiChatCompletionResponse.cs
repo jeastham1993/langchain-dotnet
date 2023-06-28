@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace LangChain.NET.LLMS.OpenAi;
 
-internal class OpenAiCompletionResponse
+internal class OpenAiChatCompletionResponse
 {
     [JsonPropertyName("id")]
     public string Id { get; set; }
@@ -17,7 +17,7 @@ internal class OpenAiCompletionResponse
     public string Model { get; set; }
     
     [JsonPropertyName("choices")]
-    public Choices[] Choices { get; set; }
+    public ChatChoices[] Choices { get; set; }
     
     [JsonPropertyName("usage")]
     public Usage Usage { get; set; }

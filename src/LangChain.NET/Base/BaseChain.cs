@@ -7,17 +7,6 @@ namespace LangChain.NET.Base;
 using System.Collections.Generic;
 using LoadValues = Dictionary<string, object>;
 
-public interface IChainInputs : IBaseLangChainParams
-{
-    CallbackManager? CallbackManager { get; set; }
-}
-
-public class ChainInputs : IChainInputs
-{
-    public CallbackManager? CallbackManager { get; set; }
-    public bool? Verbose { get; set; }
-}
-
 public abstract class BaseChain
 {
     const string RunKey = "__run";

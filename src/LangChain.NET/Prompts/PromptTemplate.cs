@@ -8,52 +8,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-public abstract class ParsedFStringNode
-{
-    public string Type { get; }
-    
-    protected ParsedFStringNode(string type)
-    {
-        Type = type;
-    }
-}
-
-public class LiteralNode : ParsedFStringNode
-{
-    public string Text { get; }
-    
-    public LiteralNode(string text) : base("literal")
-    {
-        Text = text;
-    }
-}
-
-public class VariableNode : ParsedFStringNode
-{
-    public string Name { get; }
-    
-    public VariableNode(string name) : base("variable")
-    {
-        Name = name;
-    }
-}
-
-
-public enum TemplateFormatOptions
-{
-    FString,
-    Jinja2
-}
-
-public interface IPromptTemplateInput : IBasePromptTemplateInput
-{
-    string Template { get; set; }
-    
-    TemplateFormatOptions? TemplateFormat { get; set; }
-    
-    bool? ValidateTemplate { get; set; }
-}
-
 public class PromptTemplate : BaseStringPromptTemplate, IPromptTemplateInput
 {
     public string Template { get; set; }
