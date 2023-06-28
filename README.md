@@ -45,7 +45,7 @@ Or using chains
 var llm = new OpenAi();
 
 var template = "What is a good name for a company that makes {product}?";
-var prompt = new PromptTemplate<string>(new PromptTemplateInput<string>()
+var prompt = new PromptTemplate(new PromptTemplateInput()
 {
     Template = template,
     InputVariables = new List<string>() { "product" }

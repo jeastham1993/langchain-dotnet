@@ -8,12 +8,10 @@ using LangChain.NET.LLMS.OpenAiChatModel;
 using LangChain.NET.Prompts;
 using LangChain.NET.Schema;
 
-Console.WriteLine("What is your OpenAI API Key?");
-
 var llm = new OpenAi();
 
 var template = "What is a good name for a company that makes {product}?";
-var prompt = new PromptTemplate<string>(new PromptTemplateInput<string>()
+var prompt = new PromptTemplate(new PromptTemplateInput()
 {
     Template = template,
     InputVariables = new List<string>() { "product" }
@@ -45,10 +43,10 @@ var chat = new OpenAiChatModel(new OpenAiConfiguration()
     ModelName = "gpt-3.5-turbo"
 });
 
-var chatPrompt = ChatPromptTemplate<string>.FromPromptMessages(new List<BaseMessagePromptTemplate>(2)
+var chatPrompt = ChatPromptTemplate.FromPromptMessages(new List<BaseMessagePromptTemplate>(2)
 {
-    SystemMessagePromptTemplate<string>.FromTemplate("You are a helpful assistant that translates {input_language} to {output_language}."),
-    HumanMessagePromptTemplate<string>.FromTemplate("{text}")
+    SystemMessagePromptTemplate.FromTemplate("You are a helpful assistant that translates {input_language} to {output_language}."),
+    HumanMessagePromptTemplate.FromTemplate("{text}")
 });
 
 var chainB = new LlmChain<string>(new LlmChainInput<string>()

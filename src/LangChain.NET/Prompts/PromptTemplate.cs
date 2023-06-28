@@ -45,7 +45,7 @@ public enum TemplateFormatOptions
     Jinja2
 }
 
-public interface IPromptTemplateInput<T> : IBasePromptTemplateInput<T>
+public interface IPromptTemplateInput : IBasePromptTemplateInput
 {
     string Template { get; set; }
     
@@ -54,7 +54,7 @@ public interface IPromptTemplateInput<T> : IBasePromptTemplateInput<T>
     bool? ValidateTemplate { get; set; }
 }
 
-public class PromptTemplate<T> : BaseStringPromptTemplate<T>, IPromptTemplateInput<T>
+public class PromptTemplate : BaseStringPromptTemplate, IPromptTemplateInput
 {
     public string Template { get; set; }
     public TemplateFormatOptions? TemplateFormat { get; set; } = TemplateFormatOptions.FString;
@@ -62,7 +62,7 @@ public class PromptTemplate<T> : BaseStringPromptTemplate<T>, IPromptTemplateInp
     
     public new Dictionary<string, object> PartialVariables { get; set; } = new();
 
-    public PromptTemplate(IPromptTemplateInput<T> input)
+    public PromptTemplate(IPromptTemplateInput input)
         : base(input)
     {
         Template = input.Template;
@@ -92,7 +92,7 @@ public class PromptTemplate<T> : BaseStringPromptTemplate<T>, IPromptTemplateInp
         return RenderTemplate(Template, TemplateFormat.Value, allValues.Value);
     }
 
-    public static PromptTemplate<T> FromExamples(
+    public static PromptTemplate FromExamples(
         IEnumerable<string> examples,
         string suffix,
         IEnumerable<string> inputVariables,
@@ -100,14 +100,14 @@ public class PromptTemplate<T> : BaseStringPromptTemplate<T>, IPromptTemplateInp
         string prefix = "")
     {
         var template = $"{prefix}\n{string.Join(exampleSeparator, examples)}{suffix}";
-        return new PromptTemplate<T>(new PromptTemplateInput<T>
+        return new PromptTemplate(new PromptTemplateInput
         {
             InputVariables = inputVariables.ToList(),
             Template = template
         });
     }
 
-    public static PromptTemplate<T> FromTemplate(string template, PromptTemplateInput<T>? options = null)
+    public static PromptTemplate FromTemplate(string template, PromptTemplateInput? options = null)
     {
         var names = new HashSet<string>();
         ParseTemplate(template, options?.TemplateFormat ?? TemplateFormatOptions.FString)
@@ -119,7 +119,7 @@ public class PromptTemplate<T> : BaseStringPromptTemplate<T>, IPromptTemplateInp
                 }
             });
 
-        return new PromptTemplate<T>(new PromptTemplateInput<T>
+        return new PromptTemplate(new PromptTemplateInput
         {
             InputVariables = names.ToList(),
             TemplateFormat = options?.TemplateFormat ?? TemplateFormatOptions.FString,
@@ -127,15 +127,14 @@ public class PromptTemplate<T> : BaseStringPromptTemplate<T>, IPromptTemplateInp
         });
     }
 
-    public override async Task<BasePromptTemplate<T>> Partial(PartialValues values)
+    public override async Task<BasePromptTemplate> Partial(PartialValues values)
     {
-        PromptTemplateInput<T> promptDict = new PromptTemplateInput<T>
+        PromptTemplateInput promptDict = new PromptTemplateInput
         {
             Template = Template,
             TemplateFormat = TemplateFormat,
             ValidateTemplate = ValidateTemplate,
             InputVariables = InputVariables,
-            OutputParser = OutputParser,
             PartialVariables = PartialVariables
         };
 
@@ -156,16 +155,11 @@ public class PromptTemplate<T> : BaseStringPromptTemplate<T>, IPromptTemplateInp
             promptDict.PartialVariables[kvp.Key] = kvp.Value;
         }
 
-        return new PromptTemplate<T>(promptDict);
+        return new PromptTemplate(promptDict);
     }
 
     public override SerializedPromptTemplate Serialize()
     {
-        if (OutputParser != null)
-        {
-            throw new Exception("Cannot serialize a prompt template with an output parser");
-        }
-
         return new SerializedPromptTemplate
         {
             InputVariables = InputVariables.ToList(),
@@ -173,14 +167,14 @@ public class PromptTemplate<T> : BaseStringPromptTemplate<T>, IPromptTemplateInp
         };
     }
 
-    public static async Task<PromptTemplate<T>> Deserialize(SerializedPromptTemplate data)
+    public static async Task<PromptTemplate> Deserialize(SerializedPromptTemplate data)
     {
         if (string.IsNullOrEmpty(data.Template))
         {
             throw new Exception("Prompt template must have a template");
         }
 
-        return new PromptTemplate<T>(new PromptTemplateInput<T>
+        return new PromptTemplate(new PromptTemplateInput
         {
             InputVariables = data.InputVariables,
             Template = data.Template,

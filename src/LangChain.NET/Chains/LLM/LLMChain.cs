@@ -9,9 +9,9 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-public class LlmChain<T> : BaseChain, ILlmChainInput<T>
+public class LlmChain<T> : BaseChain, ILlmChainInput
 {
-    public BasePromptTemplate<T> Prompt { get; }
+    public BasePromptTemplate Prompt { get; }
     public BaseLanguageModel Llm { get; }
     public string OutputKey { get; set; }
     public BaseOutputParser<T>? OutputParser { get; }
@@ -34,8 +34,6 @@ public class LlmChain<T> : BaseChain, ILlmChainInput<T>
         {
             throw new Exception("Cannot set both OutputParser and Prompt.OutputParser");
         }
-            
-        OutputParser = Prompt.OutputParser;
     }
 
     protected async Task<object?> GetFinalOutput(

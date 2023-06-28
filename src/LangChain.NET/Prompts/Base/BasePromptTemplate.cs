@@ -2,14 +2,12 @@ using LangChain.NET.Schema;
 
 namespace LangChain.NET.Prompts.Base;
 
-public abstract class BasePromptTemplate<T>
+public abstract class BasePromptTemplate
 {
     public List<string> InputVariables { get; set;  }
-    public BaseOutputParser<T> OutputParser { get; set; }
-    public PartialValues PartialValues { get; set; }
     public InputValues PartialVariables { get; }
     
-    public BasePromptTemplate(IBasePromptTemplateInput<T> input)
+    public BasePromptTemplate(IBasePromptTemplateInput input)
     {
         if (input.InputVariables.Contains("stop"))
         {
@@ -17,11 +15,10 @@ public abstract class BasePromptTemplate<T>
         }
         
         InputVariables = input.InputVariables;
-        OutputParser = input.OutputParser;
         PartialVariables = new InputValues(){Value = input.PartialVariables};
     }
     
-    public abstract Task<BasePromptTemplate<T>> Partial(PartialValues values);
+    public abstract Task<BasePromptTemplate> Partial(PartialValues values);
     
     public async Task<InputValues> MergePartialAndUserVariables(InputValues userVariables)
     {
@@ -54,7 +51,7 @@ public abstract class BasePromptTemplate<T>
     
     public abstract SerializedBasePromptTemplate Serialize();
     
-    public static async Task<BasePromptTemplate<T>> Deserialize(SerializedBasePromptTemplate data)
+    public static async Task<BasePromptTemplate> Deserialize(SerializedBasePromptTemplate data)
     {
         switch (data.Type)
         {
@@ -74,7 +71,7 @@ public abstract class BasePromptTemplate<T>
     }
 }
 
-public abstract class BaseStringPromptTemplate<T> : BasePromptTemplate<T>
+public abstract class BaseStringPromptTemplate : BasePromptTemplate
 {
     public override async Task<BasePromptValue> FormatPromptValue(InputValues values)
     {
@@ -86,7 +83,7 @@ public abstract class BaseStringPromptTemplate<T> : BasePromptTemplate<T>
         };
     }
 
-    protected BaseStringPromptTemplate(IBasePromptTemplateInput<T> input) : base(input)
+    protected BaseStringPromptTemplate(IBasePromptTemplateInput input) : base(input)
     {
     }
 }

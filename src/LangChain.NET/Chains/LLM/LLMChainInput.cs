@@ -5,17 +5,16 @@ using LangChain.NET.Schema;
 
 namespace LangChain.NET.Chains.LLM;
 
-public interface ILlmChainInput<T> : IChainInputs
+public interface ILlmChainInput : IChainInputs
 {
-    BasePromptTemplate<T> Prompt { get; }
+    BasePromptTemplate Prompt { get; }
     BaseLanguageModel Llm { get; }
-    BaseOutputParser<T>? OutputParser { get; }
     string OutputKey { get; set; }
 }
 
-public class LlmChainInput<T> : ILlmChainInput<T>
+public class LlmChainInput<T> : ILlmChainInput
 {
-    public BasePromptTemplate<T> Prompt { get; set; }
+    public BasePromptTemplate Prompt { get; set; }
     public BaseLanguageModel Llm { get; set; }
     public BaseOutputParser<T> OutputParser { get; set; }
     public string OutputKey { get; set; }

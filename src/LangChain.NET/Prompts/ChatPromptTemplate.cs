@@ -71,11 +71,11 @@ public class MessagesPlaceholder : BaseMessagePromptTemplate
     }
 }
 
-public abstract class BaseMessageStringPromptTemplate<T> : BaseMessagePromptTemplate
+public abstract class BaseMessageStringPromptTemplate : BaseMessagePromptTemplate
 {
-    public BaseStringPromptTemplate<T> Prompt { get; set; }
+    public BaseStringPromptTemplate Prompt { get; set; }
 
-    protected BaseMessageStringPromptTemplate(BaseStringPromptTemplate<T> prompt)
+    protected BaseMessageStringPromptTemplate(BaseStringPromptTemplate prompt)
     {
         this.Prompt = prompt;
     }
@@ -90,9 +90,9 @@ public abstract class BaseMessageStringPromptTemplate<T> : BaseMessagePromptTemp
     }
 }
 
-public abstract class BaseChatPromptTemplate<T> : BasePromptTemplate<T>
+public abstract class BaseChatPromptTemplate : BasePromptTemplate
 {
-    protected BaseChatPromptTemplate(IBasePromptTemplateInput<T> input) : base(input) { }
+    protected BaseChatPromptTemplate(IBasePromptTemplateInput input) : base(input) { }
 
     public abstract Task<BaseChatMessage[]> FormatMessages(InputValues values);
 
@@ -108,11 +108,11 @@ public abstract class BaseChatPromptTemplate<T> : BasePromptTemplate<T>
     }
 }
 
-public class ChatMessagePromptTemplate<T> : BaseMessageStringPromptTemplate<T>
+public class ChatMessagePromptTemplate : BaseMessageStringPromptTemplate
 {
     public string Role { get; set; }
 
-    public ChatMessagePromptTemplate(BaseStringPromptTemplate<T> prompt, string role) : base(prompt)
+    public ChatMessagePromptTemplate(BaseStringPromptTemplate prompt, string role) : base(prompt)
     {
         this.Role = role;
     }
@@ -122,74 +122,73 @@ public class ChatMessagePromptTemplate<T> : BaseMessageStringPromptTemplate<T>
         return new ChatMessage(await this.Prompt.Format(values));
     }
 
-    public static ChatMessagePromptTemplate<T> FromTemplate(string template, string role)
+    public static ChatMessagePromptTemplate FromTemplate(string template, string role)
     {
-        return new ChatMessagePromptTemplate<T>(PromptTemplate<T>.FromTemplate(template), role);
+        return new ChatMessagePromptTemplate(PromptTemplate.FromTemplate(template), role);
     }
 }
 
-public class HumanMessagePromptTemplate<T> : BaseMessageStringPromptTemplate<T>
+public class HumanMessagePromptTemplate : BaseMessageStringPromptTemplate
 {
-    public HumanMessagePromptTemplate(BaseStringPromptTemplate<T> prompt) : base(prompt) { }
+    public HumanMessagePromptTemplate(BaseStringPromptTemplate prompt) : base(prompt) { }
 
     public override async Task<BaseChatMessage> Format(InputValues values)
     {
         return new HumanChatMessage(await this.Prompt.Format(values));
     }
 
-    public static HumanMessagePromptTemplate<T> FromTemplate(string template)
+    public static HumanMessagePromptTemplate FromTemplate(string template)
     {
-        return new HumanMessagePromptTemplate<T>(PromptTemplate<T>.FromTemplate(template));
+        return new HumanMessagePromptTemplate(PromptTemplate.FromTemplate(template));
     }
 }
 
-public class AIMessagePromptTemplate<T> : BaseMessageStringPromptTemplate<T>
+public class AIMessagePromptTemplate : BaseMessageStringPromptTemplate
 {
-    public AIMessagePromptTemplate(BaseStringPromptTemplate<T> prompt) : base(prompt) { }
+    public AIMessagePromptTemplate(BaseStringPromptTemplate prompt) : base(prompt) { }
 
     public override async Task<BaseChatMessage> Format(InputValues values)
     {
         return new AiChatMessage(await this.Prompt.Format(values));
     }
 
-    public static AIMessagePromptTemplate<T> FromTemplate(string template)
+    public static AIMessagePromptTemplate FromTemplate(string template)
     {
-        return new AIMessagePromptTemplate<T>(PromptTemplate<T>.FromTemplate(template));
+        return new AIMessagePromptTemplate(PromptTemplate.FromTemplate(template));
     }
 }
 
-public class SystemMessagePromptTemplate<T> : BaseMessageStringPromptTemplate<T>
+public class SystemMessagePromptTemplate : BaseMessageStringPromptTemplate
 {
-    public SystemMessagePromptTemplate(BaseStringPromptTemplate<T> prompt) : base(prompt) { }
+    public SystemMessagePromptTemplate(BaseStringPromptTemplate prompt) : base(prompt) { }
 
     public override async Task<BaseChatMessage> Format(InputValues values)
     {
         return new SystemChatMessage(await this.Prompt.Format(values));
     }
 
-    public static SystemMessagePromptTemplate<T> FromTemplate(string template)
+    public static SystemMessagePromptTemplate FromTemplate(string template)
     {
-        return new SystemMessagePromptTemplate<T>(PromptTemplate<T>.FromTemplate(template));
+        return new SystemMessagePromptTemplate(PromptTemplate.FromTemplate(template));
     }
 }
 
-public class ChatPromptTemplateInput<T> : IBasePromptTemplateInput<T>
+public class ChatPromptTemplateInput : IBasePromptTemplateInput
 {
     public List<BaseMessagePromptTemplate> PromptMessages { get; set; }
 
     public bool ValidateTemplate { get; set; } = true;
     public List<string> InputVariables { get; set; } = new();
-    public BaseOutputParser<T> OutputParser { get; set; }
     public Dictionary<string, object> PartialVariables { get; set; } = new();
 }
 
-public class ChatPromptTemplate<T> : BaseChatPromptTemplate<T>
+public class ChatPromptTemplate : BaseChatPromptTemplate
 {
     public List<BaseMessagePromptTemplate> PromptMessages { get; set; }
 
     public bool ValidateTemplate { get; set; }
 
-    public ChatPromptTemplate(ChatPromptTemplateInput<T> input) : base(input)
+    public ChatPromptTemplate(ChatPromptTemplateInput input) : base(input)
     {
         this.PromptMessages = input.PromptMessages;
         this.ValidateTemplate = input.ValidateTemplate;
@@ -200,7 +199,7 @@ public class ChatPromptTemplate<T> : BaseChatPromptTemplate<T>
         }
     }
 
-    public override Task<BasePromptTemplate<T>> Partial(PartialValues values)
+    public override Task<BasePromptTemplate> Partial(PartialValues values)
     {
         throw new NotImplementedException();
     }
@@ -243,25 +242,18 @@ public class ChatPromptTemplate<T> : BaseChatPromptTemplate<T>
     }
     
     
-    public static ChatPromptTemplate<T> FromPromptMessages(List<BaseMessagePromptTemplate> promptMessages)
+    public static ChatPromptTemplate FromPromptMessages(List<BaseMessagePromptTemplate> promptMessages)
     {
         var flattenedMessages = new List<BaseMessagePromptTemplate>();
 
         foreach (var promptMessage in promptMessages)
         {
-            if (promptMessage is ChatPromptTemplate<T> chatPromptTemplate)
-            {
-                flattenedMessages.AddRange(chatPromptTemplate.PromptMessages);
-            }
-            else
-            {
-                flattenedMessages.Add(promptMessage);
-            }
+            flattenedMessages.Add(promptMessage);
         }
 
         var inputVariables = new HashSet<string>();
 
-        return new ChatPromptTemplate<T>(new ChatPromptTemplateInput<T>())
+        return new ChatPromptTemplate(new ChatPromptTemplateInput())
         {
             InputVariables = inputVariables.ToList(),
             PromptMessages = flattenedMessages
