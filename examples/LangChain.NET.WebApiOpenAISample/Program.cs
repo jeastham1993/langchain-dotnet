@@ -1,4 +1,4 @@
-using LangChain.NET.NetCore;
+using LangChain.NET.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 

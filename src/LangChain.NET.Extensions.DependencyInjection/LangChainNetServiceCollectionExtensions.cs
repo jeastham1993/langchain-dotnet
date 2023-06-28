@@ -1,7 +1,7 @@
 ﻿using LangChain.NET.LLMS.OpenAi;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace LangChain.NET.NetCore;
+namespace LangChain.NET.Extensions.DependencyInjection;
 
 public static class LangChainNetServiceCollectionExtensions
 {
