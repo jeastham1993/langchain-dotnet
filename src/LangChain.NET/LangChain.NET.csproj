@@ -13,6 +13,8 @@
     <PackageId>LangChain.NET</PackageId>
     <Version>0.0.1-preview1</Version>
     <Authors>James Eastham</Authors>
+    <RepositoryUrl>https://github.com/jeastham1993/langchain-dotnet</RepositoryUrl> 
+    <RepositoryType>git</RepositoryType> 
   </PropertyGroup>
 
   <ItemGroup>
