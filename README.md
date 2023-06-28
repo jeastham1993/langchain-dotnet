@@ -1,5 +1,6 @@
 **IMPORTANT! This package is currently in an early alpha preview, please provide any feedback via GitHub issues.**
 
+[![CI](https://github.com/jeastham1993/langchain-dotnet/actions/workflows/release.yaml/badge.svg?branch=main)](https://github.com/jeastham1993/langchain-dotnet/actions/workflows/release.yaml)
 [![NuGet](https://img.shields.io/nuget/vpre/langchain.net.svg)](https://www.nuget.org/packages/LangChain.NET)
 
 # 🦜️🔗 LangChain .NET
