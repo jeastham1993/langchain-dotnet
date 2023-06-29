@@ -42,6 +42,46 @@ public class SequentialChainTests
         outputs.Value["bar"].Should().Be("123foo");
         outputs.Value["baz"].Should().Be("123foofoo");
     }
+    
+    [Fact]
+    public void Should_Throw_Exception_On_Empty_Chains()
+    {
+        // Arrange
+        var input = new SequentialChainInput(Array.Empty<IChain>(), Array.Empty<string>());
+        
+        // Act
+        var act = new Action(() => new SequentialChain(input));
+
+        act.Should().Throw<ArgumentException>()
+            .WithMessage("Sequential chain must have at least one chain.");
+    }
+
+    [Fact]
+    public void Should_Throw_Exception_On_Wrongly_Specify_ReturnAll()
+    {
+        // Arrange
+        var input = new SequentialChainInput(Array.Empty<IChain>(), Array.Empty<string>(), new string[]{"output1"}, true);
+        
+        // Act
+        var act = new Action(() => new SequentialChain(input));
+
+        act.Should().Throw<ArgumentException>()
+            .WithMessage("Either specify variables to return using `outputVariables` or use `returnAll` param. Cannot apply both conditions at the same time.");
+    }
+    
+    [Fact]
+    public async Task Should_Throw_Exception_From_Validation()
+    {
+        // Arrange
+        var chain1 = CreateFakeChainMock(new[] {"input1", "input2"}, new []{"bar"}).Object;
+        var chain2 = CreateFakeChainMock(new []{"bar"}, new []{"output1"}).Object;
+        
+        // Act 
+        Action act = () => new SequentialChain(new SequentialChainInput(new[] {chain1, chain2}, new []{"Some Input"}));
+
+        // Assert
+        act.Should().Throw<ArgumentException>();
+    }
 
     private Mock<IChain> CreateFakeChainMock(string[] inputVariables, string[] outputVariables)
     {

@@ -18,16 +18,15 @@ public class SequentialChain : BaseChain
         InputKeys = input.InputVariables;
         OutputKeys = input.OutputVariables ?? Array.Empty<string>();
         ReturnAll = input.ReturnAll;
-
-        if (OutputKeys.Length > 0 && ReturnAll)
-        {
-            throw new Exception(
-                "Either specify variables to return using `outputVariables` or use `returnAll` param. Cannot apply both conditions at the same time.");
-        } 
+        
+        Validate();
+        
         if(OutputKeys.Length == 0 && !ReturnAll)
         {
             OutputKeys = Chains.Last().OutputKeys;
         }
+        
+
     }
     
     public override string ChainType()
@@ -64,5 +63,19 @@ public class SequentialChain : BaseChain
         }
 
         return output;
+    }
+
+    protected virtual void Validate()
+    {
+        if (OutputKeys.Length > 0 && ReturnAll)
+        {
+            throw new ArgumentException(
+                "Either specify variables to return using `outputVariables` or use `returnAll` param. Cannot apply both conditions at the same time.");
+        }
+
+        if (Chains.Length == 0)
+        {
+            throw new ArgumentException("Sequential chain must have at least one chain.");
+        }
     }
 }
