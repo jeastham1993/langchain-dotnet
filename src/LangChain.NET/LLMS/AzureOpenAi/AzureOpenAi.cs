@@ -31,7 +31,7 @@ namespace LangChain.NET.LLMS.AzureOpenAi
         public override string LlmType { get; set; }
         public override TikTokenizer Tokenizer { get; set; }
 
-        public override async Task<LlmResult> Generate(string[] prompts, List<string>? stop)
+        public override async Task<LlmResult> Generate(string[] prompts, List<string>? stopSequences)
         {
             var choices = new List<Choice>();
             var usage = new List<CompletionsUsage>();
@@ -40,24 +40,7 @@ namespace LangChain.NET.LLMS.AzureOpenAi
 
             foreach (var prompt in prompts)
             {
-                CompletionsOptions completionsOptions = new()
-                {
-                    Temperature = _configuration.Temperature,
-                    MaxTokens = _configuration.MaxTokens,
-                    LogProbabilityCount = _configuration.LogProbabilityCount,
-                    NucleusSamplingFactor = _configuration.NucleusSamplingFactor,
-                    PresencePenalty = _configuration.PresencePenalty
-                };
-
-                if (stop != null)
-                {
-                    foreach (var s in stop)
-                    {
-                        completionsOptions.StopSequences.Add(s);
-                    }
-                }
-
-                completionsOptions.Prompts.Add(prompt);
+                CompletionsOptions completionsOptions = CreateCompletionsOptions(stopSequences, prompt);
 
                 Response<Completions> completionsResponse = await client.GetCompletionsAsync(_configuration.ModelName, completionsOptions);
 
@@ -81,6 +64,29 @@ namespace LangChain.NET.LLMS.AzureOpenAi
                 {"usage", usage}
             }
             };
+        }
+
+        private CompletionsOptions CreateCompletionsOptions(List<string>? stopSequences, string prompt)
+        {
+            CompletionsOptions completionsOptions = new()
+            {
+                Temperature = _configuration.Temperature,
+                MaxTokens = _configuration.MaxTokens,
+                LogProbabilityCount = _configuration.LogProbabilityCount,
+                NucleusSamplingFactor = _configuration.NucleusSamplingFactor,
+                PresencePenalty = _configuration.PresencePenalty
+            };
+
+            if (stopSequences != null)
+            {
+                foreach (var stop in stopSequences)
+                {
+                    completionsOptions.StopSequences.Add(stop);
+                }
+            }
+
+            completionsOptions.Prompts.Add(prompt);
+            return completionsOptions;
         }
 
         public void Dispose()
