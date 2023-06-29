@@ -34,7 +34,7 @@ namespace LangChain.NET.IntegrationTests
         }));
 
             // The result is an object with a `text` property.
-            result.Value["text"].ToString().Should().NotBeEmpty();
+            (result.Value["text"] as string).Should().NotBeEmpty();
         }
     }
 }
