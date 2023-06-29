@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.Extensions.De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.Abstractions", "src\LangChain.NET.Abstractions\LangChain.NET.Abstractions.csproj", "{F3DF550C-734A-41F7-866F-C0B0151E3A8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.SequentialChainSample", "examples\LangChain.NET.SequentialChainSample\LangChain.NET.SequentialChainSample.csproj", "{C453DD90-EFE8-4B28-8B5B-13174805E3D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +74,10 @@ Global
 		{F3DF550C-734A-41F7-866F-C0B0151E3A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3DF550C-734A-41F7-866F-C0B0151E3A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3DF550C-734A-41F7-866F-C0B0151E3A8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C453DD90-EFE8-4B28-8B5B-13174805E3D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C453DD90-EFE8-4B28-8B5B-13174805E3D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C453DD90-EFE8-4B28-8B5B-13174805E3D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C453DD90-EFE8-4B28-8B5B-13174805E3D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{67344432-3C26-4B6F-B05C-7916F72CA212} = {CDFF9629-E87F-42EB-9054-C26D3F76C525}
@@ -83,5 +89,6 @@ Global
 		{8B08F494-A3D1-4677-9BA8-46484C39D838} = {0F72D671-D884-41CF-9CF2-5FFDFE664C6F}
 		{C3C373D7-AB39-4BA9-B083-885B86D119FB} = {CDFF9629-E87F-42EB-9054-C26D3F76C525}
 		{F3DF550C-734A-41F7-866F-C0B0151E3A8C} = {CDFF9629-E87F-42EB-9054-C26D3F76C525}
+		{C453DD90-EFE8-4B28-8B5B-13174805E3D5} = {0F72D671-D884-41CF-9CF2-5FFDFE664C6F}
 	EndGlobalSection
 EndGlobal
