@@ -5,15 +5,16 @@ using Microsoft.DeepDev;
 
 namespace LangChain.NET.LLMS.AzureOpenAi
 {
-    public class AzureOpenAi : BaseLlm
+    public class AzureOpenAi : BaseLlm, IDisposable
     {
         private readonly AzureOpenAiConfiguration _configuration;
+        private readonly OpenAIClient _client;
 
-        public AzureOpenAi() : this (new AzureOpenAiConfiguration())
+        public AzureOpenAi() : this(new AzureOpenAiConfiguration())
         {
         }
 
-        public AzureOpenAi(AzureOpenAiConfiguration configuration) : base(configuration)
+        public AzureOpenAi(AzureOpenAiConfiguration configuration, OpenAIClient? client = null) : base(configuration)
         {
             _configuration = configuration;
 
@@ -24,6 +25,15 @@ namespace LangChain.NET.LLMS.AzureOpenAi
             if (string.IsNullOrEmpty(_configuration.Endpoint))
             {
                 _configuration.ApiKey = Environment.GetEnvironmentVariable("AZURE_OPEN_AI_ENDPOINT") ?? throw new ArgumentException("'AZURE_OPEN_AI_ENDPOINT' environment variable is not set and an API key is not provided in the input parameters");
+            }
+
+            if(client == null) 
+            {
+                _client = new OpenAIClient(new Uri(_configuration.Endpoint), new AzureKeyCredential(_configuration.ApiKey));
+            }
+            else
+            {
+                _client = client;
             }
         }
 
@@ -36,13 +46,11 @@ namespace LangChain.NET.LLMS.AzureOpenAi
             var choices = new List<Choice>();
             var usage = new List<CompletionsUsage>();
 
-            var client = new OpenAIClient(new Uri(_configuration.Endpoint), new AzureKeyCredential(_configuration.ApiKey));
-
             foreach (var prompt in prompts)
             {
                 CompletionsOptions completionsOptions = CreateCompletionsOptions(stopSequences, prompt);
 
-                Response<Completions> completionsResponse = await client.GetCompletionsAsync(_configuration.ModelName, completionsOptions);
+                Response<Completions> completionsResponse = await _client.GetCompletionsAsync(_configuration.ModelName, completionsOptions);
 
                 choices.AddRange(completionsResponse.Value.Choices);
                 usage.Add(completionsResponse.Value.Usage);
