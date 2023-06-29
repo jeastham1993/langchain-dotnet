@@ -22,4 +22,8 @@
     <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LangChain.NET.Abstractions\LangChain.NET.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>
