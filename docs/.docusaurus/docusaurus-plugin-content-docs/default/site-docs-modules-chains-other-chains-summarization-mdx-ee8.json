@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/chains/other_chains/summarization",
+  "id": "modules/chains/other_chains/summarization",
+  "title": "Summarization",
+  "description": "A summarization chain can be used to summarize multiple documents. One way is to input multiple smaller documents, after they have been divided into chunks, and operate over them with a MapReduceDocumentsChain. You can also choose instead for the chain that does summarization to be a StuffDocumentsChain, or a RefineDocumentsChain. See more about the differences between them here",
+  "source": "@site/docs/modules/chains/other_chains/summarization.mdx",
+  "sourceDirName": "modules/chains/other_chains",
+  "slug": "/modules/chains/other_chains/summarization",
+  "permalink": "/docs/modules/chains/other_chains/summarization",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/chains/other_chains/summarization.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "SqlDatabaseChain",
+    "permalink": "/docs/modules/chains/other_chains/sql"
+  },
+  "next": {
+    "title": "Prompt Selectors",
+    "permalink": "/docs/modules/chains/prompt_selectors/"
+  }
+}

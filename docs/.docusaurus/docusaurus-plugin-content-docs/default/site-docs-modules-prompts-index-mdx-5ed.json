@@ -1,0 +1,29 @@
+{
+  "unversionedId": "modules/prompts/index",
+  "id": "modules/prompts/index",
+  "title": "Prompts",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/prompts/index.mdx",
+  "sourceDirName": "modules/prompts",
+  "slug": "/modules/prompts/",
+  "permalink": "/docs/modules/prompts/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/prompts/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "hide_table_of_contents": true,
+    "sidebar_label": "Prompts"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Additional Functionality",
+    "permalink": "/docs/modules/models/llms/additional_functionality"
+  },
+  "next": {
+    "title": "Prompt Templates",
+    "permalink": "/docs/modules/prompts/prompt_templates/"
+  }
+}

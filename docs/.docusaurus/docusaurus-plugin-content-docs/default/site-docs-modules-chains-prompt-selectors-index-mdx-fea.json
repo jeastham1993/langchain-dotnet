@@ -1,0 +1,27 @@
+{
+  "unversionedId": "modules/chains/prompt_selectors/index",
+  "id": "modules/chains/prompt_selectors/index",
+  "title": "Prompt Selectors",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/chains/prompt_selectors/index.mdx",
+  "sourceDirName": "modules/chains/prompt_selectors",
+  "slug": "/modules/chains/prompt_selectors/",
+  "permalink": "/docs/modules/chains/prompt_selectors/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/chains/prompt_selectors/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_label": "Prompt Selectors"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Summarization",
+    "permalink": "/docs/modules/chains/other_chains/summarization"
+  },
+  "next": {
+    "title": "Agents",
+    "permalink": "/docs/modules/agents/"
+  }
+}

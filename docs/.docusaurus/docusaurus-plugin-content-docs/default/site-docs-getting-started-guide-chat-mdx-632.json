@@ -1,0 +1,27 @@
+{
+  "unversionedId": "getting-started/guide-chat",
+  "id": "getting-started/guide-chat",
+  "title": "Quickstart, using Chat Models",
+  "description": "Chat models are a variation on language models.",
+  "source": "@site/docs/getting-started/guide-chat.mdx",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/guide-chat",
+  "permalink": "/docs/getting-started/guide-chat",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/getting-started/guide-chat.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Quickstart, using LLMs",
+    "permalink": "/docs/getting-started/guide-llm"
+  },
+  "next": {
+    "title": "Schema",
+    "permalink": "/docs/modules/schema/"
+  }
+}

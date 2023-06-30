@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/retrievers/metal-retriever",
+  "id": "modules/indexes/retrievers/metal-retriever",
+  "title": "Metal Retriever",
+  "description": "This example shows how to use the Metal Retriever in a RetrievalQAChain to retrieve documents from a Metal index.",
+  "source": "@site/docs/modules/indexes/retrievers/metal-retriever.mdx",
+  "sourceDirName": "modules/indexes/retrievers",
+  "slug": "/modules/indexes/retrievers/metal-retriever",
+  "permalink": "/docs/modules/indexes/retrievers/metal-retriever",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/retrievers/metal-retriever.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "HyDE Retriever",
+    "permalink": "/docs/modules/indexes/retrievers/hyde"
+  },
+  "next": {
+    "title": "Remote Retriever",
+    "permalink": "/docs/modules/indexes/retrievers/remote-retriever"
+  }
+}

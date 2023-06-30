@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/agents/agents/examples/conversational_agent",
+  "id": "modules/agents/agents/examples/conversational_agent",
+  "title": "Conversational Agent",
+  "description": "This example covers how to create a conversational agent for a chat model. It will utilize chat specific prompts.",
+  "source": "@site/docs/modules/agents/agents/examples/conversational_agent.mdx",
+  "sourceDirName": "modules/agents/agents/examples",
+  "slug": "/modules/agents/agents/examples/conversational_agent",
+  "permalink": "/docs/modules/agents/agents/examples/conversational_agent",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/agents/examples/conversational_agent.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_position": 3
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "MRKL Agent for Chat Models",
+    "permalink": "/docs/modules/agents/agents/examples/chat_mrkl"
+  },
+  "next": {
+    "title": "Agent with Custom Prompt, using Chat Models",
+    "permalink": "/docs/modules/agents/agents/examples/custom_agent_chat"
+  }
+}

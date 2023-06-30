@@ -1,0 +1,24 @@
+{
+  "unversionedId": "production/callbacks/index",
+  "id": "production/callbacks/index",
+  "title": "Events / Callbacks",
+  "description": "LangChain provides a callback system that allows you to hook into the various stages of your LLM application. This is useful for logging, monitoring, streaming, and other tasks.",
+  "source": "@site/docs/production/callbacks/index.mdx",
+  "sourceDirName": "production/callbacks",
+  "slug": "/production/callbacks/",
+  "permalink": "/docs/production/callbacks/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/production/callbacks/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "BabyAGI",
+    "permalink": "/docs/use_cases/autonomous_agents/baby_agi"
+  },
+  "next": {
+    "title": "Creating callback handlers",
+    "permalink": "/docs/production/callbacks/create-handlers"
+  }
+}

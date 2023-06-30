@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/file_loaders/pdf",
+  "id": "modules/indexes/document_loaders/examples/file_loaders/pdf",
+  "title": "PDF files",
+  "description": "This example goes over how to load data from PDF files. By default, one document will be created for each page in the PDF file, you can change this behavior by setting the splitPages option to false.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/file_loaders/pdf.md",
+  "sourceDirName": "modules/indexes/document_loaders/examples/file_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/file_loaders/pdf",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/pdf",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/file_loaders/pdf.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Notion markdown export",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/notion_markdown"
+  },
+  "next": {
+    "title": "Subtitles",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/subtitles"
+  }
+}

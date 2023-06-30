@@ -1,0 +1,728 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "api/API",
+              "path": "/docs/api/API",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "api/index",
+              "path": "/docs/api/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "ecosystem/databerry",
+              "path": "/docs/ecosystem/databerry",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "ecosystem/helicone",
+              "path": "/docs/ecosystem/helicone",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "ecosystem/unstructured",
+              "path": "/docs/ecosystem/unstructured",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "getting-started/guide-chat",
+              "path": "/docs/getting-started/guide-chat",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "getting-started/guide-llm",
+              "path": "/docs/getting-started/guide-llm",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "getting-started/install",
+              "path": "/docs/getting-started/install",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "index",
+              "path": "/docs/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/agents/custom_llm",
+              "path": "/docs/modules/agents/agents/custom_llm",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/agents/custom_llm_chat",
+              "path": "/docs/modules/agents/agents/custom_llm_chat",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/agents/examples/chat_mrkl",
+              "path": "/docs/modules/agents/agents/examples/chat_mrkl",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/agents/examples/conversational_agent",
+              "path": "/docs/modules/agents/agents/examples/conversational_agent",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/agents/examples/custom_agent_chat",
+              "path": "/docs/modules/agents/agents/examples/custom_agent_chat",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/agents/examples/index",
+              "path": "/docs/modules/agents/agents/examples/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/agents/examples/llm_mrkl",
+              "path": "/docs/modules/agents/agents/examples/llm_mrkl",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/agents/index",
+              "path": "/docs/modules/agents/agents/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/executor/getting-started",
+              "path": "/docs/modules/agents/executor/getting-started",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/executor/index",
+              "path": "/docs/modules/agents/executor/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/index",
+              "path": "/docs/modules/agents/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/toolkits/index",
+              "path": "/docs/modules/agents/toolkits/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/toolkits/json",
+              "path": "/docs/modules/agents/toolkits/json",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/toolkits/openapi",
+              "path": "/docs/modules/agents/toolkits/openapi",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/toolkits/sql",
+              "path": "/docs/modules/agents/toolkits/sql",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/toolkits/vectorstore",
+              "path": "/docs/modules/agents/toolkits/vectorstore",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/tools/agents_with_vectorstores",
+              "path": "/docs/modules/agents/tools/agents_with_vectorstores",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/tools/aiplugin-tool",
+              "path": "/docs/modules/agents/tools/aiplugin-tool",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/tools/index",
+              "path": "/docs/modules/agents/tools/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/tools/integrations/index",
+              "path": "/docs/modules/agents/tools/integrations/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/tools/lambda_agent",
+              "path": "/docs/modules/agents/tools/lambda_agent",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/tools/webbrowser",
+              "path": "/docs/modules/agents/tools/webbrowser",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/agents/tools/zapier_agent",
+              "path": "/docs/modules/agents/tools/zapier_agent",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/chains/index",
+              "path": "/docs/modules/chains/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/chains/index_related_chains/conversational_retrieval",
+              "path": "/docs/modules/chains/index_related_chains/conversational_retrieval",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/chains/index_related_chains/document_qa",
+              "path": "/docs/modules/chains/index_related_chains/document_qa",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/chains/index_related_chains/index",
+              "path": "/docs/modules/chains/index_related_chains/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/chains/index_related_chains/retrieval_qa",
+              "path": "/docs/modules/chains/index_related_chains/retrieval_qa",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/chains/llmchain",
+              "path": "/docs/modules/chains/llmchain",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/chains/other_chains/analyze_document",
+              "path": "/docs/modules/chains/other_chains/analyze_document",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/chains/other_chains/constitutional_chain",
+              "path": "/docs/modules/chains/other_chains/constitutional_chain",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/chains/other_chains/index",
+              "path": "/docs/modules/chains/other_chains/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/chains/other_chains/moderation_chain",
+              "path": "/docs/modules/chains/other_chains/moderation_chain",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/chains/other_chains/sql",
+              "path": "/docs/modules/chains/other_chains/sql",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/chains/other_chains/summarization",
+              "path": "/docs/modules/chains/other_chains/summarization",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/chains/prompt_selectors/index",
+              "path": "/docs/modules/chains/prompt_selectors/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/chains/sequential_chain",
+              "path": "/docs/modules/chains/sequential_chain",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/file_loaders/csv",
+              "path": "/docs/modules/indexes/document_loaders/examples/file_loaders/csv",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/file_loaders/directory",
+              "path": "/docs/modules/indexes/document_loaders/examples/file_loaders/directory",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/file_loaders/docx",
+              "path": "/docs/modules/indexes/document_loaders/examples/file_loaders/docx",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/file_loaders/epub",
+              "path": "/docs/modules/indexes/document_loaders/examples/file_loaders/epub",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/file_loaders/index",
+              "path": "/docs/modules/indexes/document_loaders/examples/file_loaders/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/file_loaders/json",
+              "path": "/docs/modules/indexes/document_loaders/examples/file_loaders/json",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/file_loaders/jsonlines",
+              "path": "/docs/modules/indexes/document_loaders/examples/file_loaders/jsonlines",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/file_loaders/notion_markdown",
+              "path": "/docs/modules/indexes/document_loaders/examples/file_loaders/notion_markdown",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/file_loaders/pdf",
+              "path": "/docs/modules/indexes/document_loaders/examples/file_loaders/pdf",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/file_loaders/subtitles",
+              "path": "/docs/modules/indexes/document_loaders/examples/file_loaders/subtitles",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/file_loaders/text",
+              "path": "/docs/modules/indexes/document_loaders/examples/file_loaders/text",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/file_loaders/unstructured",
+              "path": "/docs/modules/indexes/document_loaders/examples/file_loaders/unstructured",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/index",
+              "path": "/docs/modules/indexes/document_loaders/examples/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/web_loaders/college_confidential",
+              "path": "/docs/modules/indexes/document_loaders/examples/web_loaders/college_confidential",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/web_loaders/confluence",
+              "path": "/docs/modules/indexes/document_loaders/examples/web_loaders/confluence",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/web_loaders/gitbook",
+              "path": "/docs/modules/indexes/document_loaders/examples/web_loaders/gitbook",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/web_loaders/github",
+              "path": "/docs/modules/indexes/document_loaders/examples/web_loaders/github",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/web_loaders/hn",
+              "path": "/docs/modules/indexes/document_loaders/examples/web_loaders/hn",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/web_loaders/imsdb",
+              "path": "/docs/modules/indexes/document_loaders/examples/web_loaders/imsdb",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/web_loaders/index",
+              "path": "/docs/modules/indexes/document_loaders/examples/web_loaders/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/web_loaders/s3",
+              "path": "/docs/modules/indexes/document_loaders/examples/web_loaders/s3",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/web_loaders/web_cheerio",
+              "path": "/docs/modules/indexes/document_loaders/examples/web_loaders/web_cheerio",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/web_loaders/web_playwright",
+              "path": "/docs/modules/indexes/document_loaders/examples/web_loaders/web_playwright",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/examples/web_loaders/web_puppeteer",
+              "path": "/docs/modules/indexes/document_loaders/examples/web_loaders/web_puppeteer",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/document_loaders/index",
+              "path": "/docs/modules/indexes/document_loaders/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/index",
+              "path": "/docs/modules/indexes/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/retrievers/chatgpt-retriever-plugin",
+              "path": "/docs/modules/indexes/retrievers/chatgpt-retriever-plugin",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/retrievers/contextual-compression-retriever",
+              "path": "/docs/modules/indexes/retrievers/contextual-compression-retriever",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/retrievers/databerry-retriever",
+              "path": "/docs/modules/indexes/retrievers/databerry-retriever",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/retrievers/hyde",
+              "path": "/docs/modules/indexes/retrievers/hyde",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/retrievers/index",
+              "path": "/docs/modules/indexes/retrievers/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/retrievers/metal-retriever",
+              "path": "/docs/modules/indexes/retrievers/metal-retriever",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/retrievers/remote-retriever",
+              "path": "/docs/modules/indexes/retrievers/remote-retriever",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/retrievers/supabase-hybrid",
+              "path": "/docs/modules/indexes/retrievers/supabase-hybrid",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/retrievers/time-weighted-retriever",
+              "path": "/docs/modules/indexes/retrievers/time-weighted-retriever",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/retrievers/vectorstore",
+              "path": "/docs/modules/indexes/retrievers/vectorstore",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/text_splitters/examples/character",
+              "path": "/docs/modules/indexes/text_splitters/examples/character",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/text_splitters/examples/index",
+              "path": "/docs/modules/indexes/text_splitters/examples/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/text_splitters/examples/markdown",
+              "path": "/docs/modules/indexes/text_splitters/examples/markdown",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/text_splitters/examples/recursive_character",
+              "path": "/docs/modules/indexes/text_splitters/examples/recursive_character",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/text_splitters/examples/token",
+              "path": "/docs/modules/indexes/text_splitters/examples/token",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/text_splitters/index",
+              "path": "/docs/modules/indexes/text_splitters/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/vector_stores/index",
+              "path": "/docs/modules/indexes/vector_stores/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/vector_stores/integrations/chroma",
+              "path": "/docs/modules/indexes/vector_stores/integrations/chroma",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/vector_stores/integrations/hnswlib",
+              "path": "/docs/modules/indexes/vector_stores/integrations/hnswlib",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/vector_stores/integrations/index",
+              "path": "/docs/modules/indexes/vector_stores/integrations/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/vector_stores/integrations/memory",
+              "path": "/docs/modules/indexes/vector_stores/integrations/memory",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/vector_stores/integrations/milvus",
+              "path": "/docs/modules/indexes/vector_stores/integrations/milvus",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/vector_stores/integrations/myscale",
+              "path": "/docs/modules/indexes/vector_stores/integrations/myscale",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/vector_stores/integrations/opensearch",
+              "path": "/docs/modules/indexes/vector_stores/integrations/opensearch",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/vector_stores/integrations/pinecone",
+              "path": "/docs/modules/indexes/vector_stores/integrations/pinecone",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/vector_stores/integrations/prisma",
+              "path": "/docs/modules/indexes/vector_stores/integrations/prisma",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/vector_stores/integrations/supabase",
+              "path": "/docs/modules/indexes/vector_stores/integrations/supabase",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/indexes/vector_stores/integrations/weaviate",
+              "path": "/docs/modules/indexes/vector_stores/integrations/weaviate",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/memory/examples/buffer_memory",
+              "path": "/docs/modules/memory/examples/buffer_memory",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/memory/examples/buffer_memory_chat",
+              "path": "/docs/modules/memory/examples/buffer_memory_chat",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/memory/examples/buffer_window_memory",
+              "path": "/docs/modules/memory/examples/buffer_window_memory",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/memory/examples/conversation_summary",
+              "path": "/docs/modules/memory/examples/conversation_summary",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/memory/examples/index",
+              "path": "/docs/modules/memory/examples/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/memory/examples/motorhead_memory",
+              "path": "/docs/modules/memory/examples/motorhead_memory",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/memory/examples/vector_store_memory",
+              "path": "/docs/modules/memory/examples/vector_store_memory",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/memory/index",
+              "path": "/docs/modules/memory/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/models/chat/additional_functionality",
+              "path": "/docs/modules/models/chat/additional_functionality",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/models/chat/index",
+              "path": "/docs/modules/models/chat/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/models/chat/integrations",
+              "path": "/docs/modules/models/chat/integrations",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/models/embeddings/additional_functionality",
+              "path": "/docs/modules/models/embeddings/additional_functionality",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/models/embeddings/index",
+              "path": "/docs/modules/models/embeddings/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/models/embeddings/integrations",
+              "path": "/docs/modules/models/embeddings/integrations",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/models/index",
+              "path": "/docs/modules/models/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/models/llms/additional_functionality",
+              "path": "/docs/modules/models/llms/additional_functionality",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/models/llms/index",
+              "path": "/docs/modules/models/llms/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/models/llms/integrations",
+              "path": "/docs/modules/models/llms/integrations",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/prompts/example_selectors/index",
+              "path": "/docs/modules/prompts/example_selectors/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/prompts/index",
+              "path": "/docs/modules/prompts/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/prompts/output_parsers/index",
+              "path": "/docs/modules/prompts/output_parsers/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/prompts/prompt_templates/additional_functionality",
+              "path": "/docs/modules/prompts/prompt_templates/additional_functionality",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/prompts/prompt_templates/index",
+              "path": "/docs/modules/prompts/prompt_templates/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/schema/chat-messages",
+              "path": "/docs/modules/schema/chat-messages",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/schema/document",
+              "path": "/docs/modules/schema/document",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/schema/example",
+              "path": "/docs/modules/schema/example",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "modules/schema/index",
+              "path": "/docs/modules/schema/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "production/callbacks/create-handlers",
+              "path": "/docs/production/callbacks/create-handlers",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "production/callbacks/creating-subclasses",
+              "path": "/docs/production/callbacks/creating-subclasses",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "production/callbacks/index",
+              "path": "/docs/production/callbacks/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "production/deployment",
+              "path": "/docs/production/deployment",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "production/tracing",
+              "path": "/docs/production/tracing",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "use_cases/api",
+              "path": "/docs/use_cases/api",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "use_cases/autonomous_agents/auto_gpt",
+              "path": "/docs/use_cases/autonomous_agents/auto_gpt",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "use_cases/autonomous_agents/baby_agi",
+              "path": "/docs/use_cases/autonomous_agents/baby_agi",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "use_cases/autonomous_agents/index",
+              "path": "/docs/use_cases/autonomous_agents/",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "use_cases/personal_assistants",
+              "path": "/docs/use_cases/personal_assistants",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "use_cases/question_answering",
+              "path": "/docs/use_cases/question_answering",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "use_cases/summarization",
+              "path": "/docs/use_cases/summarization",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "use_cases/tabular",
+              "path": "/docs/use_cases/tabular",
+              "sidebar": "sidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "sidebar": {
+              "link": {
+                "path": "/docs/",
+                "label": "index"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

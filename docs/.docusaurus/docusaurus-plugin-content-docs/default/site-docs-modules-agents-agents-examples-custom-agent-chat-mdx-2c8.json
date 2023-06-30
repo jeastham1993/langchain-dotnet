@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/agents/agents/examples/custom_agent_chat",
+  "id": "modules/agents/agents/examples/custom_agent_chat",
+  "title": "Agent with Custom Prompt, using Chat Models",
+  "description": "This example covers how to create a custom agent for a chat model. It will utilize chat specific prompts.",
+  "source": "@site/docs/modules/agents/agents/examples/custom_agent_chat.mdx",
+  "sourceDirName": "modules/agents/agents/examples",
+  "slug": "/modules/agents/agents/examples/custom_agent_chat",
+  "permalink": "/docs/modules/agents/agents/examples/custom_agent_chat",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/agents/examples/custom_agent_chat.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Conversational Agent",
+    "permalink": "/docs/modules/agents/agents/examples/conversational_agent"
+  },
+  "next": {
+    "title": "Agent Executors",
+    "permalink": "/docs/modules/agents/executor/"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/vector_stores/integrations/pinecone",
+  "id": "modules/indexes/vector_stores/integrations/pinecone",
+  "title": "Pinecone",
+  "description": "Only available on Node.js.",
+  "source": "@site/docs/modules/indexes/vector_stores/integrations/pinecone.md",
+  "sourceDirName": "modules/indexes/vector_stores/integrations",
+  "slug": "/modules/indexes/vector_stores/integrations/pinecone",
+  "permalink": "/docs/modules/indexes/vector_stores/integrations/pinecone",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/vector_stores/integrations/pinecone.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_class_name": "node-only"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "OpenSearch",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/opensearch"
+  },
+  "next": {
+    "title": "Prisma",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/prisma"
+  }
+}

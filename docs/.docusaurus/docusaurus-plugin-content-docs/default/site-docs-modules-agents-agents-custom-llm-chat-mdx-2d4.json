@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/agents/agents/custom_llm_chat",
+  "id": "modules/agents/agents/custom_llm_chat",
+  "title": "Custom LLM Agent (with Chat Model)",
+  "description": "This example covers how to create a custom Agent powered by a Chat Model.",
+  "source": "@site/docs/modules/agents/agents/custom_llm_chat.mdx",
+  "sourceDirName": "modules/agents/agents",
+  "slug": "/modules/agents/agents/custom_llm_chat",
+  "permalink": "/docs/modules/agents/agents/custom_llm_chat",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/agents/custom_llm_chat.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_position": 1
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Custom LLM Agent",
+    "permalink": "/docs/modules/agents/agents/custom_llm"
+  },
+  "next": {
+    "title": "Examples",
+    "permalink": "/docs/modules/agents/agents/examples/"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/retrievers/hyde",
+  "id": "modules/indexes/retrievers/hyde",
+  "title": "HyDE Retriever",
+  "description": "This example shows how to use the HyDE Retriever, which implements Hypothetical Document Embeddings (HyDE) as described in this paper.",
+  "source": "@site/docs/modules/indexes/retrievers/hyde.mdx",
+  "sourceDirName": "modules/indexes/retrievers",
+  "slug": "/modules/indexes/retrievers/hyde",
+  "permalink": "/docs/modules/indexes/retrievers/hyde",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/retrievers/hyde.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Databerry Retriever",
+    "permalink": "/docs/modules/indexes/retrievers/databerry-retriever"
+  },
+  "next": {
+    "title": "Metal Retriever",
+    "permalink": "/docs/modules/indexes/retrievers/metal-retriever"
+  }
+}

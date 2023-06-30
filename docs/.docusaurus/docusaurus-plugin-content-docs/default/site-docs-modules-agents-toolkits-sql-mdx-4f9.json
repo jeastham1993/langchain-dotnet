@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/agents/toolkits/sql",
+  "id": "modules/agents/toolkits/sql",
+  "title": "SQL Agent Toolkit",
+  "description": "This example shows how to load and use an agent with a SQL toolkit.",
+  "source": "@site/docs/modules/agents/toolkits/sql.mdx",
+  "sourceDirName": "modules/agents/toolkits",
+  "slug": "/modules/agents/toolkits/sql",
+  "permalink": "/docs/modules/agents/toolkits/sql",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/toolkits/sql.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "OpenAPI Agent Toolkit",
+    "permalink": "/docs/modules/agents/toolkits/openapi"
+  },
+  "next": {
+    "title": "VectorStore Agent Toolkit",
+    "permalink": "/docs/modules/agents/toolkits/vectorstore"
+  }
+}

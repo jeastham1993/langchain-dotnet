@@ -1,0 +1,27 @@
+{
+  "unversionedId": "modules/agents/tools/lambda_agent",
+  "id": "modules/agents/tools/lambda_agent",
+  "title": "Agent with AWS Lambda Integration",
+  "description": "Full docs here//docs.aws.amazon.com/lambda/index.html",
+  "source": "@site/docs/modules/agents/tools/lambda_agent.md",
+  "sourceDirName": "modules/agents/tools",
+  "slug": "/modules/agents/tools/lambda_agent",
+  "permalink": "/docs/modules/agents/tools/lambda_agent",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/tools/lambda_agent.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Agent with AWS Lambda",
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "ChatGPT Plugins",
+    "permalink": "/docs/modules/agents/tools/aiplugin-tool"
+  },
+  "next": {
+    "title": "Web Browser Tool",
+    "permalink": "/docs/modules/agents/tools/webbrowser"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/web_loaders/web_cheerio",
+  "id": "modules/indexes/document_loaders/examples/web_loaders/web_cheerio",
+  "title": "Webpages, with Cheerio",
+  "description": "This example goes over how to load data from webpages using Cheerio. One document will be created for each webpage.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/web_loaders/web_cheerio.md",
+  "sourceDirName": "modules/indexes/document_loaders/examples/web_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/web_loaders/web_cheerio",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/web_cheerio",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/web_loaders/web_cheerio.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "sidebar_label": "Cheerio",
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Web Loaders",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/"
+  },
+  "next": {
+    "title": "Puppeteer",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/web_puppeteer"
+  }
+}

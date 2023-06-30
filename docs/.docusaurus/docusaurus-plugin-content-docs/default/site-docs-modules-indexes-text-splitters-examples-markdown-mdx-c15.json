@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/text_splitters/examples/markdown",
+  "id": "modules/indexes/text_splitters/examples/markdown",
+  "title": "MarkdownTextSplitter",
+  "description": "If your content is in Markdown format then MarkdownTextSplitter. This class will split your content into documents based on the Markdown headers. For example, if you have the following Markdown content:",
+  "source": "@site/docs/modules/indexes/text_splitters/examples/markdown.mdx",
+  "sourceDirName": "modules/indexes/text_splitters/examples",
+  "slug": "/modules/indexes/text_splitters/examples/markdown",
+  "permalink": "/docs/modules/indexes/text_splitters/examples/markdown",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/text_splitters/examples/markdown.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "CharacterTextSplitter",
+    "permalink": "/docs/modules/indexes/text_splitters/examples/character"
+  },
+  "next": {
+    "title": "RecursiveCharacterTextSplitter",
+    "permalink": "/docs/modules/indexes/text_splitters/examples/recursive_character"
+  }
+}

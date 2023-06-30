@@ -1,0 +1,29 @@
+{
+  "unversionedId": "modules/indexes/text_splitters/index",
+  "id": "modules/indexes/text_splitters/index",
+  "title": "Getting Started: Text Splitters",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/indexes/text_splitters/index.mdx",
+  "sourceDirName": "modules/indexes/text_splitters",
+  "slug": "/modules/indexes/text_splitters/",
+  "permalink": "/docs/modules/indexes/text_splitters/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/text_splitters/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_label": "Text Splitters",
+    "hide_table_of_contents": true,
+    "sidebar_position": 2
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "S3 File",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/s3"
+  },
+  "next": {
+    "title": "Examples",
+    "permalink": "/docs/modules/indexes/text_splitters/examples/"
+  }
+}

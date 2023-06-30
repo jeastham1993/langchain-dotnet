@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/indexes/vector_stores/integrations/prisma",
+  "id": "modules/indexes/vector_stores/integrations/prisma",
+  "title": "Prisma",
+  "description": "For augmenting existing models in PostgreSQL database with vector search, Langchain supports using Prisma together with PostgreSQL and pgvector Postgres extension.",
+  "source": "@site/docs/modules/indexes/vector_stores/integrations/prisma.mdx",
+  "sourceDirName": "modules/indexes/vector_stores/integrations",
+  "slug": "/modules/indexes/vector_stores/integrations/prisma",
+  "permalink": "/docs/modules/indexes/vector_stores/integrations/prisma",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/vector_stores/integrations/prisma.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Pinecone",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/pinecone"
+  },
+  "next": {
+    "title": "Supabase",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/supabase"
+  }
+}

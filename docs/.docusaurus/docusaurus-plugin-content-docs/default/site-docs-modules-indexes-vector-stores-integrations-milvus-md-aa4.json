@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/vector_stores/integrations/milvus",
+  "id": "modules/indexes/vector_stores/integrations/milvus",
+  "title": "Milvus",
+  "description": "Milvus is a vector database built for embeddings similarity search and AI applications.",
+  "source": "@site/docs/modules/indexes/vector_stores/integrations/milvus.md",
+  "sourceDirName": "modules/indexes/vector_stores/integrations",
+  "slug": "/modules/indexes/vector_stores/integrations/milvus",
+  "permalink": "/docs/modules/indexes/vector_stores/integrations/milvus",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/vector_stores/integrations/milvus.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_class_name": "node-only"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "HNSWLib",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/hnswlib"
+  },
+  "next": {
+    "title": "MyScale",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/myscale"
+  }
+}

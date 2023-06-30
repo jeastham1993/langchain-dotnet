@@ -1,0 +1,28 @@
+{
+  "unversionedId": "use_cases/personal_assistants",
+  "id": "use_cases/personal_assistants",
+  "title": "Personal Assistants",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/use_cases/personal_assistants.mdx",
+  "sourceDirName": "use_cases",
+  "slug": "/use_cases/personal_assistants",
+  "permalink": "/docs/use_cases/personal_assistants",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/use_cases/personal_assistants.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_position": 1
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/docs/modules/agents/executor/getting-started"
+  },
+  "next": {
+    "title": "Question Answering",
+    "permalink": "/docs/use_cases/question_answering"
+  }
+}

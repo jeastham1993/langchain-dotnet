@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/schema/document",
+  "id": "modules/schema/document",
+  "title": "Document",
+  "description": "Language models only know information about what they were trained on. In order to get them answer questions or summarize other information you have to pass it to the language model. Therefore, it is very important to have a concept of a document.",
+  "source": "@site/docs/modules/schema/document.md",
+  "sourceDirName": "modules/schema",
+  "slug": "/modules/schema/document",
+  "permalink": "/docs/modules/schema/document",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/schema/document.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Chat Messages",
+    "permalink": "/docs/modules/schema/chat-messages"
+  },
+  "next": {
+    "title": "Examples",
+    "permalink": "/docs/modules/schema/example"
+  }
+}

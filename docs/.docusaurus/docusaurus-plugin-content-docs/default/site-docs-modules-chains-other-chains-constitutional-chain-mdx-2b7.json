@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/chains/other_chains/constitutional_chain",
+  "id": "modules/chains/other_chains/constitutional_chain",
+  "title": "ConstitutionalChain",
+  "description": "The ConstitutionalChain is a chain that ensures the output of a language model adheres to a predefined set of constitutional principles. By incorporating specific rules and guidelines, the ConstitutionalChain filters and modifies the generated content to align with these principles, thus providing more controlled, ethical, and contextually appropriate responses. This mechanism helps maintain the integrity of the output while minimizing the risk of generating content that may violate guidelines, be offensive, or deviate from the desired context.",
+  "source": "@site/docs/modules/chains/other_chains/constitutional_chain.mdx",
+  "sourceDirName": "modules/chains/other_chains",
+  "slug": "/modules/chains/other_chains/constitutional_chain",
+  "permalink": "/docs/modules/chains/other_chains/constitutional_chain",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/chains/other_chains/constitutional_chain.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "AnalyzeDocumentChain",
+    "permalink": "/docs/modules/chains/other_chains/analyze_document"
+  },
+  "next": {
+    "title": "OpenAIModerationChain",
+    "permalink": "/docs/modules/chains/other_chains/moderation_chain"
+  }
+}

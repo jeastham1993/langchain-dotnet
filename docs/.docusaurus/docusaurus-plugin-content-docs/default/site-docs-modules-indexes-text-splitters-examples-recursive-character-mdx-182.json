@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/text_splitters/examples/recursive_character",
+  "id": "modules/indexes/text_splitters/examples/recursive_character",
+  "title": "RecursiveCharacterTextSplitter",
+  "description": "The recommended TextSplitter is the RecursiveCharacterTextSplitter. This will split documents recursively by different characters - starting with \"\\n\\n\", then \"\\n\", then \" \". This is nice because it will try to keep all the semantically relevant content in the same place for as long as possible.",
+  "source": "@site/docs/modules/indexes/text_splitters/examples/recursive_character.mdx",
+  "sourceDirName": "modules/indexes/text_splitters/examples",
+  "slug": "/modules/indexes/text_splitters/examples/recursive_character",
+  "permalink": "/docs/modules/indexes/text_splitters/examples/recursive_character",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/text_splitters/examples/recursive_character.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "MarkdownTextSplitter",
+    "permalink": "/docs/modules/indexes/text_splitters/examples/markdown"
+  },
+  "next": {
+    "title": "TokenTextSplitter",
+    "permalink": "/docs/modules/indexes/text_splitters/examples/token"
+  }
+}

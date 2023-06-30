@@ -1,0 +1,27 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/web_loaders/s3",
+  "id": "modules/indexes/document_loaders/examples/web_loaders/s3",
+  "title": "S3 File",
+  "description": "Only available on Node.js.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/web_loaders/s3.mdx",
+  "sourceDirName": "modules/indexes/document_loaders/examples/web_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/web_loaders/s3",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/s3",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/web_loaders/s3.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_class_name": "node-only"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "IMSDB",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/imsdb"
+  },
+  "next": {
+    "title": "Text Splitters",
+    "permalink": "/docs/modules/indexes/text_splitters/"
+  }
+}

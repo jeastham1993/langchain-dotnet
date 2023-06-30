@@ -1,0 +1,30 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/web_loaders/web_playwright",
+  "id": "modules/indexes/document_loaders/examples/web_loaders/web_playwright",
+  "title": "Webpages, with Playwright",
+  "description": "Only available on Node.js.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/web_loaders/web_playwright.md",
+  "sourceDirName": "modules/indexes/document_loaders/examples/web_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/web_loaders/web_playwright",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/web_playwright",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/web_loaders/web_playwright.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "hide_table_of_contents": true,
+    "sidebar_class_name": "node-only",
+    "sidebar_label": "Playwright"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Puppeteer",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/web_puppeteer"
+  },
+  "next": {
+    "title": "College Confidential",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/college_confidential"
+  }
+}

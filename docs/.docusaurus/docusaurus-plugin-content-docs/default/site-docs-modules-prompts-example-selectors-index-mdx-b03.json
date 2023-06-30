@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/prompts/example_selectors/index",
+  "id": "modules/prompts/example_selectors/index",
+  "title": "Example Selectors",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/prompts/example_selectors/index.mdx",
+  "sourceDirName": "modules/prompts/example_selectors",
+  "slug": "/modules/prompts/example_selectors/",
+  "permalink": "/docs/modules/prompts/example_selectors/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/prompts/example_selectors/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_label": "Example Selectors",
+    "sidebar_position": 3
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Output Parsers",
+    "permalink": "/docs/modules/prompts/output_parsers/"
+  },
+  "next": {
+    "title": "Indexes",
+    "permalink": "/docs/modules/indexes/"
+  }
+}

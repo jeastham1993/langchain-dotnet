@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/indexes/retrievers/supabase-hybrid",
+  "id": "modules/indexes/retrievers/supabase-hybrid",
+  "title": "Supabase Hybrid Search",
+  "description": "Langchain supports hybrid search with a Supabase Postgres database. The hybrid search combines the postgres pgvector extension (similarity search) and Full-Text Search (keyword search) to retrieve documents. You can add documents via SupabaseVectorStore addDocuments function. SupabaseHybridKeyWordSearch accepts embedding, supabase client, number of results for similarity search, and number of results for keyword search as parameters. The getRelevantDocuments function produces a list of documents that has duplicates removed and is sorted by relevance score.",
+  "source": "@site/docs/modules/indexes/retrievers/supabase-hybrid.mdx",
+  "sourceDirName": "modules/indexes/retrievers",
+  "slug": "/modules/indexes/retrievers/supabase-hybrid",
+  "permalink": "/docs/modules/indexes/retrievers/supabase-hybrid",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/retrievers/supabase-hybrid.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Remote Retriever",
+    "permalink": "/docs/modules/indexes/retrievers/remote-retriever"
+  },
+  "next": {
+    "title": "Time-Weighted Retriever",
+    "permalink": "/docs/modules/indexes/retrievers/time-weighted-retriever"
+  }
+}

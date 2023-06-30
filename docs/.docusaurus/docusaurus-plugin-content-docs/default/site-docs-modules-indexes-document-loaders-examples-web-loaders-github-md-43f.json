@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/web_loaders/github",
+  "id": "modules/indexes/document_loaders/examples/web_loaders/github",
+  "title": "GitHub",
+  "description": "This example goes over how to load data from a GitHub repository.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/web_loaders/github.md",
+  "sourceDirName": "modules/indexes/document_loaders/examples/web_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/web_loaders/github",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/github",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/web_loaders/github.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "GitBook",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/gitbook"
+  },
+  "next": {
+    "title": "Hacker News",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/hn"
+  }
+}

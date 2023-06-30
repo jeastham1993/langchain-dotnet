@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/models/embeddings/integrations",
+  "id": "modules/models/embeddings/integrations",
+  "title": "Integrations: Embeddings",
+  "description": "LangChain offers a number of Embeddings implementations that integrate with various model providers. These are:",
+  "source": "@site/docs/modules/models/embeddings/integrations.mdx",
+  "sourceDirName": "modules/models/embeddings",
+  "slug": "/modules/models/embeddings/integrations",
+  "permalink": "/docs/modules/models/embeddings/integrations",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/models/embeddings/integrations.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "sidebar_label": "Integrations"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Embeddings",
+    "permalink": "/docs/modules/models/embeddings/"
+  },
+  "next": {
+    "title": "Additional Functionality",
+    "permalink": "/docs/modules/models/embeddings/additional_functionality"
+  }
+}

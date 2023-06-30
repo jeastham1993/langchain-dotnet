@@ -1,0 +1,27 @@
+{
+  "unversionedId": "modules/models/chat/index",
+  "id": "modules/models/chat/index",
+  "title": "Getting Started: Chat Models",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/models/chat/index.mdx",
+  "sourceDirName": "modules/models/chat",
+  "slug": "/modules/models/chat/",
+  "permalink": "/docs/modules/models/chat/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/models/chat/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_label": "Chat Models"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Models",
+    "permalink": "/docs/modules/models/"
+  },
+  "next": {
+    "title": "Integrations",
+    "permalink": "/docs/modules/models/chat/integrations"
+  }
+}

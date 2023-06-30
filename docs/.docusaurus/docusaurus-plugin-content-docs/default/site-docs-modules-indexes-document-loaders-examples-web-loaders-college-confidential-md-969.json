@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/web_loaders/college_confidential",
+  "id": "modules/indexes/document_loaders/examples/web_loaders/college_confidential",
+  "title": "College Confidential",
+  "description": "This example goes over how to load data from the college confidential website, using Cheerio. One document will be created for each page.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/web_loaders/college_confidential.md",
+  "sourceDirName": "modules/indexes/document_loaders/examples/web_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/web_loaders/college_confidential",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/college_confidential",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/web_loaders/college_confidential.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Playwright",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/web_playwright"
+  },
+  "next": {
+    "title": "Confluence",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/confluence"
+  }
+}

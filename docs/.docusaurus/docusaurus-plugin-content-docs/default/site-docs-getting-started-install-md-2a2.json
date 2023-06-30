@@ -1,0 +1,27 @@
+{
+  "unversionedId": "getting-started/install",
+  "id": "getting-started/install",
+  "title": "Setup and Installation",
+  "description": "Updating from <0.0.52? See this section for instructions.",
+  "source": "@site/docs/getting-started/install.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/install",
+  "permalink": "/docs/getting-started/install",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/getting-started/install.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Welcome to LangChain",
+    "permalink": "/docs/"
+  },
+  "next": {
+    "title": "Quickstart, using LLMs",
+    "permalink": "/docs/getting-started/guide-llm"
+  }
+}

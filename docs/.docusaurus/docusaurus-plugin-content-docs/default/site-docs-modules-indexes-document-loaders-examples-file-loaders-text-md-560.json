@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/file_loaders/text",
+  "id": "modules/indexes/document_loaders/examples/file_loaders/text",
+  "title": "Text files",
+  "description": "This example goes over how to load data from text files.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/file_loaders/text.md",
+  "sourceDirName": "modules/indexes/document_loaders/examples/file_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/file_loaders/text",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/text",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/file_loaders/text.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Subtitles",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/subtitles"
+  },
+  "next": {
+    "title": "Unstructured",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/unstructured"
+  }
+}

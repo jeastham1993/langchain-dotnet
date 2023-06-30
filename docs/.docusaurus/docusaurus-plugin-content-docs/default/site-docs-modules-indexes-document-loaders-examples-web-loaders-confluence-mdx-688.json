@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/web_loaders/confluence",
+  "id": "modules/indexes/document_loaders/examples/web_loaders/confluence",
+  "title": "Confluence",
+  "description": "Only available on Node.js.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/web_loaders/confluence.mdx",
+  "sourceDirName": "modules/indexes/document_loaders/examples/web_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/web_loaders/confluence",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/confluence",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/web_loaders/confluence.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_class_name": "node-only"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "College Confidential",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/college_confidential"
+  },
+  "next": {
+    "title": "GitBook",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/gitbook"
+  }
+}

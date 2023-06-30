@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/memory/examples/index",
+  "id": "modules/memory/examples/index",
+  "title": "Examples: Memory",
+  "description": "",
+  "source": "@site/docs/modules/memory/examples/index.mdx",
+  "sourceDirName": "modules/memory/examples",
+  "slug": "/modules/memory/examples/",
+  "permalink": "/docs/modules/memory/examples/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/memory/examples/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Examples"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Memory",
+    "permalink": "/docs/modules/memory/"
+  },
+  "next": {
+    "title": "Buffer Memory",
+    "permalink": "/docs/modules/memory/examples/buffer_memory"
+  }
+}

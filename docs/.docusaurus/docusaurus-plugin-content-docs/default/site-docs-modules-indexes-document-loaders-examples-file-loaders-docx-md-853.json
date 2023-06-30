@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/file_loaders/docx",
+  "id": "modules/indexes/document_loaders/examples/file_loaders/docx",
+  "title": "Docx files",
+  "description": "This example goes over how to load data from docx files.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/file_loaders/docx.md",
+  "sourceDirName": "modules/indexes/document_loaders/examples/file_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/file_loaders/docx",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/docx",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/file_loaders/docx.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "CSV files",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/csv"
+  },
+  "next": {
+    "title": "EPUB files",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/epub"
+  }
+}

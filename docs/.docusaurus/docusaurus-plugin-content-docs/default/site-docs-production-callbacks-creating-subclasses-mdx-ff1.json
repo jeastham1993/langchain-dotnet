@@ -1,0 +1,26 @@
+{
+  "unversionedId": "production/callbacks/creating-subclasses",
+  "id": "production/callbacks/creating-subclasses",
+  "title": "Callbacks in custom Chains/Agents",
+  "description": "LangChain is designed to be extensible. You can add your own custom Chains and Agents to the library. This page will show you how to add callbacks to your custom Chains and Agents.",
+  "source": "@site/docs/production/callbacks/creating-subclasses.mdx",
+  "sourceDirName": "production/callbacks",
+  "slug": "/production/callbacks/creating-subclasses",
+  "permalink": "/docs/production/callbacks/creating-subclasses",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/production/callbacks/creating-subclasses.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Callbacks in custom Chains"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Creating callback handlers",
+    "permalink": "/docs/production/callbacks/create-handlers"
+  },
+  "next": {
+    "title": "Deployment",
+    "permalink": "/docs/production/deployment"
+  }
+}

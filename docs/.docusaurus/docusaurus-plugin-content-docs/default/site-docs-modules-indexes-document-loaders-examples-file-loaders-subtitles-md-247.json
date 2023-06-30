@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/file_loaders/subtitles",
+  "id": "modules/indexes/document_loaders/examples/file_loaders/subtitles",
+  "title": "Subtitles",
+  "description": "This example goes over how to load data from subtitle files. One document will be created for each subtitles file.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/file_loaders/subtitles.md",
+  "sourceDirName": "modules/indexes/document_loaders/examples/file_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/file_loaders/subtitles",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/subtitles",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/file_loaders/subtitles.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "PDF files",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/pdf"
+  },
+  "next": {
+    "title": "Text files",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/text"
+  }
+}

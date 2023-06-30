@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/chains/index_related_chains/conversational_retrieval",
+  "id": "modules/chains/index_related_chains/conversational_retrieval",
+  "title": "Conversational Retrieval QA",
+  "description": "The ConversationalRetrievalQA chain builds on RetrievalQAChain to provide a chat history component.",
+  "source": "@site/docs/modules/chains/index_related_chains/conversational_retrieval.mdx",
+  "sourceDirName": "modules/chains/index_related_chains",
+  "slug": "/modules/chains/index_related_chains/conversational_retrieval",
+  "permalink": "/docs/modules/chains/index_related_chains/conversational_retrieval",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/chains/index_related_chains/conversational_retrieval.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_position": 3
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Retrieval QA",
+    "permalink": "/docs/modules/chains/index_related_chains/retrieval_qa"
+  },
+  "next": {
+    "title": "Sequential Chain",
+    "permalink": "/docs/modules/chains/sequential_chain"
+  }
+}

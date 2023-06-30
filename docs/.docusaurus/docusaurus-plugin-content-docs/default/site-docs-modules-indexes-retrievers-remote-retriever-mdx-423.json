@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/retrievers/remote-retriever",
+  "id": "modules/indexes/retrievers/remote-retriever",
+  "title": "Remote Retriever",
+  "description": "This example shows how to use a Remote Retriever in a RetrievalQAChain to retrieve documents from a remote server.",
+  "source": "@site/docs/modules/indexes/retrievers/remote-retriever.mdx",
+  "sourceDirName": "modules/indexes/retrievers",
+  "slug": "/modules/indexes/retrievers/remote-retriever",
+  "permalink": "/docs/modules/indexes/retrievers/remote-retriever",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/retrievers/remote-retriever.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Metal Retriever",
+    "permalink": "/docs/modules/indexes/retrievers/metal-retriever"
+  },
+  "next": {
+    "title": "Supabase Hybrid Search",
+    "permalink": "/docs/modules/indexes/retrievers/supabase-hybrid"
+  }
+}

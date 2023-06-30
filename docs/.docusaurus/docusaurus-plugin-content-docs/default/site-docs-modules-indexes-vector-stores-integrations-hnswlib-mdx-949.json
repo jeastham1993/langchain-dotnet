@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/vector_stores/integrations/hnswlib",
+  "id": "modules/indexes/vector_stores/integrations/hnswlib",
+  "title": "HNSWLib",
+  "description": "Only available on Node.js.",
+  "source": "@site/docs/modules/indexes/vector_stores/integrations/hnswlib.mdx",
+  "sourceDirName": "modules/indexes/vector_stores/integrations",
+  "slug": "/modules/indexes/vector_stores/integrations/hnswlib",
+  "permalink": "/docs/modules/indexes/vector_stores/integrations/hnswlib",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/vector_stores/integrations/hnswlib.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_class_name": "node-only"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Chroma",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/chroma"
+  },
+  "next": {
+    "title": "Milvus",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/milvus"
+  }
+}

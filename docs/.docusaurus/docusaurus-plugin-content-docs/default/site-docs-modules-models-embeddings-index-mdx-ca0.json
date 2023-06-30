@@ -1,0 +1,27 @@
+{
+  "unversionedId": "modules/models/embeddings/index",
+  "id": "modules/models/embeddings/index",
+  "title": "Getting Started: Embeddings",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/models/embeddings/index.mdx",
+  "sourceDirName": "modules/models/embeddings",
+  "slug": "/modules/models/embeddings/",
+  "permalink": "/docs/modules/models/embeddings/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/models/embeddings/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_label": "Embeddings"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Additional Functionality",
+    "permalink": "/docs/modules/models/chat/additional_functionality"
+  },
+  "next": {
+    "title": "Integrations",
+    "permalink": "/docs/modules/models/embeddings/integrations"
+  }
+}

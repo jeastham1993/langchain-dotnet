@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/file_loaders/unstructured",
+  "id": "modules/indexes/document_loaders/examples/file_loaders/unstructured",
+  "title": "Unstructured",
+  "description": "This example covers how to use Unstructured to load files of many types. Unstructured currently supports loading of text files, powerpoints, html, pdfs, images, and more.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/file_loaders/unstructured.mdx",
+  "sourceDirName": "modules/indexes/document_loaders/examples/file_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/file_loaders/unstructured",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/unstructured",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/file_loaders/unstructured.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Text files",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/text"
+  },
+  "next": {
+    "title": "Web Loaders",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/"
+  }
+}

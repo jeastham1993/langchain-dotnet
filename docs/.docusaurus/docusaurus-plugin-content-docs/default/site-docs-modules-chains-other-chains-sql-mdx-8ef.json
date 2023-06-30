@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/chains/other_chains/sql",
+  "id": "modules/chains/other_chains/sql",
+  "title": "SqlDatabaseChain",
+  "description": "The SqlDatabaseChain allows you to answer questions over a SQL database.",
+  "source": "@site/docs/modules/chains/other_chains/sql.mdx",
+  "sourceDirName": "modules/chains/other_chains",
+  "slug": "/modules/chains/other_chains/sql",
+  "permalink": "/docs/modules/chains/other_chains/sql",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/chains/other_chains/sql.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "OpenAIModerationChain",
+    "permalink": "/docs/modules/chains/other_chains/moderation_chain"
+  },
+  "next": {
+    "title": "Summarization",
+    "permalink": "/docs/modules/chains/other_chains/summarization"
+  }
+}

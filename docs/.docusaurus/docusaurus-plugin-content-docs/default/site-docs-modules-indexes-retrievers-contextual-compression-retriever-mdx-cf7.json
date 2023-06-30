@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/indexes/retrievers/contextual-compression-retriever",
+  "id": "modules/indexes/retrievers/contextual-compression-retriever",
+  "title": "Contextual Compression Retriever",
+  "description": "A Contextual Compression Retriever is designed to improve the answers returned from vector store document similarity searches by better taking into account the context from the query.",
+  "source": "@site/docs/modules/indexes/retrievers/contextual-compression-retriever.mdx",
+  "sourceDirName": "modules/indexes/retrievers",
+  "slug": "/modules/indexes/retrievers/contextual-compression-retriever",
+  "permalink": "/docs/modules/indexes/retrievers/contextual-compression-retriever",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/retrievers/contextual-compression-retriever.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "ChatGPT Plugin Retriever",
+    "permalink": "/docs/modules/indexes/retrievers/chatgpt-retriever-plugin"
+  },
+  "next": {
+    "title": "Databerry Retriever",
+    "permalink": "/docs/modules/indexes/retrievers/databerry-retriever"
+  }
+}

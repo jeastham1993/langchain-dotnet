@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/vector_stores/integrations/opensearch",
+  "id": "modules/indexes/vector_stores/integrations/opensearch",
+  "title": "OpenSearch",
+  "description": "Only available on Node.js.",
+  "source": "@site/docs/modules/indexes/vector_stores/integrations/opensearch.md",
+  "sourceDirName": "modules/indexes/vector_stores/integrations",
+  "slug": "/modules/indexes/vector_stores/integrations/opensearch",
+  "permalink": "/docs/modules/indexes/vector_stores/integrations/opensearch",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/vector_stores/integrations/opensearch.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_class_name": "node-only"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "MyScale",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/myscale"
+  },
+  "next": {
+    "title": "Pinecone",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/pinecone"
+  }
+}

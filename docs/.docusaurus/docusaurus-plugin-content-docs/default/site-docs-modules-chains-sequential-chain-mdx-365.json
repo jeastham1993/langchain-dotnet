@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/chains/sequential_chain",
+  "id": "modules/chains/sequential_chain",
+  "title": "Sequential Chain",
+  "description": "Sequential chains allow you to connect multiple chains and compose them into pipelines that execute some specific scenario.",
+  "source": "@site/docs/modules/chains/sequential_chain.mdx",
+  "sourceDirName": "modules/chains",
+  "slug": "/modules/chains/sequential_chain",
+  "permalink": "/docs/modules/chains/sequential_chain",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/chains/sequential_chain.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_position": 3
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Conversational Retrieval QA",
+    "permalink": "/docs/modules/chains/index_related_chains/conversational_retrieval"
+  },
+  "next": {
+    "title": "Other Chains",
+    "permalink": "/docs/modules/chains/other_chains/"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/retrievers/chatgpt-retriever-plugin",
+  "id": "modules/indexes/retrievers/chatgpt-retriever-plugin",
+  "title": "ChatGPT Plugin Retriever",
+  "description": "This example shows how to use the ChatGPT Retriever Plugin within LangChain.",
+  "source": "@site/docs/modules/indexes/retrievers/chatgpt-retriever-plugin.mdx",
+  "sourceDirName": "modules/indexes/retrievers",
+  "slug": "/modules/indexes/retrievers/chatgpt-retriever-plugin",
+  "permalink": "/docs/modules/indexes/retrievers/chatgpt-retriever-plugin",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/retrievers/chatgpt-retriever-plugin.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Retrievers",
+    "permalink": "/docs/modules/indexes/retrievers/"
+  },
+  "next": {
+    "title": "Contextual Compression Retriever",
+    "permalink": "/docs/modules/indexes/retrievers/contextual-compression-retriever"
+  }
+}

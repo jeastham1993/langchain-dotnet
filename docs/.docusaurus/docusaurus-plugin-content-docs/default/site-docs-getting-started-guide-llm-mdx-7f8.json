@@ -1,0 +1,27 @@
+{
+  "unversionedId": "getting-started/guide-llm",
+  "id": "getting-started/guide-llm",
+  "title": "Quickstart, using LLMs",
+  "description": "This tutorial gives you a quick walkthrough about building an end-to-end language model application with LangChain.",
+  "source": "@site/docs/getting-started/guide-llm.mdx",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/guide-llm",
+  "permalink": "/docs/getting-started/guide-llm",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/getting-started/guide-llm.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Setup and Installation",
+    "permalink": "/docs/getting-started/install"
+  },
+  "next": {
+    "title": "Quickstart, using Chat Models",
+    "permalink": "/docs/getting-started/guide-chat"
+  }
+}

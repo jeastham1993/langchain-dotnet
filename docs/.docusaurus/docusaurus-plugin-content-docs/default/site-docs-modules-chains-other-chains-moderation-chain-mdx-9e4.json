@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/chains/other_chains/moderation_chain",
+  "id": "modules/chains/other_chains/moderation_chain",
+  "title": "OpenAIModerationChain",
+  "description": "You can use the OpenAIModerationChain which takes care of evaluating the input and identifying whether it violates OpenAI's Terms of Service (TOS). If the input contains any content that breaks the TOS and throwError is set to true, an error will be thrown and caught. If throwError is set to false the chain will return \"Text was found that violates OpenAI's content policy.\"",
+  "source": "@site/docs/modules/chains/other_chains/moderation_chain.mdx",
+  "sourceDirName": "modules/chains/other_chains",
+  "slug": "/modules/chains/other_chains/moderation_chain",
+  "permalink": "/docs/modules/chains/other_chains/moderation_chain",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/chains/other_chains/moderation_chain.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "ConstitutionalChain",
+    "permalink": "/docs/modules/chains/other_chains/constitutional_chain"
+  },
+  "next": {
+    "title": "SqlDatabaseChain",
+    "permalink": "/docs/modules/chains/other_chains/sql"
+  }
+}

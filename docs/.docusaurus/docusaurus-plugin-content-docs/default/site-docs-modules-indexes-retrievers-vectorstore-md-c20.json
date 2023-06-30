@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/retrievers/vectorstore",
+  "id": "modules/indexes/retrievers/vectorstore",
+  "title": "Vector Store",
+  "description": "Once you've created a Vector Store, the way to use it as a Retriever is very simple:",
+  "source": "@site/docs/modules/indexes/retrievers/vectorstore.md",
+  "sourceDirName": "modules/indexes/retrievers",
+  "slug": "/modules/indexes/retrievers/vectorstore",
+  "permalink": "/docs/modules/indexes/retrievers/vectorstore",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/retrievers/vectorstore.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Time-Weighted Retriever",
+    "permalink": "/docs/modules/indexes/retrievers/time-weighted-retriever"
+  },
+  "next": {
+    "title": "Memory",
+    "permalink": "/docs/modules/memory/"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/vector_stores/integrations/index",
+  "id": "modules/indexes/vector_stores/integrations/index",
+  "title": "Vector Stores: Integrations",
+  "description": "",
+  "source": "@site/docs/modules/indexes/vector_stores/integrations/index.mdx",
+  "sourceDirName": "modules/indexes/vector_stores/integrations",
+  "slug": "/modules/indexes/vector_stores/integrations/",
+  "permalink": "/docs/modules/indexes/vector_stores/integrations/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/vector_stores/integrations/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Integrations"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Vector Stores",
+    "permalink": "/docs/modules/indexes/vector_stores/"
+  },
+  "next": {
+    "title": "Memory",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/memory"
+  }
+}

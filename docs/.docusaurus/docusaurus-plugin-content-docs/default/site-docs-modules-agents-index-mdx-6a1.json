@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/agents/index",
+  "id": "modules/agents/index",
+  "title": "Agents",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/agents/index.mdx",
+  "sourceDirName": "modules/agents",
+  "slug": "/modules/agents/",
+  "permalink": "/docs/modules/agents/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7,
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Prompt Selectors",
+    "permalink": "/docs/modules/chains/prompt_selectors/"
+  },
+  "next": {
+    "title": "Tools",
+    "permalink": "/docs/modules/agents/tools/"
+  }
+}

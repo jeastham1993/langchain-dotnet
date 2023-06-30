@@ -1,0 +1,27 @@
+{
+  "unversionedId": "modules/agents/executor/getting-started",
+  "id": "modules/agents/executor/getting-started",
+  "title": "Getting Started: Agent Executors",
+  "description": "Agents use an LLM to determine which actions to take and in what order. An action can either be using a tool and observing its output, or returning to the user.",
+  "source": "@site/docs/modules/agents/executor/getting-started.md",
+  "sourceDirName": "modules/agents/executor",
+  "slug": "/modules/agents/executor/getting-started",
+  "permalink": "/docs/modules/agents/executor/getting-started",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/executor/getting-started.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Getting Started",
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Agent Executors",
+    "permalink": "/docs/modules/agents/executor/"
+  },
+  "next": {
+    "title": "Personal Assistants",
+    "permalink": "/docs/use_cases/personal_assistants"
+  }
+}

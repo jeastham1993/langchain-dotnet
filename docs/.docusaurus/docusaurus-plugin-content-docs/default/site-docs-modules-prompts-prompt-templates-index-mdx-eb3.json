@@ -1,0 +1,29 @@
+{
+  "unversionedId": "modules/prompts/prompt_templates/index",
+  "id": "modules/prompts/prompt_templates/index",
+  "title": "Prompt Templates",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/prompts/prompt_templates/index.mdx",
+  "sourceDirName": "modules/prompts/prompt_templates",
+  "slug": "/modules/prompts/prompt_templates/",
+  "permalink": "/docs/modules/prompts/prompt_templates/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/prompts/prompt_templates/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_label": "Prompt Templates",
+    "sidebar_position": 1
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Prompts",
+    "permalink": "/docs/modules/prompts/"
+  },
+  "next": {
+    "title": "Additional Functionality",
+    "permalink": "/docs/modules/prompts/prompt_templates/additional_functionality"
+  }
+}

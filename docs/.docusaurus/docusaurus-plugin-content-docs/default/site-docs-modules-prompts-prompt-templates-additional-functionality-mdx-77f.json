@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/prompts/prompt_templates/additional_functionality",
+  "id": "modules/prompts/prompt_templates/additional_functionality",
+  "title": "Additional Functionality: Prompt Templates",
+  "description": "We offer a number of extra features for prompt templates, as shown below:",
+  "source": "@site/docs/modules/prompts/prompt_templates/additional_functionality.mdx",
+  "sourceDirName": "modules/prompts/prompt_templates",
+  "slug": "/modules/prompts/prompt_templates/additional_functionality",
+  "permalink": "/docs/modules/prompts/prompt_templates/additional_functionality",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/prompts/prompt_templates/additional_functionality.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Additional Functionality"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Prompt Templates",
+    "permalink": "/docs/modules/prompts/prompt_templates/"
+  },
+  "next": {
+    "title": "Output Parsers",
+    "permalink": "/docs/modules/prompts/output_parsers/"
+  }
+}

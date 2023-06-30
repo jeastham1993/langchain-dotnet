@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/file_loaders/directory",
+  "id": "modules/indexes/document_loaders/examples/file_loaders/directory",
+  "title": "Folders with multiple files",
+  "description": "This example goes over how to load data from folders with multiple files. The second argument is a map of file extensions to loader factories. Each file will be passed to the matching loader, and the resulting documents will be concatenated together.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/file_loaders/directory.md",
+  "sourceDirName": "modules/indexes/document_loaders/examples/file_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/file_loaders/directory",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/directory",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/file_loaders/directory.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "File Loaders",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/"
+  },
+  "next": {
+    "title": "CSV files",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/csv"
+  }
+}

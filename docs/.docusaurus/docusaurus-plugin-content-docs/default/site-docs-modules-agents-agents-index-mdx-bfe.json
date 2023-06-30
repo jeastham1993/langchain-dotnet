@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/agents/agents/index",
+  "id": "modules/agents/agents/index",
+  "title": "Agents",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/agents/agents/index.mdx",
+  "sourceDirName": "modules/agents/agents",
+  "slug": "/modules/agents/agents/",
+  "permalink": "/docs/modules/agents/agents/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/agents/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "VectorStore Agent Toolkit",
+    "permalink": "/docs/modules/agents/toolkits/vectorstore"
+  },
+  "next": {
+    "title": "Custom LLM Agent",
+    "permalink": "/docs/modules/agents/agents/custom_llm"
+  }
+}

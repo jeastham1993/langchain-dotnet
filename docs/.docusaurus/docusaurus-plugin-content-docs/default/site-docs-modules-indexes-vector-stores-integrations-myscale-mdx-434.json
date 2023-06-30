@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/vector_stores/integrations/myscale",
+  "id": "modules/indexes/vector_stores/integrations/myscale",
+  "title": "MyScale",
+  "description": "Only available on Node.js.",
+  "source": "@site/docs/modules/indexes/vector_stores/integrations/myscale.mdx",
+  "sourceDirName": "modules/indexes/vector_stores/integrations",
+  "slug": "/modules/indexes/vector_stores/integrations/myscale",
+  "permalink": "/docs/modules/indexes/vector_stores/integrations/myscale",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/vector_stores/integrations/myscale.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_class_name": "node-only"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Milvus",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/milvus"
+  },
+  "next": {
+    "title": "OpenSearch",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/opensearch"
+  }
+}

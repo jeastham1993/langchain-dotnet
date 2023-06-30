@@ -1,0 +1,29 @@
+{
+  "unversionedId": "modules/agents/toolkits/index",
+  "id": "modules/agents/toolkits/index",
+  "title": "Getting Started: Toolkits",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/agents/toolkits/index.mdx",
+  "sourceDirName": "modules/agents/toolkits",
+  "slug": "/modules/agents/toolkits/",
+  "permalink": "/docs/modules/agents/toolkits/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/toolkits/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_label": "Toolkits",
+    "sidebar_position": 2,
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Agent with Zapier NLA Integration",
+    "permalink": "/docs/modules/agents/tools/zapier_agent"
+  },
+  "next": {
+    "title": "JSON Agent Toolkit",
+    "permalink": "/docs/modules/agents/toolkits/json"
+  }
+}

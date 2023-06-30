@@ -1,0 +1,24 @@
+{
+  "unversionedId": "use_cases/autonomous_agents/index",
+  "id": "use_cases/autonomous_agents/index",
+  "title": "Autonomous Agents",
+  "description": "Autonomous Agents are agents that designed to be more long running. You give them one or multiple long term goals, and they independently execute towards those goals. The applications combine tool usage and long term memory.",
+  "source": "@site/docs/use_cases/autonomous_agents/index.mdx",
+  "sourceDirName": "use_cases/autonomous_agents",
+  "slug": "/use_cases/autonomous_agents/",
+  "permalink": "/docs/use_cases/autonomous_agents/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/use_cases/autonomous_agents/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Summarization",
+    "permalink": "/docs/use_cases/summarization"
+  },
+  "next": {
+    "title": "AutoGPT",
+    "permalink": "/docs/use_cases/autonomous_agents/auto_gpt"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/web_loaders/imsdb",
+  "id": "modules/indexes/document_loaders/examples/web_loaders/imsdb",
+  "title": "IMSDB",
+  "description": "This example goes over how to load data from the internet movie script database website, using Cheerio. One document will be created for each page.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/web_loaders/imsdb.md",
+  "sourceDirName": "modules/indexes/document_loaders/examples/web_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/web_loaders/imsdb",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/imsdb",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/web_loaders/imsdb.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Hacker News",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/hn"
+  },
+  "next": {
+    "title": "S3 File",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/s3"
+  }
+}

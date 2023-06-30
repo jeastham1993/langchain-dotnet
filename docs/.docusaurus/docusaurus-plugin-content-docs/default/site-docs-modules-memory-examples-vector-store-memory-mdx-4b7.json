@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/memory/examples/vector_store_memory",
+  "id": "modules/memory/examples/vector_store_memory",
+  "title": "VectorStore-backed Memory",
+  "description": "VectorStoreRetrieverMemory stores memories in a VectorDB and queries the top-K most \"salient\" docs every time it is called.",
+  "source": "@site/docs/modules/memory/examples/vector_store_memory.mdx",
+  "sourceDirName": "modules/memory/examples",
+  "slug": "/modules/memory/examples/vector_store_memory",
+  "permalink": "/docs/modules/memory/examples/vector_store_memory",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/memory/examples/vector_store_memory.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Motörhead Memory",
+    "permalink": "/docs/modules/memory/examples/motorhead_memory"
+  },
+  "next": {
+    "title": "Chains",
+    "permalink": "/docs/modules/chains/"
+  }
+}

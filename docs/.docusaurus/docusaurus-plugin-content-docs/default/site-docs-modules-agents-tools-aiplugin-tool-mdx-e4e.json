@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/agents/tools/aiplugin-tool",
+  "id": "modules/agents/tools/aiplugin-tool",
+  "title": "ChatGPT Plugins",
+  "description": "This example shows how to use ChatGPT Plugins within LangChain abstractions.",
+  "source": "@site/docs/modules/agents/tools/aiplugin-tool.mdx",
+  "sourceDirName": "modules/agents/tools",
+  "slug": "/modules/agents/tools/aiplugin-tool",
+  "permalink": "/docs/modules/agents/tools/aiplugin-tool",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/tools/aiplugin-tool.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Agents with Vector Stores",
+    "permalink": "/docs/modules/agents/tools/agents_with_vectorstores"
+  },
+  "next": {
+    "title": "Agent with AWS Lambda",
+    "permalink": "/docs/modules/agents/tools/lambda_agent"
+  }
+}

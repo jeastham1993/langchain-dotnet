@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/indexes/retrievers/time-weighted-retriever",
+  "id": "modules/indexes/retrievers/time-weighted-retriever",
+  "title": "Time-Weighted Retriever",
+  "description": "A Time-Weighted Retriever is a retriever that takes into account recency in addition to similarity. The scoring algorithm is:",
+  "source": "@site/docs/modules/indexes/retrievers/time-weighted-retriever.mdx",
+  "sourceDirName": "modules/indexes/retrievers",
+  "slug": "/modules/indexes/retrievers/time-weighted-retriever",
+  "permalink": "/docs/modules/indexes/retrievers/time-weighted-retriever",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/retrievers/time-weighted-retriever.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Supabase Hybrid Search",
+    "permalink": "/docs/modules/indexes/retrievers/supabase-hybrid"
+  },
+  "next": {
+    "title": "Vector Store",
+    "permalink": "/docs/modules/indexes/retrievers/vectorstore"
+  }
+}

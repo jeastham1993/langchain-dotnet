@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/agents/toolkits/openapi",
+  "id": "modules/agents/toolkits/openapi",
+  "title": "OpenAPI Agent Toolkit",
+  "description": "This example shows how to load and use an agent with a OpenAPI toolkit.",
+  "source": "@site/docs/modules/agents/toolkits/openapi.md",
+  "sourceDirName": "modules/agents/toolkits",
+  "slug": "/modules/agents/toolkits/openapi",
+  "permalink": "/docs/modules/agents/toolkits/openapi",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/toolkits/openapi.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "JSON Agent Toolkit",
+    "permalink": "/docs/modules/agents/toolkits/json"
+  },
+  "next": {
+    "title": "SQL Agent Toolkit",
+    "permalink": "/docs/modules/agents/toolkits/sql"
+  }
+}

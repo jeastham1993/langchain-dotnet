@@ -1,0 +1,24 @@
+{
+  "unversionedId": "production/deployment",
+  "id": "production/deployment",
+  "title": "Deployment",
+  "description": "You've built your LangChain app and now you're looking to deploy it to production? You've come to the right place. This guide will walk you through the options you have for deploying your app, and the considerations you should make when doing so.",
+  "source": "@site/docs/production/deployment.md",
+  "sourceDirName": "production",
+  "slug": "/production/deployment",
+  "permalink": "/docs/production/deployment",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/production/deployment.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Callbacks in custom Chains",
+    "permalink": "/docs/production/callbacks/creating-subclasses"
+  },
+  "next": {
+    "title": "Tracing",
+    "permalink": "/docs/production/tracing"
+  }
+}

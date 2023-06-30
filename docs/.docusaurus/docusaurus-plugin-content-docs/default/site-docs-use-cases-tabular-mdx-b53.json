@@ -1,0 +1,28 @@
+{
+  "unversionedId": "use_cases/tabular",
+  "id": "use_cases/tabular",
+  "title": "Tabular Question Answering",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/use_cases/tabular.mdx",
+  "sourceDirName": "use_cases",
+  "slug": "/use_cases/tabular",
+  "permalink": "/docs/use_cases/tabular",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/use_cases/tabular.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_position": 3
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Question Answering",
+    "permalink": "/docs/use_cases/question_answering"
+  },
+  "next": {
+    "title": "Interacting with APIs",
+    "permalink": "/docs/use_cases/api"
+  }
+}

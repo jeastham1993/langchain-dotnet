@@ -1,0 +1,27 @@
+{
+  "unversionedId": "modules/memory/examples/conversation_summary",
+  "id": "modules/memory/examples/conversation_summary",
+  "title": "Conversation Summary Memory",
+  "description": "The Conversation Summary Memory summarizes the conversation as it happens and stores the current summary in memory. This memory can then be used to inject the summary of the conversation so far into a prompt/chain. This memory is most useful for longer conversations, where keeping the past message history in the prompt verbatim would take up too many tokens.",
+  "source": "@site/docs/modules/memory/examples/conversation_summary.mdx",
+  "sourceDirName": "modules/memory/examples",
+  "slug": "/modules/memory/examples/conversation_summary",
+  "permalink": "/docs/modules/memory/examples/conversation_summary",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/memory/examples/conversation_summary.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_label": "Conversation Summary"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Buffer Window Memory",
+    "permalink": "/docs/modules/memory/examples/buffer_window_memory"
+  },
+  "next": {
+    "title": "Motörhead Memory",
+    "permalink": "/docs/modules/memory/examples/motorhead_memory"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/text_splitters/examples/token",
+  "id": "modules/indexes/text_splitters/examples/token",
+  "title": "TokenTextSplitter",
+  "description": "Finally, TokenTextSplitter splits a raw text string by first converting the text into BPE tokens, then split these tokens into chunks and convert the tokens within a single chunk back into text.",
+  "source": "@site/docs/modules/indexes/text_splitters/examples/token.mdx",
+  "sourceDirName": "modules/indexes/text_splitters/examples",
+  "slug": "/modules/indexes/text_splitters/examples/token",
+  "permalink": "/docs/modules/indexes/text_splitters/examples/token",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/text_splitters/examples/token.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "RecursiveCharacterTextSplitter",
+    "permalink": "/docs/modules/indexes/text_splitters/examples/recursive_character"
+  },
+  "next": {
+    "title": "Vector Stores",
+    "permalink": "/docs/modules/indexes/vector_stores/"
+  }
+}

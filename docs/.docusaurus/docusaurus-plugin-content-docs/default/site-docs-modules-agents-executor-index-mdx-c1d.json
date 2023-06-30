@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/agents/executor/index",
+  "id": "modules/agents/executor/index",
+  "title": "Agent Executors",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/agents/executor/index.mdx",
+  "sourceDirName": "modules/agents/executor",
+  "slug": "/modules/agents/executor/",
+  "permalink": "/docs/modules/agents/executor/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/executor/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Agent with Custom Prompt, using Chat Models",
+    "permalink": "/docs/modules/agents/agents/examples/custom_agent_chat"
+  },
+  "next": {
+    "title": "Getting Started",
+    "permalink": "/docs/modules/agents/executor/getting-started"
+  }
+}

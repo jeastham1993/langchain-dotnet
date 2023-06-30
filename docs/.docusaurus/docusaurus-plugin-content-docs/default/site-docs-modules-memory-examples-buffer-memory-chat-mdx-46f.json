@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/memory/examples/buffer_memory_chat",
+  "id": "modules/memory/examples/buffer_memory_chat",
+  "title": "Using Buffer Memory with Chat Models",
+  "description": "This example covers how to use chat-specific memory classes with chat models.",
+  "source": "@site/docs/modules/memory/examples/buffer_memory_chat.mdx",
+  "sourceDirName": "modules/memory/examples",
+  "slug": "/modules/memory/examples/buffer_memory_chat",
+  "permalink": "/docs/modules/memory/examples/buffer_memory_chat",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/memory/examples/buffer_memory_chat.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Buffer Memory",
+    "permalink": "/docs/modules/memory/examples/buffer_memory"
+  },
+  "next": {
+    "title": "Buffer Window Memory",
+    "permalink": "/docs/modules/memory/examples/buffer_window_memory"
+  }
+}

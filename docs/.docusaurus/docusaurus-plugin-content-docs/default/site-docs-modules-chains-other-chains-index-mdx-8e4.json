@@ -1,0 +1,27 @@
+{
+  "unversionedId": "modules/chains/other_chains/index",
+  "id": "modules/chains/other_chains/index",
+  "title": "Other Chains",
+  "description": "This section highlights other examples of chains that exist.",
+  "source": "@site/docs/modules/chains/other_chains/index.mdx",
+  "sourceDirName": "modules/chains/other_chains",
+  "slug": "/modules/chains/other_chains/",
+  "permalink": "/docs/modules/chains/other_chains/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/chains/other_chains/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_label": "Other Chains"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Sequential Chain",
+    "permalink": "/docs/modules/chains/sequential_chain"
+  },
+  "next": {
+    "title": "AnalyzeDocumentChain",
+    "permalink": "/docs/modules/chains/other_chains/analyze_document"
+  }
+}

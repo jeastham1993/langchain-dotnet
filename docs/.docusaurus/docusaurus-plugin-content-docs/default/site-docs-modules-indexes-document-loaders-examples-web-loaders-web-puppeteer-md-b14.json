@@ -1,0 +1,30 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/web_loaders/web_puppeteer",
+  "id": "modules/indexes/document_loaders/examples/web_loaders/web_puppeteer",
+  "title": "Webpages, with Puppeteer",
+  "description": "Only available on Node.js.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/web_loaders/web_puppeteer.md",
+  "sourceDirName": "modules/indexes/document_loaders/examples/web_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/web_loaders/web_puppeteer",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/web_puppeteer",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/web_loaders/web_puppeteer.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "sidebar_label": "Puppeteer",
+    "hide_table_of_contents": true,
+    "sidebar_class_name": "node-only"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Cheerio",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/web_cheerio"
+  },
+  "next": {
+    "title": "Playwright",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/web_loaders/web_playwright"
+  }
+}

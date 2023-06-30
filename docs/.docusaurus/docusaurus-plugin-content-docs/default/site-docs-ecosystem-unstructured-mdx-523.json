@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ecosystem/unstructured",
+  "id": "ecosystem/unstructured",
+  "title": "Unstructured",
+  "description": "This page covers how to use Unstructured within LangChain.",
+  "source": "@site/docs/ecosystem/unstructured.mdx",
+  "sourceDirName": "ecosystem",
+  "slug": "/ecosystem/unstructured",
+  "permalink": "/docs/ecosystem/unstructured",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/ecosystem/unstructured.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Helicone",
+    "permalink": "/docs/ecosystem/helicone"
+  },
+  "next": {
+    "title": "Website",
+    "permalink": "/docs/api/"
+  }
+}

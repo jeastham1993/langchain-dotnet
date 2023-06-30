@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/models/llms/integrations",
+  "id": "modules/models/llms/integrations",
+  "title": "Integrations: LLMs",
+  "description": "LangChain offers a number of LLM implementations that integrate with various model providers. These are:",
+  "source": "@site/docs/modules/models/llms/integrations.mdx",
+  "sourceDirName": "modules/models/llms",
+  "slug": "/modules/models/llms/integrations",
+  "permalink": "/docs/modules/models/llms/integrations",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/models/llms/integrations.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "sidebar_label": "Integrations"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "LLMs",
+    "permalink": "/docs/modules/models/llms/"
+  },
+  "next": {
+    "title": "Additional Functionality",
+    "permalink": "/docs/modules/models/llms/additional_functionality"
+  }
+}

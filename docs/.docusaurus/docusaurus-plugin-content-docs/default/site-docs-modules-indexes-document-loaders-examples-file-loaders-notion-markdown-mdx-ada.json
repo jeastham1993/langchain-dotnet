@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/file_loaders/notion_markdown",
+  "id": "modules/indexes/document_loaders/examples/file_loaders/notion_markdown",
+  "title": "Notion markdown export",
+  "description": "This example goes over how to load data from your Notion pages exported from the notion dashboard.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/file_loaders/notion_markdown.mdx",
+  "sourceDirName": "modules/indexes/document_loaders/examples/file_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/file_loaders/notion_markdown",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/notion_markdown",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/file_loaders/notion_markdown.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "JSONLines files",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/jsonlines"
+  },
+  "next": {
+    "title": "PDF files",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/pdf"
+  }
+}

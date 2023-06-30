@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/agents/toolkits/vectorstore",
+  "id": "modules/agents/toolkits/vectorstore",
+  "title": "VectorStore Agent Toolkit",
+  "description": "This example shows how to load and use an agent with a vectorstore toolkit.",
+  "source": "@site/docs/modules/agents/toolkits/vectorstore.md",
+  "sourceDirName": "modules/agents/toolkits",
+  "slug": "/modules/agents/toolkits/vectorstore",
+  "permalink": "/docs/modules/agents/toolkits/vectorstore",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/toolkits/vectorstore.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "SQL Agent Toolkit",
+    "permalink": "/docs/modules/agents/toolkits/sql"
+  },
+  "next": {
+    "title": "Agents",
+    "permalink": "/docs/modules/agents/agents/"
+  }
+}

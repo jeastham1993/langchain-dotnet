@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/file_loaders/json",
+  "id": "modules/indexes/document_loaders/examples/file_loaders/json",
+  "title": "JSON files",
+  "description": "The JSON loader use JSON pointer to target keys in your JSON files you want to target.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/file_loaders/json.md",
+  "sourceDirName": "modules/indexes/document_loaders/examples/file_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/file_loaders/json",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/json",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/file_loaders/json.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "EPUB files",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/epub"
+  },
+  "next": {
+    "title": "JSONLines files",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/jsonlines"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "use_cases/autonomous_agents/baby_agi",
+  "id": "use_cases/autonomous_agents/baby_agi",
+  "title": "BabyAGI",
+  "description": "Original Repo//github.com/yoheinakajima/babyagi",
+  "source": "@site/docs/use_cases/autonomous_agents/baby_agi.mdx",
+  "sourceDirName": "use_cases/autonomous_agents",
+  "slug": "/use_cases/autonomous_agents/baby_agi",
+  "permalink": "/docs/use_cases/autonomous_agents/baby_agi",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/use_cases/autonomous_agents/baby_agi.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "AutoGPT",
+    "permalink": "/docs/use_cases/autonomous_agents/auto_gpt"
+  },
+  "next": {
+    "title": "Events / Callbacks",
+    "permalink": "/docs/production/callbacks/"
+  }
+}

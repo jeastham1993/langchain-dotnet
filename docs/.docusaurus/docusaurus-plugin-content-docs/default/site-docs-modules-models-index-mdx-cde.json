@@ -1,0 +1,29 @@
+{
+  "unversionedId": "modules/models/index",
+  "id": "modules/models/index",
+  "title": "Models",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/models/index.mdx",
+  "sourceDirName": "modules/models",
+  "slug": "/modules/models/",
+  "permalink": "/docs/modules/models/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/models/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "hide_table_of_contents": true,
+    "sidebar_label": "Models"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Examples",
+    "permalink": "/docs/modules/schema/example"
+  },
+  "next": {
+    "title": "Chat Models",
+    "permalink": "/docs/modules/models/chat/"
+  }
+}

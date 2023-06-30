@@ -1,0 +1,28 @@
+{
+  "unversionedId": "use_cases/question_answering",
+  "id": "use_cases/question_answering",
+  "title": "Question Answering",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/use_cases/question_answering.mdx",
+  "sourceDirName": "use_cases",
+  "slug": "/use_cases/question_answering",
+  "permalink": "/docs/use_cases/question_answering",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/use_cases/question_answering.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_position": 2
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Personal Assistants",
+    "permalink": "/docs/use_cases/personal_assistants"
+  },
+  "next": {
+    "title": "Tabular Question Answering",
+    "permalink": "/docs/use_cases/tabular"
+  }
+}

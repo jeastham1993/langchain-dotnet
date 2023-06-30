@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/indexes/vector_stores/integrations/chroma",
+  "id": "modules/indexes/vector_stores/integrations/chroma",
+  "title": "Chroma",
+  "description": "Chroma is an open-source Apache 2.0 embedding database.",
+  "source": "@site/docs/modules/indexes/vector_stores/integrations/chroma.mdx",
+  "sourceDirName": "modules/indexes/vector_stores/integrations",
+  "slug": "/modules/indexes/vector_stores/integrations/chroma",
+  "permalink": "/docs/modules/indexes/vector_stores/integrations/chroma",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/vector_stores/integrations/chroma.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Memory",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/memory"
+  },
+  "next": {
+    "title": "HNSWLib",
+    "permalink": "/docs/modules/indexes/vector_stores/integrations/hnswlib"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "modules/models/llms/index",
+  "id": "modules/models/llms/index",
+  "title": "Getting Started: LLMs",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/models/llms/index.mdx",
+  "sourceDirName": "modules/models/llms",
+  "slug": "/modules/models/llms/",
+  "permalink": "/docs/modules/models/llms/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/models/llms/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_label": "LLMs"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Additional Functionality",
+    "permalink": "/docs/modules/models/embeddings/additional_functionality"
+  },
+  "next": {
+    "title": "Integrations",
+    "permalink": "/docs/modules/models/llms/integrations"
+  }
+}

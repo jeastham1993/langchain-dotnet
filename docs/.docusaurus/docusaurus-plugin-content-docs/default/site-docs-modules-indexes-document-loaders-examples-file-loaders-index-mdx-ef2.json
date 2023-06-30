@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/file_loaders/index",
+  "id": "modules/indexes/document_loaders/examples/file_loaders/index",
+  "title": "File Loaders",
+  "description": "Only available on Node.js.",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/file_loaders/index.mdx",
+  "sourceDirName": "modules/indexes/document_loaders/examples/file_loaders",
+  "slug": "/modules/indexes/document_loaders/examples/file_loaders/",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/file_loaders/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "label": "File Loaders",
+    "hide_table_of_contents": true,
+    "sidebar_class_name": "node-only-category"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Examples",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/"
+  },
+  "next": {
+    "title": "Folders with multiple files",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/directory"
+  }
+}

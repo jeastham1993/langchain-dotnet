@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/agents/agents/examples/chat_mrkl",
+  "id": "modules/agents/agents/examples/chat_mrkl",
+  "title": "MRKL Agent for Chat Models",
+  "description": "This example covers how to use an agent that uses the ReAct Framework (based on the descriptions of tools) to decide what action to take. This agent is optimized to be used with Chat Models. If you want to use it with an LLM, you can use the LLM MRKL Agent instead.",
+  "source": "@site/docs/modules/agents/agents/examples/chat_mrkl.mdx",
+  "sourceDirName": "modules/agents/agents/examples",
+  "slug": "/modules/agents/agents/examples/chat_mrkl",
+  "permalink": "/docs/modules/agents/agents/examples/chat_mrkl",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/agents/examples/chat_mrkl.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "hide_table_of_contents": true,
+    "sidebar_position": 2
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "MRKL Agent for LLMs",
+    "permalink": "/docs/modules/agents/agents/examples/llm_mrkl"
+  },
+  "next": {
+    "title": "Conversational Agent",
+    "permalink": "/docs/modules/agents/agents/examples/conversational_agent"
+  }
+}

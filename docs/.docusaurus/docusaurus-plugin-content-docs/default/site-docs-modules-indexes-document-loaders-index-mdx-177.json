@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/index",
+  "id": "modules/indexes/document_loaders/index",
+  "title": "Getting Started: Document Loaders",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/indexes/document_loaders/index.mdx",
+  "sourceDirName": "modules/indexes/document_loaders",
+  "slug": "/modules/indexes/document_loaders/",
+  "permalink": "/docs/modules/indexes/document_loaders/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_label": "Document Loaders",
+    "sidebar_position": 1
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Indexes",
+    "permalink": "/docs/modules/indexes/"
+  },
+  "next": {
+    "title": "Examples",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/"
+  }
+}

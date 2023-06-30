@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/chains/other_chains/analyze_document",
+  "id": "modules/chains/other_chains/analyze_document",
+  "title": "AnalyzeDocumentChain",
+  "description": "You can use the AnalyzeDocumentChain, which accepts a single piece of text as input and operates over it.",
+  "source": "@site/docs/modules/chains/other_chains/analyze_document.mdx",
+  "sourceDirName": "modules/chains/other_chains",
+  "slug": "/modules/chains/other_chains/analyze_document",
+  "permalink": "/docs/modules/chains/other_chains/analyze_document",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/chains/other_chains/analyze_document.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Other Chains",
+    "permalink": "/docs/modules/chains/other_chains/"
+  },
+  "next": {
+    "title": "ConstitutionalChain",
+    "permalink": "/docs/modules/chains/other_chains/constitutional_chain"
+  }
+}

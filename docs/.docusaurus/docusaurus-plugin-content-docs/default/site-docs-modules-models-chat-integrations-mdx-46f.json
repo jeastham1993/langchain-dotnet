@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/models/chat/integrations",
+  "id": "modules/models/chat/integrations",
+  "title": "Integrations: Chat Models",
+  "description": "LangChain offers a number of Chat Models implementations that integrate with various model providers. These are:",
+  "source": "@site/docs/modules/models/chat/integrations.mdx",
+  "sourceDirName": "modules/models/chat",
+  "slug": "/modules/models/chat/integrations",
+  "permalink": "/docs/modules/models/chat/integrations",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/models/chat/integrations.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "sidebar_label": "Integrations"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Chat Models",
+    "permalink": "/docs/modules/models/chat/"
+  },
+  "next": {
+    "title": "Additional Functionality",
+    "permalink": "/docs/modules/models/chat/additional_functionality"
+  }
+}

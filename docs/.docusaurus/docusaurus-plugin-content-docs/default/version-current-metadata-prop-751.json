@@ -1,0 +1,1845 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "sidebar": [
+      {
+        "type": "link",
+        "label": "Welcome to LangChain",
+        "href": "/docs/",
+        "docId": "index"
+      },
+      {
+        "type": "category",
+        "label": "Getting Started",
+        "collapsed": false,
+        "collapsible": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Setup and Installation",
+            "href": "/docs/getting-started/install",
+            "docId": "getting-started/install"
+          },
+          {
+            "type": "link",
+            "label": "Quickstart, using LLMs",
+            "href": "/docs/getting-started/guide-llm",
+            "docId": "getting-started/guide-llm"
+          },
+          {
+            "type": "link",
+            "label": "Quickstart, using Chat Models",
+            "href": "/docs/getting-started/guide-chat",
+            "docId": "getting-started/guide-chat"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Components",
+        "collapsed": false,
+        "collapsible": false,
+        "items": [
+          {
+            "type": "category",
+            "label": "Schema",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "Chat Messages",
+                "href": "/docs/modules/schema/chat-messages",
+                "docId": "modules/schema/chat-messages"
+              },
+              {
+                "type": "link",
+                "label": "Document",
+                "href": "/docs/modules/schema/document",
+                "docId": "modules/schema/document"
+              },
+              {
+                "type": "link",
+                "label": "Examples",
+                "href": "/docs/modules/schema/example",
+                "docId": "modules/schema/example"
+              }
+            ],
+            "href": "/docs/modules/schema/"
+          },
+          {
+            "type": "category",
+            "label": "Models",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "category",
+                "label": "Chat Models",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Integrations",
+                    "href": "/docs/modules/models/chat/integrations",
+                    "docId": "modules/models/chat/integrations"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Additional Functionality",
+                    "href": "/docs/modules/models/chat/additional_functionality",
+                    "docId": "modules/models/chat/additional_functionality"
+                  }
+                ],
+                "href": "/docs/modules/models/chat/"
+              },
+              {
+                "type": "category",
+                "label": "Embeddings",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Integrations",
+                    "href": "/docs/modules/models/embeddings/integrations",
+                    "docId": "modules/models/embeddings/integrations"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Additional Functionality",
+                    "href": "/docs/modules/models/embeddings/additional_functionality",
+                    "docId": "modules/models/embeddings/additional_functionality"
+                  }
+                ],
+                "href": "/docs/modules/models/embeddings/"
+              },
+              {
+                "type": "category",
+                "label": "LLMs",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Integrations",
+                    "href": "/docs/modules/models/llms/integrations",
+                    "docId": "modules/models/llms/integrations"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Additional Functionality",
+                    "href": "/docs/modules/models/llms/additional_functionality",
+                    "docId": "modules/models/llms/additional_functionality"
+                  }
+                ],
+                "href": "/docs/modules/models/llms/"
+              }
+            ],
+            "href": "/docs/modules/models/"
+          },
+          {
+            "type": "category",
+            "label": "Prompts",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "category",
+                "label": "Prompt Templates",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Additional Functionality",
+                    "href": "/docs/modules/prompts/prompt_templates/additional_functionality",
+                    "docId": "modules/prompts/prompt_templates/additional_functionality"
+                  }
+                ],
+                "href": "/docs/modules/prompts/prompt_templates/"
+              },
+              {
+                "type": "link",
+                "label": "Output Parsers",
+                "href": "/docs/modules/prompts/output_parsers/",
+                "docId": "modules/prompts/output_parsers/index"
+              },
+              {
+                "type": "link",
+                "label": "Example Selectors",
+                "href": "/docs/modules/prompts/example_selectors/",
+                "docId": "modules/prompts/example_selectors/index"
+              }
+            ],
+            "href": "/docs/modules/prompts/"
+          },
+          {
+            "type": "category",
+            "label": "Indexes",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "category",
+                "label": "Document Loaders",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "Examples",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "category",
+                        "label": "File Loaders",
+                        "collapsible": true,
+                        "collapsed": true,
+                        "className": "node-only-category",
+                        "items": [
+                          {
+                            "type": "link",
+                            "label": "Folders with multiple files",
+                            "href": "/docs/modules/indexes/document_loaders/examples/file_loaders/directory",
+                            "docId": "modules/indexes/document_loaders/examples/file_loaders/directory"
+                          },
+                          {
+                            "type": "link",
+                            "label": "CSV files",
+                            "href": "/docs/modules/indexes/document_loaders/examples/file_loaders/csv",
+                            "docId": "modules/indexes/document_loaders/examples/file_loaders/csv"
+                          },
+                          {
+                            "type": "link",
+                            "label": "Docx files",
+                            "href": "/docs/modules/indexes/document_loaders/examples/file_loaders/docx",
+                            "docId": "modules/indexes/document_loaders/examples/file_loaders/docx"
+                          },
+                          {
+                            "type": "link",
+                            "label": "EPUB files",
+                            "href": "/docs/modules/indexes/document_loaders/examples/file_loaders/epub",
+                            "docId": "modules/indexes/document_loaders/examples/file_loaders/epub"
+                          },
+                          {
+                            "type": "link",
+                            "label": "JSON files",
+                            "href": "/docs/modules/indexes/document_loaders/examples/file_loaders/json",
+                            "docId": "modules/indexes/document_loaders/examples/file_loaders/json"
+                          },
+                          {
+                            "type": "link",
+                            "label": "JSONLines files",
+                            "href": "/docs/modules/indexes/document_loaders/examples/file_loaders/jsonlines",
+                            "docId": "modules/indexes/document_loaders/examples/file_loaders/jsonlines"
+                          },
+                          {
+                            "type": "link",
+                            "label": "Notion markdown export",
+                            "href": "/docs/modules/indexes/document_loaders/examples/file_loaders/notion_markdown",
+                            "docId": "modules/indexes/document_loaders/examples/file_loaders/notion_markdown"
+                          },
+                          {
+                            "type": "link",
+                            "label": "PDF files",
+                            "href": "/docs/modules/indexes/document_loaders/examples/file_loaders/pdf",
+                            "docId": "modules/indexes/document_loaders/examples/file_loaders/pdf"
+                          },
+                          {
+                            "type": "link",
+                            "label": "Subtitles",
+                            "href": "/docs/modules/indexes/document_loaders/examples/file_loaders/subtitles",
+                            "docId": "modules/indexes/document_loaders/examples/file_loaders/subtitles"
+                          },
+                          {
+                            "type": "link",
+                            "label": "Text files",
+                            "href": "/docs/modules/indexes/document_loaders/examples/file_loaders/text",
+                            "docId": "modules/indexes/document_loaders/examples/file_loaders/text"
+                          },
+                          {
+                            "type": "link",
+                            "label": "Unstructured",
+                            "href": "/docs/modules/indexes/document_loaders/examples/file_loaders/unstructured",
+                            "docId": "modules/indexes/document_loaders/examples/file_loaders/unstructured"
+                          }
+                        ],
+                        "href": "/docs/modules/indexes/document_loaders/examples/file_loaders/"
+                      },
+                      {
+                        "type": "category",
+                        "label": "Web Loaders",
+                        "collapsible": true,
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "type": "link",
+                            "label": "Cheerio",
+                            "href": "/docs/modules/indexes/document_loaders/examples/web_loaders/web_cheerio",
+                            "docId": "modules/indexes/document_loaders/examples/web_loaders/web_cheerio"
+                          },
+                          {
+                            "type": "link",
+                            "label": "Puppeteer",
+                            "href": "/docs/modules/indexes/document_loaders/examples/web_loaders/web_puppeteer",
+                            "className": "node-only",
+                            "docId": "modules/indexes/document_loaders/examples/web_loaders/web_puppeteer"
+                          },
+                          {
+                            "type": "link",
+                            "label": "Playwright",
+                            "href": "/docs/modules/indexes/document_loaders/examples/web_loaders/web_playwright",
+                            "className": "node-only",
+                            "docId": "modules/indexes/document_loaders/examples/web_loaders/web_playwright"
+                          },
+                          {
+                            "type": "link",
+                            "label": "College Confidential",
+                            "href": "/docs/modules/indexes/document_loaders/examples/web_loaders/college_confidential",
+                            "docId": "modules/indexes/document_loaders/examples/web_loaders/college_confidential"
+                          },
+                          {
+                            "type": "link",
+                            "label": "Confluence",
+                            "href": "/docs/modules/indexes/document_loaders/examples/web_loaders/confluence",
+                            "className": "node-only",
+                            "docId": "modules/indexes/document_loaders/examples/web_loaders/confluence"
+                          },
+                          {
+                            "type": "link",
+                            "label": "GitBook",
+                            "href": "/docs/modules/indexes/document_loaders/examples/web_loaders/gitbook",
+                            "docId": "modules/indexes/document_loaders/examples/web_loaders/gitbook"
+                          },
+                          {
+                            "type": "link",
+                            "label": "GitHub",
+                            "href": "/docs/modules/indexes/document_loaders/examples/web_loaders/github",
+                            "docId": "modules/indexes/document_loaders/examples/web_loaders/github"
+                          },
+                          {
+                            "type": "link",
+                            "label": "Hacker News",
+                            "href": "/docs/modules/indexes/document_loaders/examples/web_loaders/hn",
+                            "docId": "modules/indexes/document_loaders/examples/web_loaders/hn"
+                          },
+                          {
+                            "type": "link",
+                            "label": "IMSDB",
+                            "href": "/docs/modules/indexes/document_loaders/examples/web_loaders/imsdb",
+                            "docId": "modules/indexes/document_loaders/examples/web_loaders/imsdb"
+                          },
+                          {
+                            "type": "link",
+                            "label": "S3 File",
+                            "href": "/docs/modules/indexes/document_loaders/examples/web_loaders/s3",
+                            "className": "node-only",
+                            "docId": "modules/indexes/document_loaders/examples/web_loaders/s3"
+                          }
+                        ],
+                        "href": "/docs/modules/indexes/document_loaders/examples/web_loaders/"
+                      }
+                    ],
+                    "href": "/docs/modules/indexes/document_loaders/examples/"
+                  }
+                ],
+                "href": "/docs/modules/indexes/document_loaders/"
+              },
+              {
+                "type": "category",
+                "label": "Text Splitters",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "Examples",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "link",
+                        "label": "CharacterTextSplitter",
+                        "href": "/docs/modules/indexes/text_splitters/examples/character",
+                        "docId": "modules/indexes/text_splitters/examples/character"
+                      },
+                      {
+                        "type": "link",
+                        "label": "MarkdownTextSplitter",
+                        "href": "/docs/modules/indexes/text_splitters/examples/markdown",
+                        "docId": "modules/indexes/text_splitters/examples/markdown"
+                      },
+                      {
+                        "type": "link",
+                        "label": "RecursiveCharacterTextSplitter",
+                        "href": "/docs/modules/indexes/text_splitters/examples/recursive_character",
+                        "docId": "modules/indexes/text_splitters/examples/recursive_character"
+                      },
+                      {
+                        "type": "link",
+                        "label": "TokenTextSplitter",
+                        "href": "/docs/modules/indexes/text_splitters/examples/token",
+                        "docId": "modules/indexes/text_splitters/examples/token"
+                      }
+                    ],
+                    "href": "/docs/modules/indexes/text_splitters/examples/"
+                  }
+                ],
+                "href": "/docs/modules/indexes/text_splitters/"
+              },
+              {
+                "type": "category",
+                "label": "Vector Stores",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "Integrations",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "link",
+                        "label": "Memory",
+                        "href": "/docs/modules/indexes/vector_stores/integrations/memory",
+                        "docId": "modules/indexes/vector_stores/integrations/memory"
+                      },
+                      {
+                        "type": "link",
+                        "label": "Chroma",
+                        "href": "/docs/modules/indexes/vector_stores/integrations/chroma",
+                        "docId": "modules/indexes/vector_stores/integrations/chroma"
+                      },
+                      {
+                        "type": "link",
+                        "label": "HNSWLib",
+                        "href": "/docs/modules/indexes/vector_stores/integrations/hnswlib",
+                        "className": "node-only",
+                        "docId": "modules/indexes/vector_stores/integrations/hnswlib"
+                      },
+                      {
+                        "type": "link",
+                        "label": "Milvus",
+                        "href": "/docs/modules/indexes/vector_stores/integrations/milvus",
+                        "className": "node-only",
+                        "docId": "modules/indexes/vector_stores/integrations/milvus"
+                      },
+                      {
+                        "type": "link",
+                        "label": "MyScale",
+                        "href": "/docs/modules/indexes/vector_stores/integrations/myscale",
+                        "className": "node-only",
+                        "docId": "modules/indexes/vector_stores/integrations/myscale"
+                      },
+                      {
+                        "type": "link",
+                        "label": "OpenSearch",
+                        "href": "/docs/modules/indexes/vector_stores/integrations/opensearch",
+                        "className": "node-only",
+                        "docId": "modules/indexes/vector_stores/integrations/opensearch"
+                      },
+                      {
+                        "type": "link",
+                        "label": "Pinecone",
+                        "href": "/docs/modules/indexes/vector_stores/integrations/pinecone",
+                        "className": "node-only",
+                        "docId": "modules/indexes/vector_stores/integrations/pinecone"
+                      },
+                      {
+                        "type": "link",
+                        "label": "Prisma",
+                        "href": "/docs/modules/indexes/vector_stores/integrations/prisma",
+                        "docId": "modules/indexes/vector_stores/integrations/prisma"
+                      },
+                      {
+                        "type": "link",
+                        "label": "Supabase",
+                        "href": "/docs/modules/indexes/vector_stores/integrations/supabase",
+                        "docId": "modules/indexes/vector_stores/integrations/supabase"
+                      },
+                      {
+                        "type": "link",
+                        "label": "Weaviate",
+                        "href": "/docs/modules/indexes/vector_stores/integrations/weaviate",
+                        "docId": "modules/indexes/vector_stores/integrations/weaviate"
+                      }
+                    ],
+                    "href": "/docs/modules/indexes/vector_stores/integrations/"
+                  }
+                ],
+                "href": "/docs/modules/indexes/vector_stores/"
+              },
+              {
+                "type": "category",
+                "label": "Retrievers",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "ChatGPT Plugin Retriever",
+                    "href": "/docs/modules/indexes/retrievers/chatgpt-retriever-plugin",
+                    "docId": "modules/indexes/retrievers/chatgpt-retriever-plugin"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Contextual Compression Retriever",
+                    "href": "/docs/modules/indexes/retrievers/contextual-compression-retriever",
+                    "docId": "modules/indexes/retrievers/contextual-compression-retriever"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Databerry Retriever",
+                    "href": "/docs/modules/indexes/retrievers/databerry-retriever",
+                    "docId": "modules/indexes/retrievers/databerry-retriever"
+                  },
+                  {
+                    "type": "link",
+                    "label": "HyDE Retriever",
+                    "href": "/docs/modules/indexes/retrievers/hyde",
+                    "docId": "modules/indexes/retrievers/hyde"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Metal Retriever",
+                    "href": "/docs/modules/indexes/retrievers/metal-retriever",
+                    "docId": "modules/indexes/retrievers/metal-retriever"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Remote Retriever",
+                    "href": "/docs/modules/indexes/retrievers/remote-retriever",
+                    "docId": "modules/indexes/retrievers/remote-retriever"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Supabase Hybrid Search",
+                    "href": "/docs/modules/indexes/retrievers/supabase-hybrid",
+                    "docId": "modules/indexes/retrievers/supabase-hybrid"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Time-Weighted Retriever",
+                    "href": "/docs/modules/indexes/retrievers/time-weighted-retriever",
+                    "docId": "modules/indexes/retrievers/time-weighted-retriever"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Vector Store",
+                    "href": "/docs/modules/indexes/retrievers/vectorstore",
+                    "docId": "modules/indexes/retrievers/vectorstore"
+                  }
+                ],
+                "href": "/docs/modules/indexes/retrievers/"
+              }
+            ],
+            "href": "/docs/modules/indexes/"
+          },
+          {
+            "type": "category",
+            "label": "Memory",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "category",
+                "label": "Examples",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Buffer Memory",
+                    "href": "/docs/modules/memory/examples/buffer_memory",
+                    "docId": "modules/memory/examples/buffer_memory"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Using Buffer Memory with Chat Models",
+                    "href": "/docs/modules/memory/examples/buffer_memory_chat",
+                    "docId": "modules/memory/examples/buffer_memory_chat"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Buffer Window Memory",
+                    "href": "/docs/modules/memory/examples/buffer_window_memory",
+                    "docId": "modules/memory/examples/buffer_window_memory"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Conversation Summary",
+                    "href": "/docs/modules/memory/examples/conversation_summary",
+                    "docId": "modules/memory/examples/conversation_summary"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Motörhead Memory",
+                    "href": "/docs/modules/memory/examples/motorhead_memory",
+                    "docId": "modules/memory/examples/motorhead_memory"
+                  },
+                  {
+                    "type": "link",
+                    "label": "VectorStore-backed Memory",
+                    "href": "/docs/modules/memory/examples/vector_store_memory",
+                    "docId": "modules/memory/examples/vector_store_memory"
+                  }
+                ],
+                "href": "/docs/modules/memory/examples/"
+              }
+            ],
+            "href": "/docs/modules/memory/"
+          },
+          {
+            "type": "category",
+            "label": "Chains",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "LLM Chain",
+                "href": "/docs/modules/chains/llmchain",
+                "docId": "modules/chains/llmchain"
+              },
+              {
+                "type": "category",
+                "label": "Index Related Chains",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Document QA",
+                    "href": "/docs/modules/chains/index_related_chains/document_qa",
+                    "docId": "modules/chains/index_related_chains/document_qa"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Retrieval QA",
+                    "href": "/docs/modules/chains/index_related_chains/retrieval_qa",
+                    "docId": "modules/chains/index_related_chains/retrieval_qa"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Conversational Retrieval QA",
+                    "href": "/docs/modules/chains/index_related_chains/conversational_retrieval",
+                    "docId": "modules/chains/index_related_chains/conversational_retrieval"
+                  }
+                ],
+                "href": "/docs/modules/chains/index_related_chains/"
+              },
+              {
+                "type": "link",
+                "label": "Sequential Chain",
+                "href": "/docs/modules/chains/sequential_chain",
+                "docId": "modules/chains/sequential_chain"
+              },
+              {
+                "type": "category",
+                "label": "Other Chains",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "AnalyzeDocumentChain",
+                    "href": "/docs/modules/chains/other_chains/analyze_document",
+                    "docId": "modules/chains/other_chains/analyze_document"
+                  },
+                  {
+                    "type": "link",
+                    "label": "ConstitutionalChain",
+                    "href": "/docs/modules/chains/other_chains/constitutional_chain",
+                    "docId": "modules/chains/other_chains/constitutional_chain"
+                  },
+                  {
+                    "type": "link",
+                    "label": "OpenAIModerationChain",
+                    "href": "/docs/modules/chains/other_chains/moderation_chain",
+                    "docId": "modules/chains/other_chains/moderation_chain"
+                  },
+                  {
+                    "type": "link",
+                    "label": "SqlDatabaseChain",
+                    "href": "/docs/modules/chains/other_chains/sql",
+                    "docId": "modules/chains/other_chains/sql"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Summarization",
+                    "href": "/docs/modules/chains/other_chains/summarization",
+                    "docId": "modules/chains/other_chains/summarization"
+                  }
+                ],
+                "href": "/docs/modules/chains/other_chains/"
+              },
+              {
+                "type": "link",
+                "label": "Prompt Selectors",
+                "href": "/docs/modules/chains/prompt_selectors/",
+                "docId": "modules/chains/prompt_selectors/index"
+              }
+            ],
+            "href": "/docs/modules/chains/"
+          },
+          {
+            "type": "category",
+            "label": "Agents",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "category",
+                "label": "Tools",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Integrations",
+                    "href": "/docs/modules/agents/tools/integrations/",
+                    "docId": "modules/agents/tools/integrations/index"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Agents with Vector Stores",
+                    "href": "/docs/modules/agents/tools/agents_with_vectorstores",
+                    "docId": "modules/agents/tools/agents_with_vectorstores"
+                  },
+                  {
+                    "type": "link",
+                    "label": "ChatGPT Plugins",
+                    "href": "/docs/modules/agents/tools/aiplugin-tool",
+                    "docId": "modules/agents/tools/aiplugin-tool"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Agent with AWS Lambda",
+                    "href": "/docs/modules/agents/tools/lambda_agent",
+                    "docId": "modules/agents/tools/lambda_agent"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Web Browser Tool",
+                    "href": "/docs/modules/agents/tools/webbrowser",
+                    "docId": "modules/agents/tools/webbrowser"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Agent with Zapier NLA Integration",
+                    "href": "/docs/modules/agents/tools/zapier_agent",
+                    "docId": "modules/agents/tools/zapier_agent"
+                  }
+                ],
+                "href": "/docs/modules/agents/tools/"
+              },
+              {
+                "type": "category",
+                "label": "Toolkits",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "JSON Agent Toolkit",
+                    "href": "/docs/modules/agents/toolkits/json",
+                    "docId": "modules/agents/toolkits/json"
+                  },
+                  {
+                    "type": "link",
+                    "label": "OpenAPI Agent Toolkit",
+                    "href": "/docs/modules/agents/toolkits/openapi",
+                    "docId": "modules/agents/toolkits/openapi"
+                  },
+                  {
+                    "type": "link",
+                    "label": "SQL Agent Toolkit",
+                    "href": "/docs/modules/agents/toolkits/sql",
+                    "docId": "modules/agents/toolkits/sql"
+                  },
+                  {
+                    "type": "link",
+                    "label": "VectorStore Agent Toolkit",
+                    "href": "/docs/modules/agents/toolkits/vectorstore",
+                    "docId": "modules/agents/toolkits/vectorstore"
+                  }
+                ],
+                "href": "/docs/modules/agents/toolkits/"
+              },
+              {
+                "type": "category",
+                "label": "Agents",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Custom LLM Agent",
+                    "href": "/docs/modules/agents/agents/custom_llm",
+                    "docId": "modules/agents/agents/custom_llm"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Custom LLM Agent (with Chat Model)",
+                    "href": "/docs/modules/agents/agents/custom_llm_chat",
+                    "docId": "modules/agents/agents/custom_llm_chat"
+                  },
+                  {
+                    "type": "category",
+                    "label": "Examples",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "link",
+                        "label": "MRKL Agent for LLMs",
+                        "href": "/docs/modules/agents/agents/examples/llm_mrkl",
+                        "docId": "modules/agents/agents/examples/llm_mrkl"
+                      },
+                      {
+                        "type": "link",
+                        "label": "MRKL Agent for Chat Models",
+                        "href": "/docs/modules/agents/agents/examples/chat_mrkl",
+                        "docId": "modules/agents/agents/examples/chat_mrkl"
+                      },
+                      {
+                        "type": "link",
+                        "label": "Conversational Agent",
+                        "href": "/docs/modules/agents/agents/examples/conversational_agent",
+                        "docId": "modules/agents/agents/examples/conversational_agent"
+                      },
+                      {
+                        "type": "link",
+                        "label": "Agent with Custom Prompt, using Chat Models",
+                        "href": "/docs/modules/agents/agents/examples/custom_agent_chat",
+                        "docId": "modules/agents/agents/examples/custom_agent_chat"
+                      }
+                    ],
+                    "href": "/docs/modules/agents/agents/examples/"
+                  }
+                ],
+                "href": "/docs/modules/agents/agents/"
+              },
+              {
+                "type": "category",
+                "label": "Agent Executors",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Getting Started",
+                    "href": "/docs/modules/agents/executor/getting-started",
+                    "docId": "modules/agents/executor/getting-started"
+                  }
+                ],
+                "href": "/docs/modules/agents/executor/"
+              }
+            ],
+            "href": "/docs/modules/agents/"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Use Cases",
+        "collapsed": false,
+        "collapsible": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Personal Assistants",
+            "href": "/docs/use_cases/personal_assistants",
+            "docId": "use_cases/personal_assistants"
+          },
+          {
+            "type": "link",
+            "label": "Question Answering",
+            "href": "/docs/use_cases/question_answering",
+            "docId": "use_cases/question_answering"
+          },
+          {
+            "type": "link",
+            "label": "Tabular Question Answering",
+            "href": "/docs/use_cases/tabular",
+            "docId": "use_cases/tabular"
+          },
+          {
+            "type": "link",
+            "label": "Interacting with APIs",
+            "href": "/docs/use_cases/api",
+            "docId": "use_cases/api"
+          },
+          {
+            "type": "link",
+            "label": "Summarization",
+            "href": "/docs/use_cases/summarization",
+            "docId": "use_cases/summarization"
+          },
+          {
+            "type": "category",
+            "label": "Autonomous Agents",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "AutoGPT",
+                "href": "/docs/use_cases/autonomous_agents/auto_gpt",
+                "docId": "use_cases/autonomous_agents/auto_gpt"
+              },
+              {
+                "type": "link",
+                "label": "BabyAGI",
+                "href": "/docs/use_cases/autonomous_agents/baby_agi",
+                "docId": "use_cases/autonomous_agents/baby_agi"
+              }
+            ],
+            "href": "/docs/use_cases/autonomous_agents/"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Production",
+        "collapsed": false,
+        "collapsible": false,
+        "items": [
+          {
+            "type": "category",
+            "label": "Events /​ Callbacks",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "Creating callback handlers",
+                "href": "/docs/production/callbacks/create-handlers",
+                "docId": "production/callbacks/create-handlers"
+              },
+              {
+                "type": "link",
+                "label": "Callbacks in custom Chains",
+                "href": "/docs/production/callbacks/creating-subclasses",
+                "docId": "production/callbacks/creating-subclasses"
+              }
+            ],
+            "href": "/docs/production/callbacks/"
+          },
+          {
+            "type": "link",
+            "label": "Deployment",
+            "href": "/docs/production/deployment",
+            "docId": "production/deployment"
+          },
+          {
+            "type": "link",
+            "label": "Tracing",
+            "href": "/docs/production/tracing",
+            "docId": "production/tracing"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Ecosystem",
+        "items": [
+          {
+            "type": "link",
+            "label": "Databerry",
+            "href": "/docs/ecosystem/databerry",
+            "docId": "ecosystem/databerry"
+          },
+          {
+            "type": "link",
+            "label": "Helicone",
+            "href": "/docs/ecosystem/helicone",
+            "docId": "ecosystem/helicone"
+          },
+          {
+            "type": "link",
+            "label": "Unstructured",
+            "href": "/docs/ecosystem/unstructured",
+            "docId": "ecosystem/unstructured"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "API Reference",
+        "items": [
+          {
+            "type": "link",
+            "label": "Website",
+            "href": "/docs/api/",
+            "docId": "api/index"
+          },
+          {
+            "type": "link",
+            "label": "docs",
+            "href": "/docs/api/API",
+            "docId": "api/API"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true,
+        "href": "/docs/api/"
+      }
+    ]
+  },
+  "docs": {
+    "api/API": {
+      "id": "api/API",
+      "title": "docs",
+      "description": "Packages",
+      "sidebar": "sidebar"
+    },
+    "api/index": {
+      "id": "api/index",
+      "title": "Website",
+      "description": "This website is built using Docusaurus 2, a modern static website generator.",
+      "sidebar": "sidebar"
+    },
+    "ecosystem/databerry": {
+      "id": "ecosystem/databerry",
+      "title": "Databerry",
+      "description": "This page covers how to use the Databerry within LangChain.",
+      "sidebar": "sidebar"
+    },
+    "ecosystem/helicone": {
+      "id": "ecosystem/helicone",
+      "title": "Helicone",
+      "description": "This page covers how to use the Helicone within LangChain.",
+      "sidebar": "sidebar"
+    },
+    "ecosystem/unstructured": {
+      "id": "ecosystem/unstructured",
+      "title": "Unstructured",
+      "description": "This page covers how to use Unstructured within LangChain.",
+      "sidebar": "sidebar"
+    },
+    "getting-started/guide-chat": {
+      "id": "getting-started/guide-chat",
+      "title": "Quickstart, using Chat Models",
+      "description": "Chat models are a variation on language models.",
+      "sidebar": "sidebar"
+    },
+    "getting-started/guide-llm": {
+      "id": "getting-started/guide-llm",
+      "title": "Quickstart, using LLMs",
+      "description": "This tutorial gives you a quick walkthrough about building an end-to-end language model application with LangChain.",
+      "sidebar": "sidebar"
+    },
+    "getting-started/install": {
+      "id": "getting-started/install",
+      "title": "Setup and Installation",
+      "description": "Updating from <0.0.52? See this section for instructions.",
+      "sidebar": "sidebar"
+    },
+    "index": {
+      "id": "index",
+      "title": "Welcome to LangChain",
+      "description": "LangChain is a framework for developing applications powered by language models. We believe that the most powerful and differentiated applications will not only call out to a language model via an API, but will also:",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/agents/custom_llm": {
+      "id": "modules/agents/agents/custom_llm",
+      "title": "Custom LLM Agent",
+      "description": "This example covers how to create a custom Agent powered by an LLM.",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/agents/custom_llm_chat": {
+      "id": "modules/agents/agents/custom_llm_chat",
+      "title": "Custom LLM Agent (with Chat Model)",
+      "description": "This example covers how to create a custom Agent powered by a Chat Model.",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/agents/examples/chat_mrkl": {
+      "id": "modules/agents/agents/examples/chat_mrkl",
+      "title": "MRKL Agent for Chat Models",
+      "description": "This example covers how to use an agent that uses the ReAct Framework (based on the descriptions of tools) to decide what action to take. This agent is optimized to be used with Chat Models. If you want to use it with an LLM, you can use the LLM MRKL Agent instead.",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/agents/examples/conversational_agent": {
+      "id": "modules/agents/agents/examples/conversational_agent",
+      "title": "Conversational Agent",
+      "description": "This example covers how to create a conversational agent for a chat model. It will utilize chat specific prompts.",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/agents/examples/custom_agent_chat": {
+      "id": "modules/agents/agents/examples/custom_agent_chat",
+      "title": "Agent with Custom Prompt, using Chat Models",
+      "description": "This example covers how to create a custom agent for a chat model. It will utilize chat specific prompts.",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/agents/examples/index": {
+      "id": "modules/agents/agents/examples/index",
+      "title": "Examples: Agents",
+      "description": "",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/agents/examples/llm_mrkl": {
+      "id": "modules/agents/agents/examples/llm_mrkl",
+      "title": "MRKL Agent for LLMs",
+      "description": "This example covers how to use an agent that uses the ReAct Framework (based on the descriptions of tools) to decide what action to take. This agent is optimized to be used with LLMs. If you want to use it with a chat model, try the Chat MRKL Agent.",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/agents/index": {
+      "id": "modules/agents/agents/index",
+      "title": "Agents",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/executor/getting-started": {
+      "id": "modules/agents/executor/getting-started",
+      "title": "Getting Started: Agent Executors",
+      "description": "Agents use an LLM to determine which actions to take and in what order. An action can either be using a tool and observing its output, or returning to the user.",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/executor/index": {
+      "id": "modules/agents/executor/index",
+      "title": "Agent Executors",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/index": {
+      "id": "modules/agents/index",
+      "title": "Agents",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/toolkits/index": {
+      "id": "modules/agents/toolkits/index",
+      "title": "Getting Started: Toolkits",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/toolkits/json": {
+      "id": "modules/agents/toolkits/json",
+      "title": "JSON Agent Toolkit",
+      "description": "This example shows how to load and use an agent with a JSON toolkit.",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/toolkits/openapi": {
+      "id": "modules/agents/toolkits/openapi",
+      "title": "OpenAPI Agent Toolkit",
+      "description": "This example shows how to load and use an agent with a OpenAPI toolkit.",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/toolkits/sql": {
+      "id": "modules/agents/toolkits/sql",
+      "title": "SQL Agent Toolkit",
+      "description": "This example shows how to load and use an agent with a SQL toolkit.",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/toolkits/vectorstore": {
+      "id": "modules/agents/toolkits/vectorstore",
+      "title": "VectorStore Agent Toolkit",
+      "description": "This example shows how to load and use an agent with a vectorstore toolkit.",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/tools/agents_with_vectorstores": {
+      "id": "modules/agents/tools/agents_with_vectorstores",
+      "title": "Agents with Vector Stores",
+      "description": "This notebook covers how to combine agents and vector stores. The use case for this is that you’ve ingested your data into a vector store and want to interact with it in an agentic manner.",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/tools/aiplugin-tool": {
+      "id": "modules/agents/tools/aiplugin-tool",
+      "title": "ChatGPT Plugins",
+      "description": "This example shows how to use ChatGPT Plugins within LangChain abstractions.",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/tools/index": {
+      "id": "modules/agents/tools/index",
+      "title": "Tools",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/tools/integrations/index": {
+      "id": "modules/agents/tools/integrations/index",
+      "title": "Integrations: Tools",
+      "description": "LangChain provides the following tools you can use out of the box:",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/tools/lambda_agent": {
+      "id": "modules/agents/tools/lambda_agent",
+      "title": "Agent with AWS Lambda Integration",
+      "description": "Full docs here//docs.aws.amazon.com/lambda/index.html",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/tools/webbrowser": {
+      "id": "modules/agents/tools/webbrowser",
+      "title": "Web Browser Tool",
+      "description": "The Webbrowser Tool gives your agent the ability to visit a website and extract information. It is described to the agent as",
+      "sidebar": "sidebar"
+    },
+    "modules/agents/tools/zapier_agent": {
+      "id": "modules/agents/tools/zapier_agent",
+      "title": "Agent with Zapier NLA Integration",
+      "description": "Full docs here//nla.zapier.com/api/v1/dynamic/docs",
+      "sidebar": "sidebar"
+    },
+    "modules/chains/index": {
+      "id": "modules/chains/index",
+      "title": "Getting Started: Chains",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/chains/index_related_chains/conversational_retrieval": {
+      "id": "modules/chains/index_related_chains/conversational_retrieval",
+      "title": "Conversational Retrieval QA",
+      "description": "The ConversationalRetrievalQA chain builds on RetrievalQAChain to provide a chat history component.",
+      "sidebar": "sidebar"
+    },
+    "modules/chains/index_related_chains/document_qa": {
+      "id": "modules/chains/index_related_chains/document_qa",
+      "title": "Document QA",
+      "description": "LangChain provides chains used for processing unstructured text data: StuffDocumentsChain, MapReduceDocumentsChain and RefineDocumentsChain.",
+      "sidebar": "sidebar"
+    },
+    "modules/chains/index_related_chains/index": {
+      "id": "modules/chains/index_related_chains/index",
+      "title": "Index Related Chains",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/chains/index_related_chains/retrieval_qa": {
+      "id": "modules/chains/index_related_chains/retrieval_qa",
+      "title": "Retrieval QA",
+      "description": "The RetrievalQAChain is a chain that combines a Retriever and a QA chain (described above). It is used to retrieve documents from a Retriever and then use a QA chain to answer a question based on the retrieved documents.",
+      "sidebar": "sidebar"
+    },
+    "modules/chains/llmchain": {
+      "id": "modules/chains/llmchain",
+      "title": "Getting Started: LLMChain",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/chains/other_chains/analyze_document": {
+      "id": "modules/chains/other_chains/analyze_document",
+      "title": "AnalyzeDocumentChain",
+      "description": "You can use the AnalyzeDocumentChain, which accepts a single piece of text as input and operates over it.",
+      "sidebar": "sidebar"
+    },
+    "modules/chains/other_chains/constitutional_chain": {
+      "id": "modules/chains/other_chains/constitutional_chain",
+      "title": "ConstitutionalChain",
+      "description": "The ConstitutionalChain is a chain that ensures the output of a language model adheres to a predefined set of constitutional principles. By incorporating specific rules and guidelines, the ConstitutionalChain filters and modifies the generated content to align with these principles, thus providing more controlled, ethical, and contextually appropriate responses. This mechanism helps maintain the integrity of the output while minimizing the risk of generating content that may violate guidelines, be offensive, or deviate from the desired context.",
+      "sidebar": "sidebar"
+    },
+    "modules/chains/other_chains/index": {
+      "id": "modules/chains/other_chains/index",
+      "title": "Other Chains",
+      "description": "This section highlights other examples of chains that exist.",
+      "sidebar": "sidebar"
+    },
+    "modules/chains/other_chains/moderation_chain": {
+      "id": "modules/chains/other_chains/moderation_chain",
+      "title": "OpenAIModerationChain",
+      "description": "You can use the OpenAIModerationChain which takes care of evaluating the input and identifying whether it violates OpenAI's Terms of Service (TOS). If the input contains any content that breaks the TOS and throwError is set to true, an error will be thrown and caught. If throwError is set to false the chain will return \"Text was found that violates OpenAI's content policy.\"",
+      "sidebar": "sidebar"
+    },
+    "modules/chains/other_chains/sql": {
+      "id": "modules/chains/other_chains/sql",
+      "title": "SqlDatabaseChain",
+      "description": "The SqlDatabaseChain allows you to answer questions over a SQL database.",
+      "sidebar": "sidebar"
+    },
+    "modules/chains/other_chains/summarization": {
+      "id": "modules/chains/other_chains/summarization",
+      "title": "Summarization",
+      "description": "A summarization chain can be used to summarize multiple documents. One way is to input multiple smaller documents, after they have been divided into chunks, and operate over them with a MapReduceDocumentsChain. You can also choose instead for the chain that does summarization to be a StuffDocumentsChain, or a RefineDocumentsChain. See more about the differences between them here",
+      "sidebar": "sidebar"
+    },
+    "modules/chains/prompt_selectors/index": {
+      "id": "modules/chains/prompt_selectors/index",
+      "title": "Prompt Selectors",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/chains/sequential_chain": {
+      "id": "modules/chains/sequential_chain",
+      "title": "Sequential Chain",
+      "description": "Sequential chains allow you to connect multiple chains and compose them into pipelines that execute some specific scenario.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/file_loaders/csv": {
+      "id": "modules/indexes/document_loaders/examples/file_loaders/csv",
+      "title": "CSV files",
+      "description": "This example goes over how to load data from CSV files. The second argument is the column name to extract from the CSV file. One document will be created for each row in the CSV file. When column is not specified, each row is converted into a key/value pair with each key/value pair outputted to a new line in the document's pageContent. When column is specified, one document is created for each row, and the value of the specified column is used as the document's pageContent.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/file_loaders/directory": {
+      "id": "modules/indexes/document_loaders/examples/file_loaders/directory",
+      "title": "Folders with multiple files",
+      "description": "This example goes over how to load data from folders with multiple files. The second argument is a map of file extensions to loader factories. Each file will be passed to the matching loader, and the resulting documents will be concatenated together.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/file_loaders/docx": {
+      "id": "modules/indexes/document_loaders/examples/file_loaders/docx",
+      "title": "Docx files",
+      "description": "This example goes over how to load data from docx files.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/file_loaders/epub": {
+      "id": "modules/indexes/document_loaders/examples/file_loaders/epub",
+      "title": "EPUB files",
+      "description": "This example goes over how to load data from EPUB files. By default, one document will be created for each chapter in the EPUB file, you can change this behavior by setting the splitChapters option to false.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/file_loaders/index": {
+      "id": "modules/indexes/document_loaders/examples/file_loaders/index",
+      "title": "File Loaders",
+      "description": "Only available on Node.js.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/file_loaders/json": {
+      "id": "modules/indexes/document_loaders/examples/file_loaders/json",
+      "title": "JSON files",
+      "description": "The JSON loader use JSON pointer to target keys in your JSON files you want to target.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/file_loaders/jsonlines": {
+      "id": "modules/indexes/document_loaders/examples/file_loaders/jsonlines",
+      "title": "JSONLines files",
+      "description": "This example goes over how to load data from JSONLines or JSONL files. The second argument is a JSONPointer to the property to extract from each JSON object in the file. One document will be created for each JSON object in the file.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/file_loaders/notion_markdown": {
+      "id": "modules/indexes/document_loaders/examples/file_loaders/notion_markdown",
+      "title": "Notion markdown export",
+      "description": "This example goes over how to load data from your Notion pages exported from the notion dashboard.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/file_loaders/pdf": {
+      "id": "modules/indexes/document_loaders/examples/file_loaders/pdf",
+      "title": "PDF files",
+      "description": "This example goes over how to load data from PDF files. By default, one document will be created for each page in the PDF file, you can change this behavior by setting the splitPages option to false.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/file_loaders/subtitles": {
+      "id": "modules/indexes/document_loaders/examples/file_loaders/subtitles",
+      "title": "Subtitles",
+      "description": "This example goes over how to load data from subtitle files. One document will be created for each subtitles file.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/file_loaders/text": {
+      "id": "modules/indexes/document_loaders/examples/file_loaders/text",
+      "title": "Text files",
+      "description": "This example goes over how to load data from text files.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/file_loaders/unstructured": {
+      "id": "modules/indexes/document_loaders/examples/file_loaders/unstructured",
+      "title": "Unstructured",
+      "description": "This example covers how to use Unstructured to load files of many types. Unstructured currently supports loading of text files, powerpoints, html, pdfs, images, and more.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/index": {
+      "id": "modules/indexes/document_loaders/examples/index",
+      "title": "Examples: Document Loaders",
+      "description": "",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/web_loaders/college_confidential": {
+      "id": "modules/indexes/document_loaders/examples/web_loaders/college_confidential",
+      "title": "College Confidential",
+      "description": "This example goes over how to load data from the college confidential website, using Cheerio. One document will be created for each page.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/web_loaders/confluence": {
+      "id": "modules/indexes/document_loaders/examples/web_loaders/confluence",
+      "title": "Confluence",
+      "description": "Only available on Node.js.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/web_loaders/gitbook": {
+      "id": "modules/indexes/document_loaders/examples/web_loaders/gitbook",
+      "title": "GitBook",
+      "description": "This example goes over how to load data from any GitBook, using Cheerio. One document will be created for each page.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/web_loaders/github": {
+      "id": "modules/indexes/document_loaders/examples/web_loaders/github",
+      "title": "GitHub",
+      "description": "This example goes over how to load data from a GitHub repository.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/web_loaders/hn": {
+      "id": "modules/indexes/document_loaders/examples/web_loaders/hn",
+      "title": "Hacker News",
+      "description": "This example goes over how to load data from the hacker news website, using Cheerio. One document will be created for each page.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/web_loaders/imsdb": {
+      "id": "modules/indexes/document_loaders/examples/web_loaders/imsdb",
+      "title": "IMSDB",
+      "description": "This example goes over how to load data from the internet movie script database website, using Cheerio. One document will be created for each page.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/web_loaders/index": {
+      "id": "modules/indexes/document_loaders/examples/web_loaders/index",
+      "title": "Web Loaders",
+      "description": "These loaders are used to load web resources.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/web_loaders/s3": {
+      "id": "modules/indexes/document_loaders/examples/web_loaders/s3",
+      "title": "S3 File",
+      "description": "Only available on Node.js.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/web_loaders/web_cheerio": {
+      "id": "modules/indexes/document_loaders/examples/web_loaders/web_cheerio",
+      "title": "Webpages, with Cheerio",
+      "description": "This example goes over how to load data from webpages using Cheerio. One document will be created for each webpage.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/web_loaders/web_playwright": {
+      "id": "modules/indexes/document_loaders/examples/web_loaders/web_playwright",
+      "title": "Webpages, with Playwright",
+      "description": "Only available on Node.js.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/examples/web_loaders/web_puppeteer": {
+      "id": "modules/indexes/document_loaders/examples/web_loaders/web_puppeteer",
+      "title": "Webpages, with Puppeteer",
+      "description": "Only available on Node.js.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/document_loaders/index": {
+      "id": "modules/indexes/document_loaders/index",
+      "title": "Getting Started: Document Loaders",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/index": {
+      "id": "modules/indexes/index",
+      "title": "Indexes",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/retrievers/chatgpt-retriever-plugin": {
+      "id": "modules/indexes/retrievers/chatgpt-retriever-plugin",
+      "title": "ChatGPT Plugin Retriever",
+      "description": "This example shows how to use the ChatGPT Retriever Plugin within LangChain.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/retrievers/contextual-compression-retriever": {
+      "id": "modules/indexes/retrievers/contextual-compression-retriever",
+      "title": "Contextual Compression Retriever",
+      "description": "A Contextual Compression Retriever is designed to improve the answers returned from vector store document similarity searches by better taking into account the context from the query.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/retrievers/databerry-retriever": {
+      "id": "modules/indexes/retrievers/databerry-retriever",
+      "title": "Databerry Retriever",
+      "description": "This example shows how to use the Databerry Retriever in a RetrievalQAChain to retrieve documents from a Databerry.ai datastore.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/retrievers/hyde": {
+      "id": "modules/indexes/retrievers/hyde",
+      "title": "HyDE Retriever",
+      "description": "This example shows how to use the HyDE Retriever, which implements Hypothetical Document Embeddings (HyDE) as described in this paper.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/retrievers/index": {
+      "id": "modules/indexes/retrievers/index",
+      "title": "Retrievers",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/retrievers/metal-retriever": {
+      "id": "modules/indexes/retrievers/metal-retriever",
+      "title": "Metal Retriever",
+      "description": "This example shows how to use the Metal Retriever in a RetrievalQAChain to retrieve documents from a Metal index.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/retrievers/remote-retriever": {
+      "id": "modules/indexes/retrievers/remote-retriever",
+      "title": "Remote Retriever",
+      "description": "This example shows how to use a Remote Retriever in a RetrievalQAChain to retrieve documents from a remote server.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/retrievers/supabase-hybrid": {
+      "id": "modules/indexes/retrievers/supabase-hybrid",
+      "title": "Supabase Hybrid Search",
+      "description": "Langchain supports hybrid search with a Supabase Postgres database. The hybrid search combines the postgres pgvector extension (similarity search) and Full-Text Search (keyword search) to retrieve documents. You can add documents via SupabaseVectorStore addDocuments function. SupabaseHybridKeyWordSearch accepts embedding, supabase client, number of results for similarity search, and number of results for keyword search as parameters. The getRelevantDocuments function produces a list of documents that has duplicates removed and is sorted by relevance score.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/retrievers/time-weighted-retriever": {
+      "id": "modules/indexes/retrievers/time-weighted-retriever",
+      "title": "Time-Weighted Retriever",
+      "description": "A Time-Weighted Retriever is a retriever that takes into account recency in addition to similarity. The scoring algorithm is:",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/retrievers/vectorstore": {
+      "id": "modules/indexes/retrievers/vectorstore",
+      "title": "Vector Store",
+      "description": "Once you've created a Vector Store, the way to use it as a Retriever is very simple:",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/text_splitters/examples/character": {
+      "id": "modules/indexes/text_splitters/examples/character",
+      "title": "CharacterTextSplitter",
+      "description": "Besides the RecursiveCharacterTextSplitter, there is also the more standard CharacterTextSplitter. This splits only on one type of character (defaults to \"\\n\\n\"). You can use it in the exact same way.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/text_splitters/examples/index": {
+      "id": "modules/indexes/text_splitters/examples/index",
+      "title": "Text Splitters: Examples",
+      "description": "",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/text_splitters/examples/markdown": {
+      "id": "modules/indexes/text_splitters/examples/markdown",
+      "title": "MarkdownTextSplitter",
+      "description": "If your content is in Markdown format then MarkdownTextSplitter. This class will split your content into documents based on the Markdown headers. For example, if you have the following Markdown content:",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/text_splitters/examples/recursive_character": {
+      "id": "modules/indexes/text_splitters/examples/recursive_character",
+      "title": "RecursiveCharacterTextSplitter",
+      "description": "The recommended TextSplitter is the RecursiveCharacterTextSplitter. This will split documents recursively by different characters - starting with \"\\n\\n\", then \"\\n\", then \" \". This is nice because it will try to keep all the semantically relevant content in the same place for as long as possible.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/text_splitters/examples/token": {
+      "id": "modules/indexes/text_splitters/examples/token",
+      "title": "TokenTextSplitter",
+      "description": "Finally, TokenTextSplitter splits a raw text string by first converting the text into BPE tokens, then split these tokens into chunks and convert the tokens within a single chunk back into text.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/text_splitters/index": {
+      "id": "modules/indexes/text_splitters/index",
+      "title": "Getting Started: Text Splitters",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/vector_stores/index": {
+      "id": "modules/indexes/vector_stores/index",
+      "title": "Getting Started: Vector Stores",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/vector_stores/integrations/chroma": {
+      "id": "modules/indexes/vector_stores/integrations/chroma",
+      "title": "Chroma",
+      "description": "Chroma is an open-source Apache 2.0 embedding database.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/vector_stores/integrations/hnswlib": {
+      "id": "modules/indexes/vector_stores/integrations/hnswlib",
+      "title": "HNSWLib",
+      "description": "Only available on Node.js.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/vector_stores/integrations/index": {
+      "id": "modules/indexes/vector_stores/integrations/index",
+      "title": "Vector Stores: Integrations",
+      "description": "",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/vector_stores/integrations/memory": {
+      "id": "modules/indexes/vector_stores/integrations/memory",
+      "title": "MemoryVectorStore",
+      "description": "MemoryVectorStore is an in-memory, ephemeral vectorstore that stores embeddings in-memory and does an exact, linear search for the most similar embeddings. The default similarity metric is cosine similarity, but can be changed to any of the similarity metrics supported by ml-distance.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/vector_stores/integrations/milvus": {
+      "id": "modules/indexes/vector_stores/integrations/milvus",
+      "title": "Milvus",
+      "description": "Milvus is a vector database built for embeddings similarity search and AI applications.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/vector_stores/integrations/myscale": {
+      "id": "modules/indexes/vector_stores/integrations/myscale",
+      "title": "MyScale",
+      "description": "Only available on Node.js.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/vector_stores/integrations/opensearch": {
+      "id": "modules/indexes/vector_stores/integrations/opensearch",
+      "title": "OpenSearch",
+      "description": "Only available on Node.js.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/vector_stores/integrations/pinecone": {
+      "id": "modules/indexes/vector_stores/integrations/pinecone",
+      "title": "Pinecone",
+      "description": "Only available on Node.js.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/vector_stores/integrations/prisma": {
+      "id": "modules/indexes/vector_stores/integrations/prisma",
+      "title": "Prisma",
+      "description": "For augmenting existing models in PostgreSQL database with vector search, Langchain supports using Prisma together with PostgreSQL and pgvector Postgres extension.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/vector_stores/integrations/supabase": {
+      "id": "modules/indexes/vector_stores/integrations/supabase",
+      "title": "Supabase",
+      "description": "Langchain supports using Supabase Postgres database as a vector store, using the pgvector postgres extension. Refer to the Supabase blog post for more information.",
+      "sidebar": "sidebar"
+    },
+    "modules/indexes/vector_stores/integrations/weaviate": {
+      "id": "modules/indexes/vector_stores/integrations/weaviate",
+      "title": "Weaviate",
+      "description": "Weaviate is an open source vector database that stores both objects and vectors, allowing for combining vector search with structured filtering. LangChain connects to Weaviate via the weaviate-ts-client package, the official Typescript client for Weaviate.",
+      "sidebar": "sidebar"
+    },
+    "modules/memory/examples/buffer_memory": {
+      "id": "modules/memory/examples/buffer_memory",
+      "title": "Buffer Memory",
+      "description": "BufferMemory is the simplest type of memory - it just remembers previous conversational back and forths directly.",
+      "sidebar": "sidebar"
+    },
+    "modules/memory/examples/buffer_memory_chat": {
+      "id": "modules/memory/examples/buffer_memory_chat",
+      "title": "Using Buffer Memory with Chat Models",
+      "description": "This example covers how to use chat-specific memory classes with chat models.",
+      "sidebar": "sidebar"
+    },
+    "modules/memory/examples/buffer_window_memory": {
+      "id": "modules/memory/examples/buffer_window_memory",
+      "title": "Buffer Window Memory",
+      "description": "BufferWindowMemory keeps track of the back-and-forths in conversation, and then uses a window of size k to surface the last k back-and-forths to use as memory.",
+      "sidebar": "sidebar"
+    },
+    "modules/memory/examples/conversation_summary": {
+      "id": "modules/memory/examples/conversation_summary",
+      "title": "Conversation Summary Memory",
+      "description": "The Conversation Summary Memory summarizes the conversation as it happens and stores the current summary in memory. This memory can then be used to inject the summary of the conversation so far into a prompt/chain. This memory is most useful for longer conversations, where keeping the past message history in the prompt verbatim would take up too many tokens.",
+      "sidebar": "sidebar"
+    },
+    "modules/memory/examples/index": {
+      "id": "modules/memory/examples/index",
+      "title": "Examples: Memory",
+      "description": "",
+      "sidebar": "sidebar"
+    },
+    "modules/memory/examples/motorhead_memory": {
+      "id": "modules/memory/examples/motorhead_memory",
+      "title": "Motörhead Memory",
+      "description": "Motörhead is a memory server implemented in Rust. It automatically handles incremental summarization in the background and allows for stateless applications.",
+      "sidebar": "sidebar"
+    },
+    "modules/memory/examples/vector_store_memory": {
+      "id": "modules/memory/examples/vector_store_memory",
+      "title": "VectorStore-backed Memory",
+      "description": "VectorStoreRetrieverMemory stores memories in a VectorDB and queries the top-K most \"salient\" docs every time it is called.",
+      "sidebar": "sidebar"
+    },
+    "modules/memory/index": {
+      "id": "modules/memory/index",
+      "title": "Getting Started: Memory",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/models/chat/additional_functionality": {
+      "id": "modules/models/chat/additional_functionality",
+      "title": "Additional Functionality: Chat Models",
+      "description": "We offer a number of additional features for chat models. In the examples below, we'll be using the ChatOpenAI model.",
+      "sidebar": "sidebar"
+    },
+    "modules/models/chat/index": {
+      "id": "modules/models/chat/index",
+      "title": "Getting Started: Chat Models",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/models/chat/integrations": {
+      "id": "modules/models/chat/integrations",
+      "title": "Integrations: Chat Models",
+      "description": "LangChain offers a number of Chat Models implementations that integrate with various model providers. These are:",
+      "sidebar": "sidebar"
+    },
+    "modules/models/embeddings/additional_functionality": {
+      "id": "modules/models/embeddings/additional_functionality",
+      "title": "Additional Functionality: Embeddings",
+      "description": "We offer a number of additional features for chat models. In the examples below, we'll be using the ChatOpenAI model.",
+      "sidebar": "sidebar"
+    },
+    "modules/models/embeddings/index": {
+      "id": "modules/models/embeddings/index",
+      "title": "Getting Started: Embeddings",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/models/embeddings/integrations": {
+      "id": "modules/models/embeddings/integrations",
+      "title": "Integrations: Embeddings",
+      "description": "LangChain offers a number of Embeddings implementations that integrate with various model providers. These are:",
+      "sidebar": "sidebar"
+    },
+    "modules/models/index": {
+      "id": "modules/models/index",
+      "title": "Models",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/models/llms/additional_functionality": {
+      "id": "modules/models/llms/additional_functionality",
+      "title": "Additional Functionality: LLMs",
+      "description": "We offer a number of additional features for LLMs. In most of the examples below, we'll be using the OpenAI LLM. However, all of these features are available for all LLMs.",
+      "sidebar": "sidebar"
+    },
+    "modules/models/llms/index": {
+      "id": "modules/models/llms/index",
+      "title": "Getting Started: LLMs",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/models/llms/integrations": {
+      "id": "modules/models/llms/integrations",
+      "title": "Integrations: LLMs",
+      "description": "LangChain offers a number of LLM implementations that integrate with various model providers. These are:",
+      "sidebar": "sidebar"
+    },
+    "modules/prompts/example_selectors/index": {
+      "id": "modules/prompts/example_selectors/index",
+      "title": "Example Selectors",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/prompts/index": {
+      "id": "modules/prompts/index",
+      "title": "Prompts",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/prompts/output_parsers/index": {
+      "id": "modules/prompts/output_parsers/index",
+      "title": "Output Parsers",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/prompts/prompt_templates/additional_functionality": {
+      "id": "modules/prompts/prompt_templates/additional_functionality",
+      "title": "Additional Functionality: Prompt Templates",
+      "description": "We offer a number of extra features for prompt templates, as shown below:",
+      "sidebar": "sidebar"
+    },
+    "modules/prompts/prompt_templates/index": {
+      "id": "modules/prompts/prompt_templates/index",
+      "title": "Prompt Templates",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "modules/schema/chat-messages": {
+      "id": "modules/schema/chat-messages",
+      "title": "Chat Messages",
+      "description": "The primary interface through which end users interact with LLMs is a chat interface. For this reason, some model providers have started providing access to the underlying API in a way that expects chat messages. These messages have a content field (which is usually text) and are associated with a user (or role). Right now the supported users are System, Human, and AI.",
+      "sidebar": "sidebar"
+    },
+    "modules/schema/document": {
+      "id": "modules/schema/document",
+      "title": "Document",
+      "description": "Language models only know information about what they were trained on. In order to get them answer questions or summarize other information you have to pass it to the language model. Therefore, it is very important to have a concept of a document.",
+      "sidebar": "sidebar"
+    },
+    "modules/schema/example": {
+      "id": "modules/schema/example",
+      "title": "Examples",
+      "description": "Examples are input/output pairs that represent inputs to a function and then expected output. They can be used in both training and evaluation of models.",
+      "sidebar": "sidebar"
+    },
+    "modules/schema/index": {
+      "id": "modules/schema/index",
+      "title": "Schema",
+      "description": "This section speaks about interfaces that are used throughout the rest of the library.",
+      "sidebar": "sidebar"
+    },
+    "production/callbacks/create-handlers": {
+      "id": "production/callbacks/create-handlers",
+      "title": "Creating callback handlers",
+      "description": "Creating a custom handler",
+      "sidebar": "sidebar"
+    },
+    "production/callbacks/creating-subclasses": {
+      "id": "production/callbacks/creating-subclasses",
+      "title": "Callbacks in custom Chains/Agents",
+      "description": "LangChain is designed to be extensible. You can add your own custom Chains and Agents to the library. This page will show you how to add callbacks to your custom Chains and Agents.",
+      "sidebar": "sidebar"
+    },
+    "production/callbacks/index": {
+      "id": "production/callbacks/index",
+      "title": "Events / Callbacks",
+      "description": "LangChain provides a callback system that allows you to hook into the various stages of your LLM application. This is useful for logging, monitoring, streaming, and other tasks.",
+      "sidebar": "sidebar"
+    },
+    "production/deployment": {
+      "id": "production/deployment",
+      "title": "Deployment",
+      "description": "You've built your LangChain app and now you're looking to deploy it to production? You've come to the right place. This guide will walk you through the options you have for deploying your app, and the considerations you should make when doing so.",
+      "sidebar": "sidebar"
+    },
+    "production/tracing": {
+      "id": "production/tracing",
+      "title": "Tracing",
+      "description": "Similar to the Python langchain package, JS langchain also supports tracing.",
+      "sidebar": "sidebar"
+    },
+    "use_cases/api": {
+      "id": "use_cases/api",
+      "title": "Interacting with APIs",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "use_cases/autonomous_agents/auto_gpt": {
+      "id": "use_cases/autonomous_agents/auto_gpt",
+      "title": "AutoGPT",
+      "description": "Original Repo//github.com/Significant-Gravitas/Auto-GPT",
+      "sidebar": "sidebar"
+    },
+    "use_cases/autonomous_agents/baby_agi": {
+      "id": "use_cases/autonomous_agents/baby_agi",
+      "title": "BabyAGI",
+      "description": "Original Repo//github.com/yoheinakajima/babyagi",
+      "sidebar": "sidebar"
+    },
+    "use_cases/autonomous_agents/index": {
+      "id": "use_cases/autonomous_agents/index",
+      "title": "Autonomous Agents",
+      "description": "Autonomous Agents are agents that designed to be more long running. You give them one or multiple long term goals, and they independently execute towards those goals. The applications combine tool usage and long term memory.",
+      "sidebar": "sidebar"
+    },
+    "use_cases/personal_assistants": {
+      "id": "use_cases/personal_assistants",
+      "title": "Personal Assistants",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "use_cases/question_answering": {
+      "id": "use_cases/question_answering",
+      "title": "Question Answering",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "use_cases/summarization": {
+      "id": "use_cases/summarization",
+      "title": "Summarization",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    },
+    "use_cases/tabular": {
+      "id": "use_cases/tabular",
+      "title": "Tabular Question Answering",
+      "description": "Conceptual Guide",
+      "sidebar": "sidebar"
+    }
+  }
+}

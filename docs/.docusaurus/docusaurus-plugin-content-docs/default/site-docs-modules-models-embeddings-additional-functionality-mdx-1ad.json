@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/models/embeddings/additional_functionality",
+  "id": "modules/models/embeddings/additional_functionality",
+  "title": "Additional Functionality: Embeddings",
+  "description": "We offer a number of additional features for chat models. In the examples below, we'll be using the ChatOpenAI model.",
+  "source": "@site/docs/modules/models/embeddings/additional_functionality.mdx",
+  "sourceDirName": "modules/models/embeddings",
+  "slug": "/modules/models/embeddings/additional_functionality",
+  "permalink": "/docs/modules/models/embeddings/additional_functionality",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/models/embeddings/additional_functionality.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Additional Functionality"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Integrations",
+    "permalink": "/docs/modules/models/embeddings/integrations"
+  },
+  "next": {
+    "title": "LLMs",
+    "permalink": "/docs/modules/models/llms/"
+  }
+}

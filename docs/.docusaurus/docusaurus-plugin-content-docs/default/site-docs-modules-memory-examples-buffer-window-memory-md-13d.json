@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/memory/examples/buffer_window_memory",
+  "id": "modules/memory/examples/buffer_window_memory",
+  "title": "Buffer Window Memory",
+  "description": "BufferWindowMemory keeps track of the back-and-forths in conversation, and then uses a window of size k to surface the last k back-and-forths to use as memory.",
+  "source": "@site/docs/modules/memory/examples/buffer_window_memory.md",
+  "sourceDirName": "modules/memory/examples",
+  "slug": "/modules/memory/examples/buffer_window_memory",
+  "permalink": "/docs/modules/memory/examples/buffer_window_memory",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/memory/examples/buffer_window_memory.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Using Buffer Memory with Chat Models",
+    "permalink": "/docs/modules/memory/examples/buffer_memory_chat"
+  },
+  "next": {
+    "title": "Conversation Summary",
+    "permalink": "/docs/modules/memory/examples/conversation_summary"
+  }
+}

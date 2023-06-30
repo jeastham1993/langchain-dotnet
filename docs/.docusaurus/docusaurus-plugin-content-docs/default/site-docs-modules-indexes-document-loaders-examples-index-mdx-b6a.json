@@ -1,0 +1,27 @@
+{
+  "unversionedId": "modules/indexes/document_loaders/examples/index",
+  "id": "modules/indexes/document_loaders/examples/index",
+  "title": "Examples: Document Loaders",
+  "description": "",
+  "source": "@site/docs/modules/indexes/document_loaders/examples/index.mdx",
+  "sourceDirName": "modules/indexes/document_loaders/examples",
+  "slug": "/modules/indexes/document_loaders/examples/",
+  "permalink": "/docs/modules/indexes/document_loaders/examples/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/indexes/document_loaders/examples/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Examples",
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Document Loaders",
+    "permalink": "/docs/modules/indexes/document_loaders/"
+  },
+  "next": {
+    "title": "File Loaders",
+    "permalink": "/docs/modules/indexes/document_loaders/examples/file_loaders/"
+  }
+}

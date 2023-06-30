@@ -1,0 +1,24 @@
+{
+  "unversionedId": "modules/agents/tools/zapier_agent",
+  "id": "modules/agents/tools/zapier_agent",
+  "title": "Agent with Zapier NLA Integration",
+  "description": "Full docs here//nla.zapier.com/api/v1/dynamic/docs",
+  "source": "@site/docs/modules/agents/tools/zapier_agent.mdx",
+  "sourceDirName": "modules/agents/tools",
+  "slug": "/modules/agents/tools/zapier_agent",
+  "permalink": "/docs/modules/agents/tools/zapier_agent",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/tools/zapier_agent.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Web Browser Tool",
+    "permalink": "/docs/modules/agents/tools/webbrowser"
+  },
+  "next": {
+    "title": "Toolkits",
+    "permalink": "/docs/modules/agents/toolkits/"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/agents/tools/index",
+  "id": "modules/agents/tools/index",
+  "title": "Tools",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/agents/tools/index.mdx",
+  "sourceDirName": "modules/agents/tools",
+  "slug": "/modules/agents/tools/",
+  "permalink": "/docs/modules/agents/tools/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/tools/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Agents",
+    "permalink": "/docs/modules/agents/"
+  },
+  "next": {
+    "title": "Integrations",
+    "permalink": "/docs/modules/agents/tools/integrations/"
+  }
+}

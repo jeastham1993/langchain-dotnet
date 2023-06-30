@@ -1,0 +1,26 @@
+{
+  "unversionedId": "modules/agents/tools/webbrowser",
+  "id": "modules/agents/tools/webbrowser",
+  "title": "Web Browser Tool",
+  "description": "The Webbrowser Tool gives your agent the ability to visit a website and extract information. It is described to the agent as",
+  "source": "@site/docs/modules/agents/tools/webbrowser.mdx",
+  "sourceDirName": "modules/agents/tools",
+  "slug": "/modules/agents/tools/webbrowser",
+  "permalink": "/docs/modules/agents/tools/webbrowser",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/agents/tools/webbrowser.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "hide_table_of_contents": true
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Agent with AWS Lambda",
+    "permalink": "/docs/modules/agents/tools/lambda_agent"
+  },
+  "next": {
+    "title": "Agent with Zapier NLA Integration",
+    "permalink": "/docs/modules/agents/tools/zapier_agent"
+  }
+}

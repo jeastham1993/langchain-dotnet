@@ -1,0 +1,24 @@
+{
+  "unversionedId": "production/callbacks/create-handlers",
+  "id": "production/callbacks/create-handlers",
+  "title": "Creating callback handlers",
+  "description": "Creating a custom handler",
+  "source": "@site/docs/production/callbacks/create-handlers.mdx",
+  "sourceDirName": "production/callbacks",
+  "slug": "/production/callbacks/create-handlers",
+  "permalink": "/docs/production/callbacks/create-handlers",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/production/callbacks/create-handlers.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Events / Callbacks",
+    "permalink": "/docs/production/callbacks/"
+  },
+  "next": {
+    "title": "Callbacks in custom Chains",
+    "permalink": "/docs/production/callbacks/creating-subclasses"
+  }
+}

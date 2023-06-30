@@ -1,0 +1,27 @@
+{
+  "unversionedId": "modules/schema/index",
+  "id": "modules/schema/index",
+  "title": "Schema",
+  "description": "This section speaks about interfaces that are used throughout the rest of the library.",
+  "source": "@site/docs/modules/schema/index.mdx",
+  "sourceDirName": "modules/schema",
+  "slug": "/modules/schema/",
+  "permalink": "/docs/modules/schema/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/schema/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Quickstart, using Chat Models",
+    "permalink": "/docs/getting-started/guide-chat"
+  },
+  "next": {
+    "title": "Chat Messages",
+    "permalink": "/docs/modules/schema/chat-messages"
+  }
+}

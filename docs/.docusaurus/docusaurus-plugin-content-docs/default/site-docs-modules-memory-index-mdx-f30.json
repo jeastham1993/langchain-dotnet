@@ -1,0 +1,28 @@
+{
+  "unversionedId": "modules/memory/index",
+  "id": "modules/memory/index",
+  "title": "Getting Started: Memory",
+  "description": "Conceptual Guide",
+  "source": "@site/docs/modules/memory/index.mdx",
+  "sourceDirName": "modules/memory",
+  "slug": "/modules/memory/",
+  "permalink": "/docs/modules/memory/",
+  "draft": false,
+  "editUrl": "https://github.com/hwchase17/langchainjs/edit/main/docs/docs/modules/memory/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_label": "Memory",
+    "sidebar_position": 5
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Vector Store",
+    "permalink": "/docs/modules/indexes/retrievers/vectorstore"
+  },
+  "next": {
+    "title": "Examples",
+    "permalink": "/docs/modules/memory/examples/"
+  }
+}
