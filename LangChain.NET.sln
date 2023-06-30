@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET.WebApiOpenAIS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET.Extensions.DependencyInjection", "src\LangChain.NET.Extensions.DependencyInjection\LangChain.NET.Extensions.DependencyInjection.csproj", "{C3C373D7-AB39-4BA9-B083-885B86D119FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.AzureOpenAISample", "LangChain.NET.AzureOpenAISample\LangChain.NET.AzureOpenAISample.csproj", "{B2DA214B-F863-4CF5-B545-C8E38408FC90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.AzureOpenAISample", "examples\LangChain.NET.AzureOpenAISample\LangChain.NET.AzureOpenAISample.csproj", "{B2DA214B-F863-4CF5-B545-C8E38408FC90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
