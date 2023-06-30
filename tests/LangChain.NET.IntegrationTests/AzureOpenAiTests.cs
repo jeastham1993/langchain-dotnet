@@ -4,6 +4,7 @@ using LangChain.NET.LLMS.AzureOpenAi;
 using LangChain.NET.Prompts;
 using LangChain.NET.Schema;
 
+/* Temporarily disabled Azure tests as there is no API key.
 namespace LangChain.NET.IntegrationTests
 {
     public class AzureOpenAiTests
@@ -38,3 +39,4 @@ namespace LangChain.NET.IntegrationTests
         }
     }
 }
+*/
