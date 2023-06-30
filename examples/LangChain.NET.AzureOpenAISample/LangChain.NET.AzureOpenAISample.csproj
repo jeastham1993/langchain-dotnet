@@ -7,8 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\src\LangChain.NET\LangChain.NET.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\LangChain.NET\LangChain.NET.csproj" />
+    </ItemGroup>
 
 </Project>
