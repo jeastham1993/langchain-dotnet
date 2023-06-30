@@ -43,6 +43,8 @@ jobs:
     - name: Run Integration Tests
       if: startsWith(github.ref, 'refs/heads/release')
       run: dotnet test tests/LangChain.NET.IntegrationTests/LangChain.NET.IntegrationTests.csproj
+      env: # Or as an environment variable
+        OPEN_AI_API_KEY: ${{ secrets.OPEN_AI_API_KEY }}
 
     - name: Publish
       if: startsWith(github.ref, 'refs/heads/release')
