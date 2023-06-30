@@ -1,9 +1,13 @@
 ﻿using LangChain.NET.Memory;
 
-var history = new ChatMessageHistory();
+var inMemoryHistory = new ChatMessageHistory();
 
-history.AddUserMessage("hi!");
+inMemoryHistory.AddUserMessage("hi!");
 
-history.AddAiMessage("whats up?");
+inMemoryHistory.AddAiMessage("whats up?");
 
-Console.WriteLine(history);
+foreach (var message in inMemoryHistory.Messages)
+{
+    Console.WriteLine(message.GetType().Name + ":" + message.Text);
+}
+
