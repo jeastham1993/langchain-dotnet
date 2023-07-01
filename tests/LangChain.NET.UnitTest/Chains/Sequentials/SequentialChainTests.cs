@@ -69,7 +69,6 @@ public class SequentialChainTests
             .WithMessage("Either specify variables to return using `outputVariables` or use `returnAll` param. Cannot apply both conditions at the same time.");
     }
     
-    [Fact]
     public async Task Should_Throw_Exception_From_Validation()
     {
         // Arrange
