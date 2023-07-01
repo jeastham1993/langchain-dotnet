@@ -5,25 +5,27 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CDFF9629-E87F-42EB-9054-C26D3F76C525}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET", "src\LangChain.NET\LangChain.NET.csproj", "{67344432-3C26-4B6F-B05C-7916F72CA212}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET", "src\LangChain.NET\LangChain.NET.csproj", "{67344432-3C26-4B6F-B05C-7916F72CA212}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{0F72D671-D884-41CF-9CF2-5FFDFE664C6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.OpenAISample", "examples\LangChain.NET.OpenAISample\LangChain.NET.OpenAISample.csproj", "{977B2590-8AC9-4D03-9815-DB33127AB1A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET.OpenAISample", "examples\LangChain.NET.OpenAISample\LangChain.NET.OpenAISample.csproj", "{977B2590-8AC9-4D03-9815-DB33127AB1A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.HuggingFace", "examples\LangChain.NET.HuggingFace\LangChain.NET.HuggingFace.csproj", "{342B7F40-5309-4975-8FB1-5F394A999F65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET.HuggingFace", "examples\LangChain.NET.HuggingFace\LangChain.NET.HuggingFace.csproj", "{342B7F40-5309-4975-8FB1-5F394A999F65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.Prompts", "examples\LangChain.NET.Prompts\LangChain.NET.Prompts.csproj", "{1350644C-A358-490A-8C9E-2118E4E363FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET.Prompts", "examples\LangChain.NET.Prompts\LangChain.NET.Prompts.csproj", "{1350644C-A358-490A-8C9E-2118E4E363FE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CFADA032-A6C4-439A-BE76-4A8BEB05FB84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.UnitTest", "tests\LangChain.NET.UnitTest\LangChain.NET.UnitTest.csproj", "{4B5680FD-C0A1-4027-85D6-4AEC444689F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET.UnitTest", "tests\LangChain.NET.UnitTest\LangChain.NET.UnitTest.csproj", "{4B5680FD-C0A1-4027-85D6-4AEC444689F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.IntegrationTests", "tests\LangChain.NET.IntegrationTests\LangChain.NET.IntegrationTests.csproj", "{6F14F111-FDE4-49DF-9868-4C036F92004A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET.IntegrationTests", "tests\LangChain.NET.IntegrationTests\LangChain.NET.IntegrationTests.csproj", "{6F14F111-FDE4-49DF-9868-4C036F92004A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.WebApiOpenAISample", "examples\LangChain.NET.WebApiOpenAISample\LangChain.NET.WebApiOpenAISample.csproj", "{8B08F494-A3D1-4677-9BA8-46484C39D838}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET.WebApiOpenAISample", "examples\LangChain.NET.WebApiOpenAISample\LangChain.NET.WebApiOpenAISample.csproj", "{8B08F494-A3D1-4677-9BA8-46484C39D838}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.Extensions.DependencyInjection", "src\LangChain.NET.Extensions.DependencyInjection\LangChain.NET.Extensions.DependencyInjection.csproj", "{C3C373D7-AB39-4BA9-B083-885B86D119FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET.Extensions.DependencyInjection", "src\LangChain.NET.Extensions.DependencyInjection\LangChain.NET.Extensions.DependencyInjection.csproj", "{C3C373D7-AB39-4BA9-B083-885B86D119FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.AzureOpenAISample", "examples\LangChain.NET.AzureOpenAISample\LangChain.NET.AzureOpenAISample.csproj", "{B2DA214B-F863-4CF5-B545-C8E38408FC90}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.Abstractions", "src\LangChain.NET.Abstractions\LangChain.NET.Abstractions.csproj", "{F3DF550C-734A-41F7-866F-C0B0151E3A8C}"
 EndProject
@@ -33,9 +35,6 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{67344432-3C26-4B6F-B05C-7916F72CA212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -78,6 +77,13 @@ Global
 		{C453DD90-EFE8-4B28-8B5B-13174805E3D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C453DD90-EFE8-4B28-8B5B-13174805E3D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C453DD90-EFE8-4B28-8B5B-13174805E3D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2DA214B-F863-4CF5-B545-C8E38408FC90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2DA214B-F863-4CF5-B545-C8E38408FC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2DA214B-F863-4CF5-B545-C8E38408FC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2DA214B-F863-4CF5-B545-C8E38408FC90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{67344432-3C26-4B6F-B05C-7916F72CA212} = {CDFF9629-E87F-42EB-9054-C26D3F76C525}
@@ -90,5 +96,9 @@ Global
 		{C3C373D7-AB39-4BA9-B083-885B86D119FB} = {CDFF9629-E87F-42EB-9054-C26D3F76C525}
 		{F3DF550C-734A-41F7-866F-C0B0151E3A8C} = {CDFF9629-E87F-42EB-9054-C26D3F76C525}
 		{C453DD90-EFE8-4B28-8B5B-13174805E3D5} = {0F72D671-D884-41CF-9CF2-5FFDFE664C6F}
+		{B2DA214B-F863-4CF5-B545-C8E38408FC90} = {0F72D671-D884-41CF-9CF2-5FFDFE664C6F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF3A7E45-CEE5-48DB-BE1B-1EDAAB7FAAAD}
 	EndGlobalSection
 EndGlobal
