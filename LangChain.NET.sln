@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET.WebApiOpenAIS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET.Extensions.DependencyInjection", "src\LangChain.NET.Extensions.DependencyInjection\LangChain.NET.Extensions.DependencyInjection.csproj", "{C3C373D7-AB39-4BA9-B083-885B86D119FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.AzureOpenAISample", "examples\LangChain.NET.AzureOpenAISample\LangChain.NET.AzureOpenAISample.csproj", "{B2DA214B-F863-4CF5-B545-C8E38408FC90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET.AzureOpenAISample", "examples\LangChain.NET.AzureOpenAISample\LangChain.NET.AzureOpenAISample.csproj", "{B2DA214B-F863-4CF5-B545-C8E38408FC90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.MemorySample", "LangChain.NET.MemorySample\LangChain.NET.MemorySample.csproj", "{987A11CF-9955-48BA-B5B8-C7CF81BB7A08}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.Abstractions", "src\LangChain.NET.Abstractions\LangChain.NET.Abstractions.csproj", "{F3DF550C-734A-41F7-866F-C0B0151E3A8C}"
 EndProject
@@ -81,6 +83,10 @@ Global
 		{B2DA214B-F863-4CF5-B545-C8E38408FC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2DA214B-F863-4CF5-B545-C8E38408FC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2DA214B-F863-4CF5-B545-C8E38408FC90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987A11CF-9955-48BA-B5B8-C7CF81BB7A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987A11CF-9955-48BA-B5B8-C7CF81BB7A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987A11CF-9955-48BA-B5B8-C7CF81BB7A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987A11CF-9955-48BA-B5B8-C7CF81BB7A08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,6 +103,7 @@ Global
 		{F3DF550C-734A-41F7-866F-C0B0151E3A8C} = {CDFF9629-E87F-42EB-9054-C26D3F76C525}
 		{C453DD90-EFE8-4B28-8B5B-13174805E3D5} = {0F72D671-D884-41CF-9CF2-5FFDFE664C6F}
 		{B2DA214B-F863-4CF5-B545-C8E38408FC90} = {0F72D671-D884-41CF-9CF2-5FFDFE664C6F}
+		{987A11CF-9955-48BA-B5B8-C7CF81BB7A08} = {0F72D671-D884-41CF-9CF2-5FFDFE664C6F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CF3A7E45-CEE5-48DB-BE1B-1EDAAB7FAAAD}
