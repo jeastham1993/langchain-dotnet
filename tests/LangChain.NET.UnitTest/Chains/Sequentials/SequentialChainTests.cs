@@ -69,17 +69,19 @@ public class SequentialChainTests
             .WithMessage("Either specify variables to return using `outputVariables` or use `returnAll` param. Cannot apply both conditions at the same time.");
     }
     
-    public async Task Should_Throw_Exception_From_Validation()
+    [Fact]
+    public async Task Should_Throw_Exception_On_Duplicate_Output_Key()
     {
         // Arrange
-        var chain1 = CreateFakeChainMock(new[] {"input1", "input2"}, new []{"bar"}).Object;
-        var chain2 = CreateFakeChainMock(new []{"bar"}, new []{"output1"}).Object;
+        var chain1 = CreateFakeChainMock(new[] {"input1"}, new []{"duplicateOutput"}).Object;
+        var chain2 = CreateFakeChainMock(new []{"duplicateOutput"}, new []{"duplicateOutput"}).Object;
         
         // Act 
         Action act = () => new SequentialChain(new SequentialChainInput(new[] {chain1, chain2}, new []{"Some Input"}));
 
         // Assert
-        act.Should().Throw<ArgumentException>();
+        act.Should().Throw<ArgumentException>()
+            .WithMessage("Duplicate output key `duplicateOutput`");
     }
 
     private Mock<IChain> CreateFakeChainMock(string[] inputVariables, string[] outputVariables)

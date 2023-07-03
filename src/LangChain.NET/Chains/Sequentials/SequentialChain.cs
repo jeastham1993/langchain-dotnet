@@ -11,7 +11,9 @@ public class SequentialChain : BaseChain
     public override string[] InputKeys { get; }
     public override string[] OutputKeys { get; }
     public bool ReturnAll { get; }
-    
+
+    private HashSet<string> _allOutputKeys;
+
     public SequentialChain(SequentialChainInput input)
     {
         Chains = input.Chains;
@@ -23,7 +25,7 @@ public class SequentialChain : BaseChain
         
         if(OutputKeys.Length == 0 && !ReturnAll)
         {
-            OutputKeys = Chains.Last().OutputKeys;
+            OutputKeys = Chains[^1].OutputKeys;
         }
         
 
@@ -35,7 +37,11 @@ public class SequentialChain : BaseChain
     }
     public override async Task<IChainValues> CallAsync(IChainValues values)
     {
-        var allChainValues = values;
+        var allChainValues = new ChainValues(new  Dictionary<string, object>(_allOutputKeys.Count));
+        foreach (var input in InputKeys)  
+        {
+            allChainValues.Value[input] = values.Value[input];
+        }
 
         foreach (var chain in Chains)
         {
@@ -43,13 +49,13 @@ public class SequentialChain : BaseChain
 
             foreach (var inputValue in input.Value)
             {
-                allChainValues.Value.Add(inputValue.Key, inputValue.Value);
+                allChainValues.Value[inputValue.Key] = inputValue.Value;
             }
         }
 
         if (ReturnAll)
         {
-            foreach (var key in Chains.First().InputKeys)
+            foreach (var key in Chains[0].InputKeys)
             {
                 allChainValues.Value.Remove(key);
             }
@@ -76,6 +82,22 @@ public class SequentialChain : BaseChain
         if (Chains.Length == 0)
         {
             throw new ArgumentException("Sequential chain must have at least one chain.");
+        }
+
+        var allOutputKeysCount = Chains.Sum(_ => _.OutputKeys.Length) + InputKeys.Length;
+        _allOutputKeys = new HashSet<string>(allOutputKeysCount);
+
+        _allOutputKeys.UnionWith(InputKeys);
+        foreach (var chain in Chains)
+        {
+            foreach (var chainOutputKey in chain.OutputKeys)
+            {
+                if (_allOutputKeys.Contains(chainOutputKey))
+                {
+                    throw new ArgumentException($"Duplicate output key `{chainOutputKey}`");
+                }
+            }
+            _allOutputKeys.UnionWith(chain.OutputKeys);
         }
     }
 }
