@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET.Extensions.De
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangChain.NET.AzureOpenAISample", "examples\LangChain.NET.AzureOpenAISample\LangChain.NET.AzureOpenAISample.csproj", "{B2DA214B-F863-4CF5-B545-C8E38408FC90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.MemorySample", "LangChain.NET.MemorySample\LangChain.NET.MemorySample.csproj", "{987A11CF-9955-48BA-B5B8-C7CF81BB7A08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangChain.NET.MemorySample", "examples\LangChain.NET.MemorySample\LangChain.NET.MemorySample.csproj", "{987A11CF-9955-48BA-B5B8-C7CF81BB7A08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
