@@ -1,3 +1,4 @@
+using LangChain.NET.Abstractions.Schema;
 using LangChain.NET.Base;
 using LangChain.NET.Callback;
 using LangChain.NET.Prompts.Base;
@@ -42,7 +43,7 @@ public class LlmChain : BaseChain, ILlmChainInput
     /// </summary>
     /// <param name="values">The values to use when executing the chain.</param>
     /// <returns>The resulting output <see cref="ChainValues"/>.</returns>
-    public override async Task<ChainValues> Call(ChainValues values)
+    public override async Task<IChainValues> CallAsync(IChainValues values)
     {
         List<string>? stop = new List<string>();
 
@@ -62,7 +63,7 @@ public class LlmChain : BaseChain, ILlmChainInput
     
     public async Task<object> Predict(ChainValues values)
     {
-        var output = await Call(values);
+        var output = await CallAsync(values);
         return output.Value[OutputKey];
     }
 }

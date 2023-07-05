@@ -1,3 +1,5 @@
+using LangChain.NET.Abstractions.Chains.Base;
+using LangChain.NET.Abstractions.Schema;
 using LangChain.NET.Callback;
 using LangChain.NET.Chains;
 using LangChain.NET.Schema;
@@ -7,7 +9,7 @@ namespace LangChain.NET.Base;
 using System.Collections.Generic;
 using LoadValues = Dictionary<string, object>;
 
-public abstract class BaseChain
+public abstract class BaseChain : IChain
 {
     const string RunKey = "__run";
 
@@ -33,7 +35,7 @@ public abstract class BaseChain
         }
 
         var values = InputKeys.Length > 0 ? new ChainValues(InputKeys[0], input) : new ChainValues();
-        var returnValues = await Call(values);
+        var returnValues = await CallAsync(values);
         var keys = returnValues.Value.Keys;
 
         if (keys.Count(p => p != RunKey) == 1)
@@ -50,11 +52,11 @@ public abstract class BaseChain
     /// </summary>
     /// <param name="values">The <see cref="ChainValues"/> to use.</param>
     /// <returns></returns>
-    public abstract Task<ChainValues> Call(ChainValues values);
+    public abstract Task<IChainValues> CallAsync(IChainValues values);
     
     public async Task<ChainValues> Apply(List<ChainValues> inputs)
     {
-        var tasks = inputs.Select(async (input, idx) => await Call(input));
+        var tasks = inputs.Select(async (input, idx) => await CallAsync(input));
         var results = await Task.WhenAll(tasks);
 
         return results.Aggregate(new ChainValues(), (acc, result) =>

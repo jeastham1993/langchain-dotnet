@@ -50,7 +50,7 @@ var prompt = new PromptTemplate(new PromptTemplateInput(template, new List<strin
 
 var chain = new LlmChain(new LlmChainInput(llm, prompt));
 
-var result = await chain.Call(new ChainValues(new Dictionary<string, object>(1)
+var result = await chain.CallAsync(new ChainValues(new Dictionary<string, object>(1)
 {
     { "product", "colourful socks" }
 }));
