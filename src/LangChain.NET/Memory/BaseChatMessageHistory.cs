@@ -4,7 +4,7 @@ namespace LangChain.NET.Memory
 {
     public abstract class BaseChatMessageHistory
     {
-        public IList<BaseChatMessage> Messages;
+        public IList<BaseChatMessage> Messages { get; set; } = new List<BaseChatMessage>();
 
         public void AddUserMessage(string message)
         {
@@ -17,7 +17,6 @@ namespace LangChain.NET.Memory
         }
 
         public abstract void AddMessage(BaseChatMessage message);
-
         public abstract void Clear();
     }
 }
