@@ -2,6 +2,7 @@
 using LangChain.NET.Chains.LLM;
 using LangChain.NET.LLMS.OpenAi;
 using LangChain.NET.LLMS.OpenAiChatModel;
+using LangChain.NET.Memory;
 using LangChain.NET.Prompts;
 using LangChain.NET.Schema;
 
@@ -10,7 +11,7 @@ var llm = new OpenAi();
 var template = "What is a good name for a company that makes {product}?";
 var prompt = new PromptTemplate(new PromptTemplateInput(template, new List<string>(1){"product"}));
 
-var chain = new LlmChain(new LlmChainInput(llm, prompt));
+var chain = new LlmChain(new LlmChainInput(llm, prompt, new BufferMemory(new BufferMemoryInput())));
 
 var result = await chain.Call(new ChainValues(new Dictionary<string, object>(1)
 {
@@ -38,7 +39,7 @@ var chatPrompt = ChatPromptTemplate.FromPromptMessages(new List<BaseMessagePromp
     HumanMessagePromptTemplate.FromTemplate("{text}")
 });
 
-var chainB = new LlmChain(new LlmChainInput(chat, chatPrompt));
+var chainB = new LlmChain(new LlmChainInput(chat, chatPrompt, new BufferMemory(new BufferMemoryInput())));
 
 var resultB = await chainB.Call(new ChainValues(new Dictionary<string, object>(3)
 {
