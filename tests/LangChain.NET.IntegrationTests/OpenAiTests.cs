@@ -8,6 +8,8 @@ using LangChain.NET.Schema;
 
 namespace LangChain.NET.IntegrationTests;
 
+using LangChain.NET.Memory;
+
 public class OpenAiTests
 {
     [Fact]
@@ -28,7 +30,7 @@ public class OpenAiTests
         var template = "What is a good name for a company that makes {product}?";
         var prompt = new PromptTemplate(new PromptTemplateInput(template, new List<string>(1){"product"}));
 
-        var chain = new LlmChain(new LlmChainInput(llm, prompt));
+        var chain = new LlmChain(new LlmChainInput(llm, prompt, new BufferMemory(new BufferMemoryInput())));
 
         var result = await chain.Call(new ChainValues(new Dictionary<string, object>(1)
         {
